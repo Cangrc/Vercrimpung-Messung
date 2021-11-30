@@ -73,7 +73,7 @@ EnableDC1Option	0
 EnableDC1Flags	0
 EnableDC2TrshSP	0
 LightControllerSelector	LightController0
-LightControllerSource	ExposureActive
+LightControllerSource	On
 LightControllerSelector	LightController0
 LightControllerSelector	LightController0
 LightBrightnessControlMode	Analog
