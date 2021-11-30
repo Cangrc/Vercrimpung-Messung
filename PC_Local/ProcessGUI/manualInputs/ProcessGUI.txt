@@ -1,0 +1,3 @@
+Label;;Please Enter Y-Resolution and Number of Encoder Values per mm of Your Axes !
+LineEdit;manualInputsmodified.sbi;Y-resolution:;$userconfig.application.Yres;0.05
+LineEdit;manualInputsmodified.sbi;Encoder/mm:;$userconfig.application.Encoder;10000

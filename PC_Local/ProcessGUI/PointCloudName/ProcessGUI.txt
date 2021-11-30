@@ -1,0 +1,2 @@
+Label;;Please Enter Name of the Point Cloud (to save)!
+LineEdit;manualInputsmodified.sbi;name:;$userconfig.application.name;Test.e3d

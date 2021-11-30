@@ -1,0 +1,3 @@
+Label;;Please Enter Axes Speed (mm/s) and Travel Length (mm) !
+LineEdit;manualInputsmodified.sbi;Length:;$userconfig.application.Length;50
+LineEdit;manualInputsmodified.sbi;Speed:;$userconfig.application.Speed;5
