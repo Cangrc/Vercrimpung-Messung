@@ -44,7 +44,7 @@ FIRCoef	SG9
 FIRGain	2
 FIRCorrection	1
 CameraMode	FIRPeak
-ProfilesPerFrame	10
+ProfilesPerFrame	333
 AbsOffsetPos	1
 NumSubPixel	4
 TrshFirstZeroCrossing	0
