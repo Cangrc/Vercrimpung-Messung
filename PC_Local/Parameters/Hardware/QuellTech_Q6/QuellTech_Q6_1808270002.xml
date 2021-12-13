@@ -28,14 +28,14 @@ MultiSlopeSaturationThreshold	49.2063
 MultiSlopeKneePointSelector	2
 MultiSlopeSaturationThreshold	100
 MultiSlopeKneePointSelector	1
-ExposureTime	1000
+ExposureTime	2000
 NumAois	1
 AoiSelector	1
 AoiSelector	1
-AoiHeight	2300
+AoiHeight	700
 AoiSelector	1
 AoiSelector	1
-AoiOffsetY	500
+AoiOffsetY	992
 AoiSelector	1
 AoiSelector	1
 AoiThreshold	520
@@ -44,7 +44,7 @@ FIRCoef	SG9
 FIRGain	2
 FIRCorrection	1
 CameraMode	FIRPeak
-ProfilesPerFrame	333
+ProfilesPerFrame	700
 AbsOffsetPos	1
 NumSubPixel	4
 TrshFirstZeroCrossing	0
@@ -53,7 +53,7 @@ AoiTrackingEnable	0
 AoiSearchEnable	0
 AoiSearchHeight	3072
 AoiSearchOffsetY	0
-FramePeriod	9924
+FramePeriod	3044
 NDRMode	Off
 LineStartSyncTrigger	1
 DarkLevelOffset	520

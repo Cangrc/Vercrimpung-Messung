@@ -178,7 +178,7 @@
 	StartOperationMode = 0	 ;0: Process mode 1: Configuration Mode
 	StartProgramMode = 2	 ;0: empty program 1: last program, 2: given program
 	StartProgramName = 2019-04-08-Q6-Enoder-Scan.ckp	 ;Name of program, if StartProgramMode is set to given program (2)
-	StartProgramRecentName = ./DummyCommunication.ckp	 ;Name of program that was recently activated in the program list. This file will be used if StartProgramMode ist set to last program (1)
+	StartProgramRecentName = Y:/__customers/Slovenia/KNT/___Projects/Aluminium-Parts-Mondo-Project-2020/_Proof-of-concept-&-solution-concepts/PC_LOCAL/PC_Local - 2021-01-15/Programs/FindCracksOnUpperSurfaceBoxApproach-2021-01-15.ckp	 ;Name of program that was recently activated in the program list. This file will be used if StartProgramMode ist set to last program (1)
 
 [StartupPrograms.EnterApplication]
 	Enabled = 0	 ;0: Do not execute a startup program when entering the application 1: Execute a startup program with given name
