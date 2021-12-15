@@ -1,16 +1,79 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 6
+FILE_VERSION 15
 CREATED 13.12.2021 10:01:14
 CREATED_BY Admin
-LAST_MODIFIED 13.12.2021 16:01:34
+LAST_MODIFIED 15.12.2021 12:13:23
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
-    ClassVersion 1
+    ClassVersion 5
     CKGENERAL 
       ClassVersion 3
       Position 0
+      CommandType 2
+      CommandName Jump to Config
+      Enabled 3
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker config
+    DeterminationMode 1
+    ResultMode 0
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 1
+  KEY 2
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 1
       CommandType 1004
       CommandName ##### Scanner Settings #####
       Enabled 1
@@ -26,12 +89,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 1
-  KEY 2
+  END_KEY 2
+  KEY 3
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 1
+      Position 2
       CommandType 1000
       CommandName Jump to SETTINGS
       Enabled 1
@@ -85,12 +148,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 2
-  KEY 3
+  END_KEY 3
+  KEY 4
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 3
+      Position 4
       CommandType 1004
       CommandName ##### Start of the Program #####
       Enabled 1
@@ -106,12 +169,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 3
-  KEY 4
+  END_KEY 4
+  KEY 5
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 4
+      Position 5
       CommandType 2
       CommandName Mark: Beginning
       Enabled 1
@@ -169,12 +232,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 4
-  KEY 5
+  END_KEY 5
+  KEY 6
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 5
+      Position 6
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -286,12 +349,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 5
-  KEY 6
+  END_KEY 6
+  KEY 7
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 6
+      Position 7
       CommandType 124
       CommandName Text
       Enabled 1
@@ -411,12 +474,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 6
-  KEY 7
+  END_KEY 7
+  KEY 8
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 7
+      Position 8
       CommandType 246
       CommandName Close After Connection
       Enabled 1
@@ -528,12 +591,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 7
-  KEY 8
+  END_KEY 8
+  KEY 9
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 9
+      Position 10
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -549,12 +612,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 8
-  KEY 9
+  END_KEY 9
+  KEY 10
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 10
+      Position 11
       CommandType 1004
       CommandName COM STEP1: PLC -> PC
       Enabled 1
@@ -570,12 +633,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 9
-  KEY 10
+  END_KEY 10
+  KEY 11
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 11
+      Position 12
       CommandType 246
       CommandName Receive Start Signal Locally
       Enabled 1
@@ -687,12 +750,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 10
-  KEY 11
+  END_KEY 11
+  KEY 12
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 12
+      Position 13
       CommandType 246
       CommandName Receive Start Signal
       Enabled 0
@@ -804,12 +867,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 11
-  KEY 12
+  END_KEY 12
+  KEY 13
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 13
+      Position 14
       CommandType 124
       CommandName Text
       Enabled 1
@@ -929,12 +992,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 12
-  KEY 13
+  END_KEY 13
+  KEY 14
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 15
+      Position 16
       CommandType 1040
       CommandName If Something Received Then Cont
       Enabled 2
@@ -990,12 +1053,12 @@ START_PARM_LIST
       PickupListIndex 43364
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 13
-  KEY 14
+  END_KEY 14
+  KEY 15
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 17
+      Position 18
       CommandType 2
       CommandName Mark: InputArrived
       Enabled 1
@@ -1053,12 +1116,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 14
-  KEY 15
+  END_KEY 15
+  KEY 16
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 18
+      Position 19
       CommandType 114
       CommandName Stop watch
       Enabled 1
@@ -1110,12 +1173,12 @@ START_PARM_LIST
       PickupListIndex 317570
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 15
-  KEY 16
+  END_KEY 16
+  KEY 17
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 19
+      Position 20
       CommandType 124
       CommandName Text
       Enabled 1
@@ -1235,12 +1298,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 16
-  KEY 17
+  END_KEY 17
+  KEY 18
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 20
+      Position 21
       CommandType 1040
       CommandName PLC->PC
       Enabled 1
@@ -1296,12 +1359,12 @@ START_PARM_LIST
       PickupListIndex 640408
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 17
-  KEY 18
+  END_KEY 18
+  KEY 19
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 22
+      Position 23
       CommandType 2
       CommandName Mark: Start Signal OK
       Enabled 1
@@ -1359,12 +1422,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 18
-  KEY 19
+  END_KEY 19
+  KEY 20
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 23
+      Position 24
       CommandType 124
       CommandName Text
       Enabled 1
@@ -1484,12 +1547,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 19
-  KEY 20
+  END_KEY 20
+  KEY 21
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 25
+      Position 26
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -1505,12 +1568,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 20
-  KEY 21
+  END_KEY 21
+  KEY 22
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 26
+      Position 27
       CommandType 1004
       CommandName COM STEP2: PC -> PLC
       Enabled 1
@@ -1526,12 +1589,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 21
-  KEY 22
+  END_KEY 22
+  KEY 23
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 27
+      Position 28
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -1643,12 +1706,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 22
-  KEY 23
+  END_KEY 23
+  KEY 24
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 28
+      Position 29
       CommandType 1040
       CommandName PLC->PC
       Enabled 1
@@ -1705,12 +1768,12 @@ START_PARM_LIST
       PickupListIndex 993269
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 23
-  KEY 24
+  END_KEY 24
+  KEY 25
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 29
+      Position 30
       CommandType 246
       CommandName Send Busy Signal Locally
       Enabled 1
@@ -1822,12 +1885,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 24
-  KEY 25
+  END_KEY 25
+  KEY 26
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 30
+      Position 31
       CommandType 246
       CommandName Send Busy Signal
       Enabled 0
@@ -1939,12 +2002,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 25
-  KEY 26
+  END_KEY 26
+  KEY 27
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 31
+      Position 32
       CommandType 124
       CommandName Text
       Enabled 1
@@ -2064,27 +2127,6 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 26
-  KEY 27
-    ClassVersion 1
-    CKGENERAL 
-      ClassVersion 3
-      Position 33
-      CommandType 1004
-      CommandName Do Some Computations
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    OldCMDType 0
-    TeachInCounter 0
   END_KEY 27
   KEY 28
     ClassVersion 1
@@ -2092,7 +2134,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 34
       CommandType 1004
-      CommandName ----------------------------------------------------
+      CommandName Do Some Computations
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2113,7 +2155,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 35
       CommandType 1004
-      CommandName SCAN
+      CommandName ----------------------------------------------------
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2129,13 +2171,195 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 29
   KEY 30
-    ClassVersion 6
+    ClassVersion 5
     CKGENERAL 
       ClassVersion 3
       Position 36
+      CommandType 2
+      CommandName Interpreter control
+      Enabled 3
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker config
+    DeterminationMode 6
+    ResultMode 0
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 30
+  KEY 31
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 37
+      CommandType 1004
+      CommandName SCAN
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    OldCMDType 0
+    TeachInCounter 0
+  END_KEY 31
+  KEY 32
+    ClassVersion 12
+    CKGENERAL 
+      ClassVersion 3
+      Position 38
+      CommandType 1
+      CommandName Capture image
+      Enabled 3
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Capture image
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    CaptureWithVIC 0
+    CaptureType 2
+    SaveType 0
+    OnlyOnActivate 0
+    SaveWithGrafic 0
+    TriggeredCapture 0
+    ApplyTimeout 0
+    CaptureWithFlash 0
+    NumberOfCyclicFiles 10
+    CurrentCycleNumber 0
+    TriggerTimeout 0
+    TriggerInputLine 0
+    MinimumSignalDuration 0
+    FileName ./Processed/rotaryOffice-exp2000.e3c
+    AVIframes 1
+    AVImode 0
+    HWTriggeredCapture 1
+    CaptureWithVIC2 1
+    DualSnap 0
+    ImageMem2 1
+    ImageAdjust 0
+    ImageRefresh 0
+    SourceImageMode 0
+    SourceVIC 0
+    LoadOption 1
+    LoadImageIndex 0
+    LoadDirectory ./
+    RawDataConversionActive 0
+    RawDataType 1
+    PixelDataSize 2
+    ByteOrder 0
+    NumberOfChannels 1
+    ChannelOrder 0
+    DataRangeLow 0,0
+    DataRangeHigh 65535,0
+    UseDisplayValues 1
+    DisplayRangeLow 0,0
+    DisplayRangeHigh 65535,0
+    DeleteFile 0
+    FileNameToGlobalString 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 327625
+    END_CKPICKUP_TYPE_WRITE 
+    NoRestartOfCyclicLoad 0
+    SaveAsynchronous 0
+    FilenameType 0
+    TeachInCounter 0
+  END_KEY 32
+  KEY 33
+    ClassVersion 6
+    CKGENERAL 
+      ClassVersion 3
+      Position 39
       CommandType 3
       CommandName Asynchronous image capture
-      Enabled 1
+      Enabled 2
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2162,7 +2386,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
@@ -2192,154 +2416,15 @@ START_PARM_LIST
     RestartCaptureOnError 0
     StartCaptureIfNotActive 0
     TeachInCounter 0
-  END_KEY 30
-  KEY 31
-    ClassVersion 1
-    CKGENERAL 
-      ClassVersion 3
-      Position 38
-      CommandType 1004
-      CommandName Old Generation (2)
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    OldCMDType 0
-    TeachInCounter 0
-  END_KEY 31
-  KEY 32
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 39
-      CommandType 1000
-      CommandName Jump to Distance Calculation
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./ScannerSettings.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
-  END_KEY 32
-  KEY 33
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 40
-      CommandType 1000
-      CommandName Jump to Distance Calculation
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./ScannerSettings.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
   END_KEY 33
   KEY 34
-    ClassVersion 1
+    ClassVersion 5
     CKGENERAL 
       ClassVersion 3
       Position 41
-      CommandType 1004
-      CommandName New Generation (2.5)
-      Enabled 1
+      CommandType 2
+      CommandName Interpreter control
+      Enabled 3
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2350,16 +2435,58 @@ START_PARM_LIST
       OverlayImageMemory 1
       DisplayOverlayInDifferentIM 0
     END_CKGENERAL 
-    OldCMDType 0
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker config
+    DeterminationMode 6
+    ResultMode 0
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
   END_KEY 34
   KEY 35
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 43
+      Position 42
       CommandType 1004
-      CommandName ----------------------------------------------------
+      CommandName Enabled/Disabled based on Message
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2378,9 +2505,9 @@ START_PARM_LIST
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 44
+      Position 43
       CommandType 1004
-      CommandName COM STEP3: PC -> PLC
+      CommandName 8 Crimps
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2396,10 +2523,844 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 36
   KEY 37
-    ClassVersion 17
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 44
+      CommandType 1000
+      CommandName Jump to CableDistance Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 37
+  KEY 38
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 45
+      CommandType 1000
+      CommandName Jump to CableDiameter Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 38
+  KEY 39
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 46
+      CommandType 1000
+      CommandName Jump to CableOuterDiam Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 39
+  KEY 40
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 47
+      CommandType 1000
+      CommandName Jump to BushDistance Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 40
+  KEY 41
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 48
+      CommandType 1000
+      CommandName Jump to BushDiameter Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 41
+  KEY 42
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 49
+      CommandType 1000
+      CommandName Jump to BushOuterDiam Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 42
+  KEY 43
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 51
+      CommandType 1004
+      CommandName 16 Crimps
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    OldCMDType 0
+    TeachInCounter 0
+  END_KEY 43
+  KEY 44
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 52
+      CommandType 1000
+      CommandName Jump to CableDistance Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 44
+  KEY 45
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 53
+      CommandType 1000
+      CommandName Jump to CableDiameter Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 45
+  KEY 46
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 54
+      CommandType 1000
+      CommandName Jump to CableOuterDiam Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 46
+  KEY 47
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 55
+      CommandType 1000
+      CommandName Jump to BushDistance Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 47
+  KEY 48
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 56
+      CommandType 1000
+      CommandName Jump to BushDiameter Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 48
+  KEY 49
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 57
+      CommandType 1000
+      CommandName Jump to BushOuterDiam Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./ScannerSettings.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 49
+  KEY 50
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 58
+      CommandType 2
+      CommandName Mark: Start Signal OK
+      Enabled 3
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 3
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker Beginning
+    DeterminationMode 7
+    ResultMode 1
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 606664
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 50
+  KEY 51
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 60
+      CommandType 1004
+      CommandName ----------------------------------------------------
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    OldCMDType 0
+    TeachInCounter 0
+  END_KEY 51
+  KEY 52
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 61
+      CommandType 1004
+      CommandName COM STEP3: PC -> PLC
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    OldCMDType 0
+    TeachInCounter 0
+  END_KEY 52
+  KEY 53
+    ClassVersion 17
+    CKGENERAL 
+      ClassVersion 3
+      Position 62
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -2511,12 +3472,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 37
-  KEY 38
+  END_KEY 53
+  KEY 54
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 46
+      Position 63
       CommandType 1040
       CommandName PLC->PC
       Enabled 1
@@ -2573,12 +3534,12 @@ START_PARM_LIST
       PickupListIndex 282297
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 38
-  KEY 39
+  END_KEY 54
+  KEY 55
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 47
+      Position 64
       CommandType 246
       CommandName Send Results Signal Locally
       Enabled 1
@@ -2690,12 +3651,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 39
-  KEY 40
+  END_KEY 55
+  KEY 56
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 48
+      Position 65
       CommandType 246
       CommandName Send Results Signal
       Enabled 0
@@ -2807,12 +3768,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 40
-  KEY 41
+  END_KEY 56
+  KEY 57
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 49
+      Position 66
       CommandType 124
       CommandName Text
       Enabled 1
@@ -2932,12 +3893,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 41
-  KEY 42
+  END_KEY 57
+  KEY 58
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 51
+      Position 68
       CommandType 114
       CommandName Stop watch
       Enabled 1
@@ -2989,12 +3950,12 @@ START_PARM_LIST
       PickupListIndex 405628
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 42
-  KEY 43
+  END_KEY 58
+  KEY 59
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 53
+      Position 70
       CommandType 2
       CommandName Mark: Start Signal OK
       Enabled 1
@@ -3052,7 +4013,7 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 43
+  END_KEY 59
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
