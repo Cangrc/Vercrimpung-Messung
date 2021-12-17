@@ -1,1269 +1,16 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 26
+FILE_VERSION 35
 CREATED 13.12.2021 10:01:14
 CREATED_BY Admin
-LAST_MODIFIED 15.12.2021 15:37:52
+LAST_MODIFIED 17.12.2021 12:57:04
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
-    ClassVersion 1
-    CKGENERAL 
-      ClassVersion 3
-      Position 0
-      CommandType 1004
-      CommandName --- CableModule
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    OldCMDType 0
-    TeachInCounter 0
-  END_KEY 1
-  KEY 2
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
       Position 1
-      CommandType 122
-      CommandName NumberCrimps
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_NumberCrimps
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 769365
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 385543
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 2
-  KEY 3
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 2
-      CommandType 122
-      CommandName DistCrimps
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_DistCrimps
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 129766
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 559044
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 3
-  KEY 4
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 3
-      CommandType 122
-      CommandName PosTol
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_PosTol
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 873796
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 556103
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 4
-  KEY 5
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 4
-      CommandType 122
-      CommandName NegTol
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_NegTol
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 59042
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 661210
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 5
-  KEY 6
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 5
-      CommandType 122
-      CommandName PosTol_Avg
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_PosTolAvg
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 496342
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 78000
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 6
-  KEY 7
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 6
-      CommandType 122
-      CommandName NegTol_Avg
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_NegTolAvg
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 274100
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 443011
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 7
-  KEY 8
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 7
-      CommandType 122
-      CommandName DtCrimps
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_DistCrimps
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 549444
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 282700
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 8
-  KEY 9
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 8
-      CommandType 122
-      CommandName PosTol
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_PosTol
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 264810
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 963169
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 9
-  KEY 10
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 9
-      CommandType 122
-      CommandName NegTol
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_NegTol
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 228273
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 936576
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 10
-  KEY 11
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 10
-      CommandType 122
-      CommandName PosTol_Avg
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_PosTolAvg
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 818776
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 818416
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 11
-  KEY 12
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 11
-      CommandType 122
-      CommandName NegTol_Avg
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 2
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cable_NegTolAvg
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 902942
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 935983
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 12
-  KEY 13
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 13
       CommandType 2
       CommandName Jump to Config
       Enabled 3
@@ -1321,12 +68,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 13
-  KEY 14
+  END_KEY 1
+  KEY 2
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 14
+      Position 2
       CommandType 1004
       CommandName ##### Scanner Settings #####
       Enabled 1
@@ -1342,12 +89,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 14
-  KEY 15
+  END_KEY 2
+  KEY 3
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 15
+      Position 3
       CommandType 1000
       CommandName Jump to SETTINGS
       Enabled 1
@@ -1401,12 +148,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 15
-  KEY 16
+  END_KEY 3
+  KEY 4
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 17
+      Position 5
       CommandType 1004
       CommandName ##### Start of the Program #####
       Enabled 1
@@ -1422,12 +169,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 16
-  KEY 17
+  END_KEY 4
+  KEY 5
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 18
+      Position 6
       CommandType 2
       CommandName Mark: Beginning
       Enabled 1
@@ -1485,12 +232,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 17
-  KEY 18
+  END_KEY 5
+  KEY 6
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 19
+      Position 7
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -1602,12 +349,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 18
-  KEY 19
+  END_KEY 6
+  KEY 7
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 20
+      Position 8
       CommandType 124
       CommandName Text
       Enabled 1
@@ -1727,12 +474,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 19
-  KEY 20
+  END_KEY 7
+  KEY 8
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 21
+      Position 9
       CommandType 246
       CommandName Close After Connection
       Enabled 1
@@ -1844,12 +591,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 20
-  KEY 21
+  END_KEY 8
+  KEY 9
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 23
+      Position 11
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -1865,12 +612,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 21
-  KEY 22
+  END_KEY 9
+  KEY 10
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 24
+      Position 12
       CommandType 1004
       CommandName COM STEP1: PLC -> PC
       Enabled 1
@@ -1886,12 +633,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 22
-  KEY 23
+  END_KEY 10
+  KEY 11
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 25
+      Position 13
       CommandType 246
       CommandName Receive Start Signal Locally
       Enabled 1
@@ -2003,12 +750,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 23
-  KEY 24
+  END_KEY 11
+  KEY 12
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 26
+      Position 14
       CommandType 246
       CommandName Receive Start Signal
       Enabled 0
@@ -2120,12 +867,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 24
-  KEY 25
+  END_KEY 12
+  KEY 13
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 27
+      Position 15
       CommandType 124
       CommandName Text
       Enabled 1
@@ -2245,12 +992,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 25
-  KEY 26
+  END_KEY 13
+  KEY 14
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 29
+      Position 17
       CommandType 1040
       CommandName If Something Received Then Cont
       Enabled 2
@@ -2306,12 +1053,12 @@ START_PARM_LIST
       PickupListIndex 43364
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 26
-  KEY 27
+  END_KEY 14
+  KEY 15
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 31
+      Position 19
       CommandType 2
       CommandName Mark: InputArrived
       Enabled 1
@@ -2369,12 +1116,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 27
-  KEY 28
+  END_KEY 15
+  KEY 16
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 32
+      Position 20
       CommandType 114
       CommandName Stop watch
       Enabled 1
@@ -2426,12 +1173,12 @@ START_PARM_LIST
       PickupListIndex 317570
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 28
-  KEY 29
+  END_KEY 16
+  KEY 17
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 33
+      Position 21
       CommandType 124
       CommandName Text
       Enabled 1
@@ -2551,12 +1298,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 29
-  KEY 30
+  END_KEY 17
+  KEY 18
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 34
+      Position 22
       CommandType 1040
       CommandName PLC->PC
       Enabled 1
@@ -2599,7 +1346,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program ~Dim Start_Measurement_Cable_module As Double~Dim Start_Measurement_Bush_bearing As Double~Dim Cancel_Measurement As Double~Dim New_Dataset As Double~Dim Travelled_Dist_Camera As Double~Dim Measurement_No As Double~~Dim cable_NumberCrimps As Double~Dim cable_DistCrimps As Double~Dim cable_PosTol_Crimps As Double~Dim cable_NegTol_Crimps As Double~Dim cable_PosTol_AvgCrimps As Double~Dim cable_NegTol_AvgCrimps As Double ~Dim cable_DiamCrimps As Double~Dim cable_PosTol_Diam As Double ~Dim cable_NegTol_Diam As Double~Dim cable_PosTol_AvgDiam As Double~Dim cable_NegTol_AvgDiam As Double~~Dim bush_NumberCrimps As Double~Dim bush_DistCrimps As Double~Dim bush_PosTol_Crimps As Double~Dim bush_NegTol_Crimps As Double~Dim bush_PosTol_AvgCrimps As Double~Dim bush_NegTol_AvgCrimps  As Double~Dim bush_DiamCrimps As Double~Dim bush_PosTol_Diam As Double~Dim bush_NegTol_Diam As Double~Dim bush_PosTol_AvgDiam As Double~Dim bush_NegTol_AvgDiam As Double~~Dim ring_NumberCrimps As Double~Dim ring_DistCrimps As Double~Dim ring_PosTol_Crimps As Double~Dim ring_NegTol_Crimps As Double~Dim ring_PosTol_AvgCrimps As Double~Dim ring_NegTol_AvgCrimps  As Double~Dim ring_DiamCrimps As Double~Dim ring_PosTol_Diam As Double~Dim ring_NegTol_Diam As Double~Dim ring_PosTol_AvgDiam As Double~Dim ring_NegTol_AvgDiam As Double~~Dim With_crimp_ring As Double~Dim Length_Spindle As Double~Dim PosTol_Length_Spindle As Double~Dim NegTol_Length_Spindle As Double~~Dim begin As String~Dim cable As String~Dim bush As String~Dim ring As String~Dim final As String~Dim all As String~~Dim temp As String~Dim tempSwap As String~~begin = "01 00 00 01 00000014 00000011"~begin = "010000010000001400000011"~~cable= 	"0010 00020000 00900000 00004000 00030001 00030030 04000300 00073000 00080000 00004300 00030020"~cable= 	"001000020000009000000000400000030001000300300400030000073000000800000000430000030020"~    ~bush=	"0510 000A0000 00E00900 00804A00 00E30B01 0C030530 040D0300 00A73000 00085060 00034300 00E30020"~bush= 	"0510000A000000E0090000804A0000E30B010C030530040D030000A73000000850600003430000E30020"~~ring= 	"0410 000AE000 30980000 00074003 00030601 00230030 04900300 00073080 00080700 000C4300 0003C020"~ring= 	"0410000AE00030980000000740030003060100230030049003000007308000080700000C43000003C020"~~final = "01 000AE000 00182000 00076003"~final = "01000AE0000018200000076003"~~'all = begin + cable + bush + ring + final~~all = GetSendString()~LogEntry(all)~~'Mid(x, position (fromLeft,and startsWith0), Length)~'2 hex digit 1 byte~~temp = Mid (all, 1, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Cable_module)~~temp = Mid (all, 3, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Bush_bearing)~LogEntry(Start_Measurement_Bush_bearing)~~temp = Mid (all, 5, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Cancel_Measurement)~LogEntry(Cancel_Measurement)~~temp = Mid (all, 7, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, New_Dataset)~LogEntry(New_Dataset)~~temp = Mid (all, 9, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Travelled_Dist_Camera)~LogEntry(Travelled_Dist_Camera)~~temp = Mid (all, 17, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Measurement_No)~LogEntry(Measurement_No)~~'----Cable----~LogEntry("----Cable----")~~temp = Mid (all, 25, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NumberCrimps)~LogEntry(cable_NumberCrimps)~GlobVarDouble("cable_NumberCrimps") = 16~~temp = Mid (all, 29, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DistCrimps)~LogEntry(cable_DistCrimps)~~temp = Mid (all, 37, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Crimps)~LogEntry(cable_PosTol_Crimps)~~temp = Mid (all, 45, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Crimps)~LogEntry(cable_NegTol_Crimps)~~temp = Mid (all, 53, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgCrimps)~LogEntry(cable_PosTol_AvgCrimps)~~temp = Mid (all, 61, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgCrimps)~LogEntry(cable_NegTol_AvgCrimps)~~temp = Mid (all, 69, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DiamCrimps)~LogEntry(cable_DiamCrimps)~~temp = Mid (all, 77, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Diam)~LogEntry(cable_PosTol_Diam)~~temp = Mid (all, 85, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Diam)~LogEntry(cable_NegTol_Diam)~~temp = Mid (all, 93, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgDiam)~LogEntry(cable_PosTol_AvgDiam)~~temp = Mid (all, 101, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgDiam)~LogEntry(cable_NegTol_AvgDiam)~~'----Bush----~LogEntry("----Bush----")~~temp = Mid (all, 109, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NumberCrimps)~LogEntry(bush_NumberCrimps)~~temp = Mid (all, 113, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DistCrimps)~LogEntry(bush_DistCrimps)~~temp = Mid (all, 121, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Crimps)~LogEntry(bush_PosTol_Crimps)~~temp = Mid (all, 129, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Crimps)~LogEntry(bush_NegTol_Crimps)~~temp = Mid (all, 137, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgCrimps)~LogEntry(bush_PosTol_AvgCrimps)~~temp = Mid (all, 145, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgCrimps)~LogEntry(bush_NegTol_AvgCrimps)~~temp = Mid (all, 153, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DiamCrimps)~LogEntry(bush_DiamCrimps)~~temp = Mid (all, 161, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Diam)~LogEntry(bush_PosTol_Diam)~~temp = Mid (all, 169, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Diam)~LogEntry(bush_NegTol_Diam)~~temp = Mid (all, 177, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgDiam)~LogEntry(bush_PosTol_AvgDiam)~~temp = Mid (all, 185, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgDiam)~LogEntry(bush_NegTol_AvgDiam)~~'----Ring----~LogEntry("----Ring----")~~temp = Mid (all, 193, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NumberCrimps)~LogEntry(ring_NumberCrimps)~~temp = Mid (all, 197, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DistCrimps)~LogEntry(ring_DistCrimps)~~temp = Mid (all, 205, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Crimps)~LogEntry(ring_PosTol_Crimps)~~temp = Mid (all, 213, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Crimps)~LogEntry(ring_NegTol_Crimps)~~temp = Mid (all, 221, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgCrimps)~LogEntry(ring_PosTol_AvgCrimps)~~temp = Mid (all, 229, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgCrimps)~LogEntry(ring_NegTol_AvgCrimps)~~temp = Mid (all, 237, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DiamCrimps)~LogEntry(ring_DiamCrimps)~~temp = Mid (all, 245, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Diam)~LogEntry(ring_PosTol_Diam)~~temp = Mid (all, 253, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Diam)~LogEntry(ring_NegTol_Diam)~~temp = Mid (all, 261, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgDiam)~LogEntry(ring_PosTol_AvgDiam)~~temp = Mid (all, 269, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgDiam)~LogEntry(ring_NegTol_AvgDiam)~~'------final~~temp = Mid (all, 277, 2)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, With_crimp_ring)~LogEntry(With_crimp_ring)~~temp = Mid (all, 279, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Length_Spindle)~LogEntry(Length_Spindle)~~temp = Mid (all, 287, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, PosTol_Length_Spindle)~LogEntry(PosTol_Length_Spindle)~~temp = Mid (all, 295, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, NegTol_Length_Spindle)~LogEntry(NegTol_Length_Spindle)~~'ends with 303~~LogEntry(Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Bush_bearing)~~If Start_Measurement_Cable_module = 1 Or Start_Measurement_Bush_bearing = 1 Then~    JUMP_MARK = "Start"~    Print("Start Signal Received")~Else~    JUMP_MARK = "Beginning"~End If~~
+    Program Dim AccessMode As Long: AccessMode = 2 + 4 + 8 '(static + var + user + init)~Dim i As Long: i = 1000001 ' address~Dim init As Double~init = 123~Dim name As String~Dim r As Long~Dim val As Double~Dim updatemode As Double~~Dim Start_Measurement_Cable_module As Double~Dim Start_Measurement_Bush_bearing As Double~Dim Cancel_Measurement As Double~Dim New_Dataset As Double~Dim Travelled_Dist_Camera As Double~Dim Measurement_No As Double~~Dim cable_NumberCrimps As Double~Dim cable_DistCrimps As Double~Dim cable_PosTol_Crimps As Double~Dim cable_NegTol_Crimps As Double~Dim cable_PosTol_AvgCrimps As Double~Dim cable_NegTol_AvgCrimps As Double ~Dim cable_DiamCrimps As Double~Dim cable_PosTol_Diam As Double ~Dim cable_NegTol_Diam As Double~Dim cable_PosTol_AvgDiam As Double~Dim cable_NegTol_AvgDiam As Double~~Dim bush_NumberCrimps As Double~Dim bush_DistCrimps As Double~Dim bush_PosTol_Crimps As Double~Dim bush_NegTol_Crimps As Double~Dim bush_PosTol_AvgCrimps As Double~Dim bush_NegTol_AvgCrimps  As Double~Dim bush_DiamCrimps As Double~Dim bush_PosTol_Diam As Double~Dim bush_NegTol_Diam As Double~Dim bush_PosTol_AvgDiam As Double~Dim bush_NegTol_AvgDiam As Double~~Dim ring_NumberCrimps As Double~Dim ring_DistCrimps As Double~Dim ring_PosTol_Crimps As Double~Dim ring_NegTol_Crimps As Double~Dim ring_PosTol_AvgCrimps As Double~Dim ring_NegTol_AvgCrimps  As Double~Dim ring_DiamCrimps As Double~Dim ring_PosTol_Diam As Double~Dim ring_NegTol_Diam As Double~Dim ring_PosTol_AvgDiam As Double~Dim ring_NegTol_AvgDiam As Double~~Dim With_crimp_ring As Double~Dim Length_Spindle As Double~Dim PosTol_Length_Spindle As Double~Dim NegTol_Length_Spindle As Double~~Dim begin As String~Dim cable As String~Dim bush As String~Dim ring As String~Dim final As String~Dim all As String~~Dim temp As String~Dim tempSwap As String~~begin = "01 00 00 01 00000014 00000011"~begin = "010000010000001400000011"~~cable= 	"0010 00020000 00900000 00004000 00030001 00030030 04000300 00073000 00080000 00004300 00030020"~cable= 	"001000020000009000000000400000030001000300300400030000073000000800000000430000030020"~    ~bush=	"0510 000A0000 00E00900 00804A00 00E30B01 0C030530 040D0300 00A73000 00085060 00034300 00E30020"~bush= 	"0510000A000000E0090000804A0000E30B010C030530040D030000A73000000850600003430000E30020"~~ring= 	"0410 000AE000 30980000 00074003 00030601 00230030 04900300 00073080 00080700 000C4300 0003C020"~ring= 	"0410000AE00030980000000740030003060100230030049003000007308000080700000C43000003C020"~~final = "01 000AE000 00182000 00076003"~final = "01000AE0000018200000076003"~~'all = begin + cable + bush + ring + final~~all = GetSendString()~LogEntry(all)~~'Mid(x, position (fromLeft,and startsWith0), Length)~'2 hex digit 1 byte~~temp = Mid (all, 1, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Cable_module)~~~temp = Mid (all, 3, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Bush_bearing)~LogEntry(Start_Measurement_Bush_bearing)~~temp = Mid (all, 5, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Cancel_Measurement)~LogEntry(Cancel_Measurement)~~temp = Mid (all, 7, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, New_Dataset)~LogEntry(New_Dataset)~~temp = Mid (all, 9, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Travelled_Dist_Camera)~LogEntry(Travelled_Dist_Camera)~~temp = Mid (all, 17, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Measurement_No)~LogEntry(Measurement_No)~~'----Cable----~LogEntry("----Cable----")~~temp = Mid (all, 25, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NumberCrimps)~LogEntry(cable_NumberCrimps)~name= "cable_NumberCrimps": init = cable_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 29, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DistCrimps)~LogEntry(cable_DistCrimps)~name= "cable_DistCrimps": init = cable_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 37, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Crimps)~LogEntry(cable_PosTol_Crimps)~name= "cable_PosTol_Crimps": init = cable_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 45, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Crimps)~LogEntry(cable_NegTol_Crimps)~name= "cable_DistCrimps": init = cable_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 53, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgCrimps)~LogEntry(cable_PosTol_AvgCrimps)~name= "cable_PosTol_AvgCrimps": init = cable_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 61, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgCrimps)~LogEntry(cable_NegTol_AvgCrimps)~name= "cable_NegTol_AvgCrimps": init = cable_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 69, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DiamCrimps)~LogEntry(cable_DiamCrimps)~name= "cable_DiamCrimps": init = cable_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 77, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Diam)~LogEntry(cable_PosTol_Diam)~name= "cable_PosTol_Diam": init = cable_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 85, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Diam)~LogEntry(cable_NegTol_Diam)~name= "cable_NegTol_Diam": init = cable_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 93, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgDiam)~LogEntry(cable_PosTol_AvgDiam)~name= "cable_PosTol_AvgDiam": init = cable_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 101, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgDiam)~LogEntry(cable_NegTol_AvgDiam)~name= "cable_NegTol_AvgDiam": init = cable_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Bush----~LogEntry("----Bush----")~~temp = Mid (all, 109, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NumberCrimps)~LogEntry(bush_NumberCrimps)~name= "bush_NumberCrimps": init = bush_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 113, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DistCrimps)~LogEntry(bush_DistCrimps)~name= "bush_DistCrimps": init = bush_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 121, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Crimps)~LogEntry(bush_PosTol_Crimps)~name= "bush_PosTol_Crimps": init = bush_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 129, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Crimps)~LogEntry(bush_NegTol_Crimps)~name= "bush_NegTol_Crimps": init = bush_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 137, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgCrimps)~LogEntry(bush_PosTol_AvgCrimps)~name= "bush_PosTol_AvgCrimps": init = bush_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 145, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgCrimps)~LogEntry(bush_NegTol_AvgCrimps)~name= "bush_NegTol_AvgCrimps": init = bush_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 153, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DiamCrimps)~LogEntry(bush_DiamCrimps)~name= "bush_DiamCrimps": init = bush_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 161, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Diam)~LogEntry(bush_PosTol_Diam)~name= "bush_PosTol_Diam": init = bush_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 169, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Diam)~LogEntry(bush_NegTol_Diam)~name= "bush_NegTol_Diam": init = bush_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 177, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgDiam)~LogEntry(bush_PosTol_AvgDiam)~name= "bush_PosTol_AvgDiam": init = bush_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 185, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgDiam)~LogEntry(bush_NegTol_AvgDiam)~name= "bush_NegTol_AvgDiam": init = bush_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Ring----~LogEntry("----Ring----")~~temp = Mid (all, 193, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NumberCrimps)~LogEntry(ring_NumberCrimps)~name= "ring_NumberCrimps": init = ring_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 197, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DistCrimps)~LogEntry(ring_DistCrimps)~name= "ring_DistCrimps": init = ring_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 205, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Crimps)~LogEntry(ring_PosTol_Crimps)~name= "ring_PosTol_Crimps": init = ring_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 213, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Crimps)~LogEntry(ring_NegTol_Crimps)~name= "ring_NegTol_Crimps": init = ring_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 221, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgCrimps)~LogEntry(ring_PosTol_AvgCrimps)~name= "cable_NegTol_AvgDiam": init = cable_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 229, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgCrimps)~LogEntry(ring_NegTol_AvgCrimps)~name= "ring_NegTol_AvgCrimps": init = ring_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 237, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DiamCrimps)~LogEntry(ring_DiamCrimps)~name= "cable_NegTol_AvgDiam": init = cable_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 245, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Diam)~LogEntry(ring_PosTol_Diam)~name= "ring_PosTol_Diam": init = ring_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 253, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Diam)~LogEntry(ring_NegTol_Diam)~name= "ring_NegTol_Diam": init = ring_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 261, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgDiam)~LogEntry(ring_PosTol_AvgDiam)~name= "ring_PosTol_AvgDiam": init = ring_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 269, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgDiam)~LogEntry(ring_NegTol_AvgDiam)~name= "ring_NegTol_AvgDiam": init = ring_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'------final~~temp = Mid (all, 277, 2)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, With_crimp_ring)~LogEntry(With_crimp_ring)~name= "With_crimp_ring": init = With_crimp_ring: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 279, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Length_Spindle)~LogEntry(Length_Spindle)~name= "Length_Spindle": init = Length_Spindle: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 287, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, PosTol_Length_Spindle)~LogEntry(PosTol_Length_Spindle)~name= "PosTol_Length_Spindle": init = PosTol_Length_Spindle: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 295, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, NegTol_Length_Spindle)~LogEntry(NegTol_Length_Spindle)~name= "NegTol_Length_Spindle": init = NegTol_Length_Spindle: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'ends with 303~~LogEntry(Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Bush_bearing)~~If Start_Measurement_Cable_module = 1 Or Start_Measurement_Bush_bearing = 1 Then~    JUMP_MARK = "Start"~    Print("Start Signal Received")~Else~    JUMP_MARK = "Beginning"~End If~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2612,12 +1359,12 @@ START_PARM_LIST
       PickupListIndex 640408
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 30
-  KEY 31
+  END_KEY 18
+  KEY 19
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 36
+      Position 24
       CommandType 2
       CommandName Mark: Start Signal OK
       Enabled 1
@@ -2675,12 +1422,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 31
-  KEY 32
+  END_KEY 19
+  KEY 20
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 37
+      Position 25
       CommandType 124
       CommandName Text
       Enabled 1
@@ -2800,12 +1547,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 32
-  KEY 33
+  END_KEY 20
+  KEY 21
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 39
+      Position 27
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -2821,12 +1568,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 33
-  KEY 34
+  END_KEY 21
+  KEY 22
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 40
+      Position 28
       CommandType 1004
       CommandName COM STEP2: PC -> PLC
       Enabled 1
@@ -2842,12 +1589,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 34
-  KEY 35
+  END_KEY 22
+  KEY 23
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 41
+      Position 29
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -2959,12 +1706,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 35
-  KEY 36
+  END_KEY 23
+  KEY 24
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 42
+      Position 30
       CommandType 1040
       CommandName PC->PLC
       Enabled 1
@@ -3021,12 +1768,12 @@ START_PARM_LIST
       PickupListIndex 993269
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 36
-  KEY 37
+  END_KEY 24
+  KEY 25
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 43
+      Position 31
       CommandType 246
       CommandName Send Busy Signal Locally
       Enabled 1
@@ -3138,12 +1885,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 37
-  KEY 38
+  END_KEY 25
+  KEY 26
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 44
+      Position 32
       CommandType 246
       CommandName Send Busy Signal
       Enabled 0
@@ -3255,12 +2002,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 38
-  KEY 39
+  END_KEY 26
+  KEY 27
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 45
+      Position 33
       CommandType 124
       CommandName Text
       Enabled 1
@@ -3380,12 +2127,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 39
-  KEY 40
+  END_KEY 27
+  KEY 28
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 47
+      Position 35
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -3497,12 +2244,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 40
-  KEY 41
+  END_KEY 28
+  KEY 29
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 48
+      Position 36
       CommandType 1004
       CommandName Do Some Computations
       Enabled 1
@@ -3518,12 +2265,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 41
-  KEY 42
+  END_KEY 29
+  KEY 30
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 49
+      Position 37
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -3539,12 +2286,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 42
-  KEY 43
+  END_KEY 30
+  KEY 31
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 50
+      Position 38
       CommandType 2
       CommandName Interpreter control
       Enabled 3
@@ -3602,12 +2349,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 43
-  KEY 44
+  END_KEY 31
+  KEY 32
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 51
+      Position 39
       CommandType 1004
       CommandName SCAN
       Enabled 1
@@ -3623,12 +2370,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 44
-  KEY 45
+  END_KEY 32
+  KEY 33
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 52
+      Position 40
       CommandType 1
       CommandName Capture image
       Enabled 3
@@ -3721,12 +2468,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 45
-  KEY 46
+  END_KEY 33
+  KEY 34
     ClassVersion 6
     CKGENERAL 
       ClassVersion 3
-      Position 53
+      Position 41
       CommandType 3
       CommandName Asynchronous image capture
       Enabled 2
@@ -3786,12 +2533,12 @@ START_PARM_LIST
     RestartCaptureOnError 0
     StartCaptureIfNotActive 0
     TeachInCounter 0
-  END_KEY 46
-  KEY 47
+  END_KEY 34
+  KEY 35
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 55
+      Position 43
       CommandType 2
       CommandName Interpreter control
       Enabled 3
@@ -3849,12 +2596,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 47
-  KEY 48
+  END_KEY 35
+  KEY 36
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 56
+      Position 44
       CommandType 1004
       CommandName Enabled/Disabled based on Message
       Enabled 1
@@ -3870,12 +2617,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 48
-  KEY 49
+  END_KEY 36
+  KEY 37
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 58
+      Position 46
       CommandType 1000
       CommandName Jump to CableDistance Calculation
       Enabled 1
@@ -3929,12 +2676,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 49
-  KEY 50
+  END_KEY 37
+  KEY 38
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 59
+      Position 47
       CommandType 1000
       CommandName Jump to CableDiameter Calculation
       Enabled 1
@@ -3988,12 +2735,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 50
-  KEY 51
+  END_KEY 38
+  KEY 39
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 60
+      Position 48
       CommandType 1000
       CommandName Jump to CableOuterDiam Calculation
       Enabled 1
@@ -4047,12 +2794,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 51
-  KEY 52
+  END_KEY 39
+  KEY 40
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 62
+      Position 50
       CommandType 1004
       CommandName 2 Sections
       Enabled 1
@@ -4068,12 +2815,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 52
-  KEY 53
+  END_KEY 40
+  KEY 41
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 63
+      Position 51
       CommandType 1000
       CommandName Jump to BushDistance Calculation
       Enabled 1
@@ -4127,12 +2874,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 53
-  KEY 54
+  END_KEY 41
+  KEY 42
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 64
+      Position 52
       CommandType 1000
       CommandName Jump to BushDiameter Calculation
       Enabled 1
@@ -4186,12 +2933,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 54
-  KEY 55
+  END_KEY 42
+  KEY 43
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 65
+      Position 53
       CommandType 1000
       CommandName Jump to BushOuterDiam Calculation
       Enabled 1
@@ -4245,12 +2992,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 55
-  KEY 56
+  END_KEY 43
+  KEY 44
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 67
+      Position 55
       CommandType 1004
       CommandName 3 Sections
       Enabled 0
@@ -4266,12 +3013,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 56
-  KEY 57
+  END_KEY 44
+  KEY 45
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 68
+      Position 56
       CommandType 1000
       CommandName Jump to BushCrimpDistance Calculation
       Enabled 1
@@ -4325,12 +3072,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 57
-  KEY 58
+  END_KEY 45
+  KEY 46
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 69
+      Position 57
       CommandType 1000
       CommandName Jump to BushCrimpDiameter Calculation
       Enabled 1
@@ -4384,12 +3131,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 58
-  KEY 59
+  END_KEY 46
+  KEY 47
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 70
+      Position 58
       CommandType 1000
       CommandName Jump to BushCrimpOuterDiam Calculation
       Enabled 1
@@ -4443,12 +3190,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 59
-  KEY 60
+  END_KEY 47
+  KEY 48
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 72
+      Position 60
       CommandType 2
       CommandName End of Program
       Enabled 3
@@ -4506,12 +3253,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 60
-  KEY 61
+  END_KEY 48
+  KEY 49
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 74
+      Position 62
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -4527,12 +3274,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 61
-  KEY 62
+  END_KEY 49
+  KEY 50
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 75
+      Position 63
       CommandType 1004
       CommandName COM STEP3: PC -> PLC
       Enabled 1
@@ -4548,12 +3295,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 62
-  KEY 63
+  END_KEY 50
+  KEY 51
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 76
+      Position 64
       CommandType 246
       CommandName Send Results Signal Locally
       Enabled 1
@@ -4665,12 +3412,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 63
-  KEY 64
+  END_KEY 51
+  KEY 52
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 77
+      Position 65
       CommandType 246
       CommandName Send Results Signal
       Enabled 0
@@ -4782,12 +3529,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 64
-  KEY 65
+  END_KEY 52
+  KEY 53
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 78
+      Position 66
       CommandType 124
       CommandName Text
       Enabled 1
@@ -4907,12 +3654,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 65
-  KEY 66
+  END_KEY 53
+  KEY 54
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 80
+      Position 68
       CommandType 114
       CommandName Stop watch
       Enabled 1
@@ -4964,12 +3711,12 @@ START_PARM_LIST
       PickupListIndex 405628
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 66
-  KEY 67
+  END_KEY 54
+  KEY 55
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 82
+      Position 70
       CommandType 2
       CommandName Mark: Start Signal OK
       Enabled 1
@@ -5027,7 +3774,7 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 67
+  END_KEY 55
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
