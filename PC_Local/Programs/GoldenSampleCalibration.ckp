@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 43
+FILE_VERSION 44
 CREATED 13.12.2021 09:34:57
 CREATED_BY Admin
-LAST_MODIFIED 20.12.2021 16:40:25
+LAST_MODIFIED 23.12.2021 00:58:35
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -844,7 +844,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 8
       CommandType 122
-      CommandName x1000
+      CommandName x1000 (to keep precision up to 3 decimal)
       Enabled 1
       Hidden 0
       GraficMode 2
