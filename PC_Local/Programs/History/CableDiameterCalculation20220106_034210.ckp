@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 79
+FILE_VERSION 71
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 06.01.2022 06:01:51
+LAST_MODIFIED 06.01.2022 03:42:10
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -2476,8 +2476,8 @@ START_PARM_LIST
       ClassVersion 3
       Position 33
       CommandType 122
-      CommandName Average (Gets Real Value)
-      Enabled 2
+      CommandName Average
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2588,119 +2588,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 34
       CommandType 122
-      CommandName Average (Gets Fake Value)
-      Enabled 3
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 4
-    VarType 0
-    RegisterIndex 0
-    OperatorType 3
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName Average
-    ArithmeticResultToPickup 1
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 2
-    ArithmeticElementRegisterIndex2 0
-    ArithmeticManualElementX 16,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 432267
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 432267
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 1000001
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 6
-      PickupListIndex 736744
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 96898
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 27
-  KEY 28
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 35
-      CommandType 122
-      CommandName AverageDistance / 2 = AvgDiameter
+      CommandName Average / 2
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2805,12 +2693,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 28
-  KEY 29
+  END_KEY 27
+  KEY 28
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 36
+      Position 35
       CommandType 1040
       CommandName Add Avg 4 BYTES + Bool 1 BYTE
       Enabled 1
@@ -2853,7 +2741,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_DiamCrimps'~'Read result and value from Pickuplist~Dim dcable_DiamCrimp As Double~Dim lcable_DiamCrimp As Long~Dim lcable_DiamCrimpUpdateMode As Long~Dim scable_DiamCrimpName As String~lResult = CKTRANSGetResultFromPickupList(1000007 , lcable_DiamCrimp, dcable_DiamCrimp, scable_DiamCrimpName, lcable_DiamCrimpUpdateMode)~ ~'Accessing pickuplist element 'cable_PosTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_PosTol_Av As Double~Dim lcable_PosTol_Av As Long~Dim lcable_PosTol_AvUpdateMode As Long~Dim scable_PosTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000010 , lcable_PosTol_Av, dcable_PosTol_Av, scable_PosTol_AvName, lcable_PosTol_AvUpdateMode)~ ~'Accessing pickuplist element 'cable_NegTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_NegTol_Av As Double~Dim lcable_NegTol_Av As Long~Dim lcable_NegTol_AvUpdateMode As Long~Dim scable_NegTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000011 , lcable_NegTol_Av, dcable_NegTol_Av, scable_NegTol_AvName, lcable_NegTol_AvUpdateMode)~~Dim dAverage As Double~CKGetValueRegister (0,dAverage, "")~~Dim s As String~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dcable_DiamCrimp - dcable_NegTol_Av And dAverage < dcable_DiamCrimp + dcable_PosTol_Av Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_DiamCrimps'~'Read result and value from Pickuplist~Dim dcable_DiamCrimp As Double~Dim lcable_DiamCrimp As Long~Dim lcable_DiamCrimpUpdateMode As Long~Dim scable_DiamCrimpName As String~lResult = CKTRANSGetResultFromPickupList(1000007 , lcable_DiamCrimp, dcable_DiamCrimp, scable_DiamCrimpName, lcable_DiamCrimpUpdateMode)~ ~'Accessing pickuplist element 'cable_PosTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_PosTol_Av As Double~Dim lcable_PosTol_Av As Long~Dim lcable_PosTol_AvUpdateMode As Long~Dim scable_PosTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000010 , lcable_PosTol_Av, dcable_PosTol_Av, scable_PosTol_AvName, lcable_PosTol_AvUpdateMode)~ ~'Accessing pickuplist element 'cable_NegTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_NegTol_Av As Double~Dim lcable_NegTol_Av As Long~Dim lcable_NegTol_AvUpdateMode As Long~Dim scable_NegTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000011 , lcable_NegTol_Av, dcable_NegTol_Av, scable_NegTol_AvName, lcable_NegTol_AvUpdateMode)~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dcable_DiamCrimp - dcable_NegTol_Av And dAverage < dcable_DiamCrimp + dcable_PosTol_Av Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2866,7 +2754,7 @@ START_PARM_LIST
       PickupListIndex 523043
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 29
+  END_KEY 28
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1

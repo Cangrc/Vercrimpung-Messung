@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 79
+FILE_VERSION 72
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 06.01.2022 06:01:51
+LAST_MODIFIED 06.01.2022 03:59:02
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -1093,7 +1093,7 @@ START_PARM_LIST
       Name 
       SourceMode 3
       RegisterIndex 0
-      ManualValue 8,0
+      ManualValue 9,0
       CKPICKUP_TYPE_READ 
         ClassVersion 1
         Name 
@@ -1355,7 +1355,7 @@ START_PARM_LIST
       Name 
       SourceMode 3
       RegisterIndex 0
-      ManualValue 16,0
+      ManualValue 17,0
       CKPICKUP_TYPE_READ 
         ClassVersion 1
         Name 
@@ -2588,7 +2588,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 34
       CommandType 122
-      CommandName Average (Gets Fake Value)
+      CommandName Average (Gets Real Value)
       Enabled 3
       Hidden 0
       GraficMode 2
@@ -2700,7 +2700,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 35
       CommandType 122
-      CommandName AverageDistance / 2 = AvgDiameter
+      CommandName Average / 2
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2853,7 +2853,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_DiamCrimps'~'Read result and value from Pickuplist~Dim dcable_DiamCrimp As Double~Dim lcable_DiamCrimp As Long~Dim lcable_DiamCrimpUpdateMode As Long~Dim scable_DiamCrimpName As String~lResult = CKTRANSGetResultFromPickupList(1000007 , lcable_DiamCrimp, dcable_DiamCrimp, scable_DiamCrimpName, lcable_DiamCrimpUpdateMode)~ ~'Accessing pickuplist element 'cable_PosTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_PosTol_Av As Double~Dim lcable_PosTol_Av As Long~Dim lcable_PosTol_AvUpdateMode As Long~Dim scable_PosTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000010 , lcable_PosTol_Av, dcable_PosTol_Av, scable_PosTol_AvName, lcable_PosTol_AvUpdateMode)~ ~'Accessing pickuplist element 'cable_NegTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_NegTol_Av As Double~Dim lcable_NegTol_Av As Long~Dim lcable_NegTol_AvUpdateMode As Long~Dim scable_NegTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000011 , lcable_NegTol_Av, dcable_NegTol_Av, scable_NegTol_AvName, lcable_NegTol_AvUpdateMode)~~Dim dAverage As Double~CKGetValueRegister (0,dAverage, "")~~Dim s As String~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dcable_DiamCrimp - dcable_NegTol_Av And dAverage < dcable_DiamCrimp + dcable_PosTol_Av Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_DiamCrimps'~'Read result and value from Pickuplist~Dim dcable_DiamCrimp As Double~Dim lcable_DiamCrimp As Long~Dim lcable_DiamCrimpUpdateMode As Long~Dim scable_DiamCrimpName As String~lResult = CKTRANSGetResultFromPickupList(1000007 , lcable_DiamCrimp, dcable_DiamCrimp, scable_DiamCrimpName, lcable_DiamCrimpUpdateMode)~ ~'Accessing pickuplist element 'cable_PosTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_PosTol_Av As Double~Dim lcable_PosTol_Av As Long~Dim lcable_PosTol_AvUpdateMode As Long~Dim scable_PosTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000010 , lcable_PosTol_Av, dcable_PosTol_Av, scable_PosTol_AvName, lcable_PosTol_AvUpdateMode)~ ~'Accessing pickuplist element 'cable_NegTol_AvgDiam'~'Read result and value from Pickuplist~Dim dcable_NegTol_Av As Double~Dim lcable_NegTol_Av As Long~Dim lcable_NegTol_AvUpdateMode As Long~Dim scable_NegTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000011 , lcable_NegTol_Av, dcable_NegTol_Av, scable_NegTol_AvName, lcable_NegTol_AvUpdateMode)~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dcable_DiamCrimp - dcable_NegTol_Av And dAverage < dcable_DiamCrimp + dcable_PosTol_Av Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
