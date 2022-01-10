@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 99
+FILE_VERSION 110
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 07.01.2022 13:23:48
+LAST_MODIFIED 10.01.2022 11:24:36
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -236,7 +236,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 3
       CommandType 1
-      CommandName Load Cable Side
+      CommandName Load Bush Side
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -362,7 +362,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
@@ -1079,7 +1079,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_NumberCrimps'~'Read result and value from Pickuplist~Dim dcable_NumberCri As Double~Dim lcable_NumberCri As Long~Dim lcable_NumberCriUpdateMode As Long~Dim scable_NumberCriName As String~lResult = CKTRANSGetResultFromPickupList(1000001 , lcable_NumberCri, dcable_NumberCri, scable_NumberCriName, lcable_NumberCriUpdateMode)~Print(dcable_NumberCri)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(525165 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~'End Early~'If dcable_NumberCri < 9 And dcounter > 8 Then~If 16 < 9 And dcounter > 8 Then~    JUMP_MARK = "AddBytes"~End If~~
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NumberCrimps'~'Read result and value from Pickuplist~Dim dbush_NumberCrim As Double~Dim lbush_NumberCrim As Long~Dim lbush_NumberCrimUpdateMode As Long~Dim sbush_NumberCrimName As String~lResult = CKTRANSGetResultFromPickupList(1000012 , lbush_NumberCrim, dbush_NumberCrim, sbush_NumberCrimName, lbush_NumberCrimUpdateMode)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(195159 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~'End Early~'If dbush_NumberCrim < 9 And dcounter > 8 Then~If 16 < 9 And dcounter > 8 Then~    JUMP_MARK = "AddBytes"~End If~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -1140,7 +1140,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(525165 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~Print(dcounter)~~Dim sError As String~Dim dValue As Double: dValue = dcounter~If CKI_SetParameterDouble("Get Region of Cavities.ObjectIndex.ManualValue", dValue,sError) <> 1 Then~  Print (sError)~End If
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(195159 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~Print(dcounter)~~Dim sError As String~Dim dValue As Double: dValue = dcounter~If CKI_SetParameterDouble("Get Region of Cavities.ObjectIndex.ManualValue", dValue,sError) <> 1 Then~  Print (sError)~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -1515,7 +1515,7 @@ START_PARM_LIST
         ClassVersion 1
         Name 
         PickupObjectType 8
-        PickupListIndex 697250
+        PickupListIndex 595327
       END_CKPICKUP_TYPE_READ 
       END_CKSOURCEVALUE 
     CKPICKUP_TYPE_WRITE 
@@ -1736,7 +1736,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim s As String~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_DistCrimps'~'Read result and value from Pickuplist~Dim dcable_DistCrimp As Double~Dim lcable_DistCrimp As Long~Dim lcable_DistCrimpUpdateMode As Long~Dim scable_DistCrimpName As String~lResult = CKTRANSGetResultFromPickupList(1000002 , lcable_DistCrimp, dcable_DistCrimp, scable_DistCrimpName, lcable_DistCrimpUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_PosTol_Crimps'~'Read result and value from Pickuplist~Dim dcable_PosTol_Cr As Double~Dim lcable_PosTol_Cr As Long~Dim lcable_PosTol_CrUpdateMode As Long~Dim scable_PosTol_CrName As String~lResult = CKTRANSGetResultFromPickupList(1000003 , lcable_PosTol_Cr, dcable_PosTol_Cr, scable_PosTol_CrName, lcable_PosTol_CrUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_NegTol_Crimps'~'Read result and value from Pickuplist~Dim dcable_NegTol_Cr As Double~Dim lcable_NegTol_Cr As Long~Dim lcable_NegTol_CrUpdateMode As Long~Dim scable_NegTol_CrName As String~lResult = CKTRANSGetResultFromPickupList(1000004 , lcable_NegTol_Cr, dcable_NegTol_Cr, scable_NegTol_CrName, lcable_NegTol_CrUpdateMode)~~~Dim lResult As Long 'Only needed once ~ ~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~dReg0 = dReg0 * 1000~Print(dReg0)~~If dReg0 > dcable_DistCrimp - dcable_NegTol_Cr And dReg0 < dcable_DistCrimp + dcable_PosTol_Cr Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(417157 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Write string to Pickuplist~Dim sBooleansWrite As String~Dim lBooleansWrite As Long~Dim lBooleansWriteUpdateMode As Long~Dim sBooleansWriteName As String~sBooleansWrite = sBooleans + s~lBooleansWrite = 0 'Default Result~lBooleansWriteUpdateMode = 14 'Default UpdateMode~sBooleansWriteName = "BooleansWrite"~lResult = CKTRANSEnterStringToPickupList(417157 , lBooleansWrite, sBooleansWrite, sBooleansWriteName, lBooleansWriteUpdateMode)~~~
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_DistCrimps'~'Read result and value from Pickuplist~Dim dbush_DistCrimps As Double~Dim lbush_DistCrimps As Long~Dim lbush_DistCrimpsUpdateMode As Long~Dim sbush_DistCrimpsName As String~lResult = CKTRANSGetResultFromPickupList(1000013 , lbush_DistCrimps, dbush_DistCrimps, sbush_DistCrimpsName, lbush_DistCrimpsUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_PosTol_Crimps'~'Read result and value from Pickuplist~Dim dbush_PosTol_Cri As Double~Dim lbush_PosTol_Cri As Long~Dim lbush_PosTol_CriUpdateMode As Long~Dim sbush_PosTol_CriName As String~lResult = CKTRANSGetResultFromPickupList(1000014 , lbush_PosTol_Cri, dbush_PosTol_Cri, sbush_PosTol_CriName, lbush_PosTol_CriUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NegTol_Crimps'~'Read result and value from Pickuplist~Dim dbush_NegTol_Cri As Double~Dim lbush_NegTol_Cri As Long~Dim lbush_NegTol_CriUpdateMode As Long~Dim sbush_NegTol_CriName As String~lResult = CKTRANSGetResultFromPickupList(1000015 , lbush_NegTol_Cri, dbush_NegTol_Cri, sbush_NegTol_CriName, lbush_NegTol_CriUpdateMode)~~Dim lResult As Long 'Only needed once ~Dim s As String~ ~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~dReg0 = dReg0 * 1000~Print(dReg0)~~If dReg0 > dbush_DistCrimps - dbush_NegTol_Cri And dReg0 < dbush_DistCrimps + dbush_PosTol_Cri Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(452527 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Write string to Pickuplist~Dim sBooleansWrite As String~Dim lBooleansWrite As Long~Dim lBooleansWriteUpdateMode As Long~Dim sBooleansWriteName As String~sBooleansWrite = sBooleans + s~lBooleansWrite = 0 'Default Result~lBooleansWriteUpdateMode = 14 'Default UpdateMode~sBooleansWriteName = "BooleansWrite"~lResult = CKTRANSEnterStringToPickupList(452527 , lBooleansWrite, sBooleansWrite, sBooleansWriteName, lBooleansWriteUpdateMode)~~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -1830,13 +1830,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 606608
+      PickupListIndex 201602
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 606608
+      PickupListIndex 201602
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -1942,13 +1942,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 525165
+      PickupListIndex 195159
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 525165
+      PickupListIndex 195159
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -2038,10 +2038,122 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 21
   KEY 22
-    ClassVersion 4
+    ClassVersion 5
     CKGENERAL 
       ClassVersion 3
       Position 30
+      CommandType 122
+      CommandName counter - 1
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 4
+    VarType 0
+    RegisterIndex 0
+    OperatorType 1
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName counter
+    ArithmeticResultToPickup 1
+    ArithmeticElementType1 1
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 2
+    ArithmeticElementRegisterIndex2 1
+    ArithmeticManualElementX 1,0
+    ArithmeticManualElementY 0,0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 195159
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 195159
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 697406
+    END_CKPICKUP_TYPE_WRITE 
+    Static 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 715510
+    END_CKPICKUP_TYPE_WRITE 
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
+  END_KEY 22
+  KEY 23
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 31
       CommandType 1040
       CommandName Add Boolean 16 BYTES
       Enabled 1
@@ -2084,7 +2196,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program ~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(417157 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~SetSendString(GetSendString() + sBooleans)~
+    Program ~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(452527 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~SetSendString(GetSendString() + sBooleans)~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2097,12 +2209,12 @@ START_PARM_LIST
       PickupListIndex 477220
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 22
-  KEY 23
+  END_KEY 23
+  KEY 24
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 31
+      Position 32
       CommandType 122
       CommandName Average (Gets Real Value)
       Enabled 2
@@ -2178,19 +2290,19 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 606608
+      PickupListIndex 201602
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 606608
+      PickupListIndex 201602
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 1000001
+      PickupListIndex 195159
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
@@ -2204,118 +2316,6 @@ START_PARM_LIST
       Name 
       PickupObjectType 0
       PickupListIndex 420886
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 14,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 23
-  KEY 24
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 32
-      CommandType 122
-      CommandName Average (Gets Fake Value)
-      Enabled 3
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 4
-    VarType 0
-    RegisterIndex 0
-    OperatorType 3
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName Average
-    ArithmeticResultToPickup 1
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 2
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 16,0
-    ArithmeticManualElementY 15,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 606608
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 606608
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 1000001
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 880155
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 387009
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 14,0
@@ -2369,7 +2369,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_DistCrimps'~'Read result and value from Pickuplist~Dim dcable_DistCrimp As Double~Dim lcable_DistCrimp As Long~Dim lcable_DistCrimpUpdateMode As Long~Dim scable_DistCrimpName As String~lResult = CKTRANSGetResultFromPickupList(1000002 , lcable_DistCrimp, dcable_DistCrimp, scable_DistCrimpName, lcable_DistCrimpUpdateMode)~ ~'Accessing pickuplist element 'cable_PosTol_AvgCrimps'~'Read result and value from Pickuplist~Dim dcable_PosTol_Av As Double~Dim lcable_PosTol_Av As Long~Dim lcable_PosTol_AvUpdateMode As Long~Dim scable_PosTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000005 , lcable_PosTol_Av, dcable_PosTol_Av, scable_PosTol_AvName, lcable_PosTol_AvUpdateMode)~ ~'Accessing pickuplist element 'cable_NegTol_AvgCrimps'~'Read result and value from Pickuplist~Dim dcable_NegTol_Av As Double~Dim lcable_NegTol_Av As Long~Dim lcable_NegTol_AvUpdateMode As Long~Dim scable_NegTol_AvName As String~lResult = CKTRANSGetResultFromPickupList(1000006 , lcable_NegTol_Av, dcable_NegTol_Av, scable_NegTol_AvName, lcable_NegTol_AvUpdateMode)~~'Accessing pickuplist element 'Average'~'Read result and value from Pickuplist~Dim dAverage As Double~Dim lAverage As Long~Dim lAverageUpdateMode As Long~Dim sAverageName As String~lResult = CKTRANSGetResultFromPickupList(606608 , lAverage, dAverage, sAverageName, lAverageUpdateMode)~~Dim s As String~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dcable_DistCrimp - dcable_NegTol_Av And dAverage > dcable_DistCrimp + dcable_PosTol_Av Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)  ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)    ~End If
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_DistCrimps'~'Read result and value from Pickuplist~Dim dbush_DistCrimps As Double~Dim lbush_DistCrimps As Long~Dim lbush_DistCrimpsUpdateMode As Long~Dim sbush_DistCrimpsName As String~lResult = CKTRANSGetResultFromPickupList(1000013 , lbush_DistCrimps, dbush_DistCrimps, sbush_DistCrimpsName, lbush_DistCrimpsUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_PosTol_AvgCrimps'~'Read result and value from Pickuplist~Dim dbush_PosTol_Avg As Double~Dim lbush_PosTol_Avg As Long~Dim lbush_PosTol_AvgUpdateMode As Long~Dim sbush_PosTol_AvgName As String~lResult = CKTRANSGetResultFromPickupList(1000016 , lbush_PosTol_Avg, dbush_PosTol_Avg, sbush_PosTol_AvgName, lbush_PosTol_AvgUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NegTol_AvgCrimps'~'Read result and value from Pickuplist~Dim dbush_NegTol_Avg As Double~Dim lbush_NegTol_Avg As Long~Dim lbush_NegTol_AvgUpdateMode As Long~Dim sbush_NegTol_AvgName As String~lResult = CKTRANSGetResultFromPickupList(1000017 , lbush_NegTol_Avg, dbush_NegTol_Avg, sbush_NegTol_AvgName, lbush_NegTol_AvgUpdateMode)~~~'Accessing pickuplist element 'Average'~'Read result and value from Pickuplist~Dim dAverage As Double~Dim lAverage As Long~Dim lAverageUpdateMode As Long~Dim sAverageName As String~lResult = CKTRANSGetResultFromPickupList(201602 , lAverage, dAverage, sAverageName, lAverageUpdateMode)~~Dim s As String~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dbush_DistCrimps - dbush_NegTol_Avg And dAverage < dbush_DistCrimps + dbush_PosTol_Avg Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)  ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)    ~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0

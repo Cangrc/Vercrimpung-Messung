@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 42
+FILE_VERSION 51
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 09.01.2022 08:17:44
+LAST_MODIFIED 10.01.2022 18:02:10
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -236,7 +236,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 3
       CommandType 1
-      CommandName Load Cable Side
+      CommandName Load Bush Side
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -1079,7 +1079,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_NumberCrimps'~'Read result and value from Pickuplist~Dim dcable_NumberCri As Double~Dim lcable_NumberCri As Long~Dim lcable_NumberCriUpdateMode As Long~Dim scable_NumberCriName As String~lResult = CKTRANSGetResultFromPickupList(1000001 , lcable_NumberCri, dcable_NumberCri, scable_NumberCriName, lcable_NumberCriUpdateMode)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(620828 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~'If (dcable_NumberCri / 2) < 5 And dcounter > 4 Then~If (123 / 2) < 5 And dcounter > 4 Then~    JUMP_MARK = "AddBytes"~End If~~
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NumberCrimps'~'Read result and value from Pickuplist~Dim dbush_NumberCrim As Double~Dim lbush_NumberCrim As Long~Dim lbush_NumberCrimUpdateMode As Long~Dim sbush_NumberCrimName As String~lResult = CKTRANSGetResultFromPickupList(1000012 , lbush_NumberCrim, dbush_NumberCrim, sbush_NumberCrimName, lbush_NumberCrimUpdateMode)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(620828 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~'If (dbush_NumberCrim / 2) < 5 And dcounter > 4 Then~If (123 / 2) < 5 And dcounter > 4 Then~    JUMP_MARK = "AddBytes"~End If~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -1140,7 +1140,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_NumberCrimps'~'Read result and value from Pickuplist~Dim dcable_NumberCri As Double~Dim lcable_NumberCri As Long~Dim lcable_NumberCriUpdateMode As Long~Dim scable_NumberCriName As String~lResult = CKTRANSGetResultFromPickupList(1000001 , lcable_NumberCri, dcable_NumberCri, scable_NumberCriName, lcable_NumberCriUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(620828 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~Print(dcounter)~~Dim sError As String~Dim dValue As Double: dValue = dcounter~If CKI_SetParameterDouble("Get Region of Cavities1.ObjectIndex.ManualValue", dValue,sError) <> 1 Then~  Print (sError)~End If~~Dim sError As String~'Dim dValue As Double: dValue = dcounter + dcable_NumberCri / 2~Dim dValue As Double: dValue = dcounter + 8~If CKI_SetParameterDouble("Get Region of Cavities2.ObjectIndex.ManualValue", dValue,sError) <> 1 Then~  Print (sError)~End If
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NumberCrimps'~'Read result and value from Pickuplist~Dim dbush_NumberCrim As Double~Dim lbush_NumberCrim As Long~Dim lbush_NumberCrimUpdateMode As Long~Dim sbush_NumberCrimName As String~lResult = CKTRANSGetResultFromPickupList(1000012 , lbush_NumberCrim, dbush_NumberCrim, sbush_NumberCrimName, lbush_NumberCrimUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(620828 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~Print(dcounter)~~Dim sError As String~Dim dValue As Double: dValue = dcounter~If CKI_SetParameterDouble("Get Region of Cavities1.ObjectIndex.ManualValue", dValue,sError) <> 1 Then~  Print (sError)~End If~~Dim sError As String~'Dim dValue As Double: dValue = dcounter + dbush_NumberCrim / 2~Dim dValue As Double: dValue = dcounter + 8~If CKI_SetParameterDouble("Get Region of Cavities2.ObjectIndex.ManualValue", dValue,sError) <> 1 Then~  Print (sError)~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -1207,7 +1207,7 @@ START_PARM_LIST
       Name 
       SourceMode 3
       RegisterIndex 0
-      ManualValue 0,0
+      ManualValue 18,0
       CKPICKUP_TYPE_READ 
         ClassVersion 1
         Name 
@@ -1469,7 +1469,7 @@ START_PARM_LIST
       Name 
       SourceMode 3
       RegisterIndex 0
-      ManualValue 8,0
+      ManualValue 26,0
       CKPICKUP_TYPE_READ 
         ClassVersion 1
         Name 
@@ -2222,7 +2222,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_DistCrimps'~'Read result and value from Pickuplist~Dim dbush_DistCrimps As Double~Dim lbush_DistCrimps As Long~Dim lbush_DistCrimpsUpdateMode As Long~Dim sbush_DistCrimpsName As String~lResult = CKTRANSGetResultFromPickupList(1000013 , lbush_DistCrimps, dbush_DistCrimps, sbush_DistCrimpsName, lbush_DistCrimpsUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_PosTol_Crimps'~'Read result and value from Pickuplist~Dim dbush_PosTol_Cri As Double~Dim lbush_PosTol_Cri As Long~Dim lbush_PosTol_CriUpdateMode As Long~Dim sbush_PosTol_CriName As String~lResult = CKTRANSGetResultFromPickupList(1000014 , lbush_PosTol_Cri, dbush_PosTol_Cri, sbush_PosTol_CriName, lbush_PosTol_CriUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NegTol_Crimps'~'Read result and value from Pickuplist~Dim dbush_NegTol_Cri As Double~Dim lbush_NegTol_Cri As Long~Dim lbush_NegTol_CriUpdateMode As Long~Dim sbush_NegTol_CriName As String~lResult = CKTRANSGetResultFromPickupList(1000015 , lbush_NegTol_Cri, dbush_NegTol_Cri, sbush_NegTol_CriName, lbush_NegTol_CriUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~dReg0 = dReg0 * 1000~Print(dReg0)~~If dReg0 > dbush_DistCrimps - dbush_NegTol_Cri And dReg0 < dbush_DistCrimps + dbush_PosTol_Cri Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(145258 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Write string to Pickuplist~Dim sBooleansWrite As String~Dim lBooleansWrite As Long~Dim lBooleansWriteUpdateMode As Long~Dim sBooleansWriteName As String~sBooleansWrite = sBooleans + s~lBooleansWrite = 0 'Default Result~lBooleansWriteUpdateMode = 14 'Default UpdateMode~sBooleansWriteName = "BooleansWrite"~lResult = CKTRANSEnterStringToPickupList(145258 , lBooleansWrite, sBooleansWrite, sBooleansWriteName, lBooleansWriteUpdateMode)~~~
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_DistCrimps'~'Read result and value from Pickuplist~Dim dbush_DistCrimps As Double~Dim lbush_DistCrimps As Long~Dim lbush_DistCrimpsUpdateMode As Long~Dim sbush_DistCrimpsName As String~lResult = CKTRANSGetResultFromPickupList(1000013 , lbush_DistCrimps, dbush_DistCrimps, sbush_DistCrimpsName, lbush_DistCrimpsUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_PosTol_Crimps'~'Read result and value from Pickuplist~Dim dbush_PosTol_Cri As Double~Dim lbush_PosTol_Cri As Long~Dim lbush_PosTol_CriUpdateMode As Long~Dim sbush_PosTol_CriName As String~lResult = CKTRANSGetResultFromPickupList(1000014 , lbush_PosTol_Cri, dbush_PosTol_Cri, sbush_PosTol_CriName, lbush_PosTol_CriUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NegTol_Crimps'~'Read result and value from Pickuplist~Dim dbush_NegTol_Cri As Double~Dim lbush_NegTol_Cri As Long~Dim lbush_NegTol_CriUpdateMode As Long~Dim sbush_NegTol_CriName As String~lResult = CKTRANSGetResultFromPickupList(1000015 , lbush_NegTol_Cri, dbush_NegTol_Cri, sbush_NegTol_CriName, lbush_NegTol_CriUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~Dim s As String~~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~dReg0 = dReg0 * 1000~Print(dReg0)~~If dReg0 > dbush_DistCrimps - dbush_NegTol_Cri And dReg0 < dbush_DistCrimps + dbush_PosTol_Cri Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)    ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~End If~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(145258 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Write string to Pickuplist~Dim sBooleansWrite As String~Dim lBooleansWrite As Long~Dim lBooleansWriteUpdateMode As Long~Dim sBooleansWriteName As String~sBooleansWrite = sBooleans + s~lBooleansWrite = 0 'Default Result~lBooleansWriteUpdateMode = 14 'Default UpdateMode~sBooleansWriteName = "BooleansWrite"~lResult = CKTRANSEnterStringToPickupList(145258 , lBooleansWrite, sBooleansWrite, sBooleansWriteName, lBooleansWriteUpdateMode)~~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0

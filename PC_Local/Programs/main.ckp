@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 38
+FILE_VERSION 40
 CREATED 13.12.2021 10:01:14
 CREATED_BY Admin
-LAST_MODIFIED 06.01.2022 13:23:01
+LAST_MODIFIED 10.01.2022 18:02:50
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -12,7 +12,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 0
       CommandType 1040
-      CommandName PLC->PC
+      CommandName PLC->PC - DELETE
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2744,6 +2744,65 @@ START_PARM_LIST
       ClassVersion 3
       Position 48
       CommandType 1000
+      CommandName Jump to CableOuterDiam Calculation
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./CableOuterDiameter.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 39
+  KEY 40
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 49
+      CommandType 1000
       CommandName Jump to CableDiameter Calculation
       Enabled 1
       Hidden 0
@@ -2796,12 +2855,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 39
-  KEY 40
+  END_KEY 40
+  KEY 41
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 49
+      Position 50
       CommandType 1000
       CommandName Jump to CableOuterDiam Calculation
       Enabled 1
@@ -2855,12 +2914,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 40
-  KEY 41
+  END_KEY 41
+  KEY 42
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 51
+      Position 52
       CommandType 1004
       CommandName 2 Sections
       Enabled 1
@@ -2876,12 +2935,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 41
-  KEY 42
+  END_KEY 42
+  KEY 43
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 52
+      Position 53
       CommandType 1000
       CommandName Jump to BushDistance Calculation
       Enabled 1
@@ -2925,65 +2984,6 @@ START_PARM_LIST
       END_CKSTATISTIC 
     END_CKRESULT 
     NameOfSubProgram ./BushDistanceCalculation.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
-  END_KEY 42
-  KEY 43
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 53
-      CommandType 1000
-      CommandName Jump to BushDiameter Calculation
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./BushDiameterCalculation.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -3055,10 +3055,128 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 44
   KEY 45
-    ClassVersion 1
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 55
+      CommandType 1000
+      CommandName Jump to BushDiameter Calculation
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./BushDiameterCalculation.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 45
+  KEY 46
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 56
+      CommandType 1000
+      CommandName Jump to BushOuterDiam Calculation
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./BushOuterDiameter.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 46
+  KEY 47
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 58
       CommandType 1004
       CommandName 3 Sections
       Enabled 0
@@ -3074,12 +3192,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 45
-  KEY 46
+  END_KEY 47
+  KEY 48
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 57
+      Position 59
       CommandType 1000
       CommandName Jump to BushCrimpDistance Calculation
       Enabled 1
@@ -3133,71 +3251,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 46
-  KEY 47
+  END_KEY 48
+  KEY 49
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 58
-      CommandType 1000
-      CommandName Jump to BushCrimpDiameter Calculation
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./BushCrimpDiameterCalculation.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
-  END_KEY 47
-  KEY 48
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 59
+      Position 60
       CommandType 1000
       CommandName Jump to BushCrimpOuterDiam Calculation
       Enabled 1
@@ -3251,12 +3310,130 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 48
-  KEY 49
-    ClassVersion 5
+  END_KEY 49
+  KEY 50
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 61
+      CommandType 1000
+      CommandName Jump to BushCrimpDiameter Calculation
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./BushCrimpDiameterCalculation.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 50
+  KEY 51
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 62
+      CommandType 1000
+      CommandName Jump to BushCrimpOuterDiam Calculation
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./BushCrimpOuterDiameter.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 51
+  KEY 52
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 64
       CommandType 2
       CommandName End of Program
       Enabled 3
@@ -3314,12 +3491,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 49
-  KEY 50
+  END_KEY 52
+  KEY 53
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 63
+      Position 66
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -3335,12 +3512,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 50
-  KEY 51
+  END_KEY 53
+  KEY 54
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 64
+      Position 67
       CommandType 1004
       CommandName COM STEP3: PC -> PLC
       Enabled 1
@@ -3356,12 +3533,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 51
-  KEY 52
+  END_KEY 54
+  KEY 55
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 65
+      Position 68
       CommandType 246
       CommandName Send Results Signal Locally
       Enabled 1
@@ -3473,12 +3650,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 52
-  KEY 53
+  END_KEY 55
+  KEY 56
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 66
+      Position 69
       CommandType 246
       CommandName Send Results Signal
       Enabled 0
@@ -3590,12 +3767,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 53
-  KEY 54
+  END_KEY 56
+  KEY 57
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 67
+      Position 70
       CommandType 124
       CommandName Text
       Enabled 1
@@ -3715,12 +3892,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 54
-  KEY 55
+  END_KEY 57
+  KEY 58
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 69
+      Position 72
       CommandType 114
       CommandName Stop watch
       Enabled 1
@@ -3772,12 +3949,12 @@ START_PARM_LIST
       PickupListIndex 405628
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 55
-  KEY 56
+  END_KEY 58
+  KEY 59
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 71
+      Position 74
       CommandType 2
       CommandName Mark: Start Signal OK
       Enabled 1
@@ -3835,7 +4012,7 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 56
+  END_KEY 59
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
