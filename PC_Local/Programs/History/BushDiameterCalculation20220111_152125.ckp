@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 51
+FILE_VERSION 53
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 10.01.2022 18:02:10
+LAST_MODIFIED 11.01.2022 15:21:25
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -1079,7 +1079,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NumberCrimps'~'Read result and value from Pickuplist~Dim dbush_NumberCrim As Double~Dim lbush_NumberCrim As Long~Dim lbush_NumberCrimUpdateMode As Long~Dim sbush_NumberCrimName As String~lResult = CKTRANSGetResultFromPickupList(1000012 , lbush_NumberCrim, dbush_NumberCrim, sbush_NumberCrimName, lbush_NumberCrimUpdateMode)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(620828 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~'If (dbush_NumberCrim / 2) < 5 And dcounter > 4 Then~If (123 / 2) < 5 And dcounter > 4 Then~    JUMP_MARK = "AddBytes"~End If~~
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bush_NumberCrimps'~'Read result and value from Pickuplist~Dim dbush_NumberCrim As Double~Dim lbush_NumberCrim As Long~Dim lbush_NumberCrimUpdateMode As Long~Dim sbush_NumberCrimName As String~lResult = CKTRANSGetResultFromPickupList(1000012 , lbush_NumberCrim, dbush_NumberCrim, sbush_NumberCrimName, lbush_NumberCrimUpdateMode)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(620828 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~'If (dbush_NumberCrim / 2) < 5 And dcounter > 4 Then~If (123 / 2) < 5 And dcounter > 4 Then~~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)    ~    ~    JUMP_MARK = "EndLoop"~End If~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2528,6 +2528,69 @@ START_PARM_LIST
     CKGENERAL 
       ClassVersion 3
       Position 34
+      CommandType 2
+      CommandName ENDLOOP
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker EndLoop
+    DeterminationMode 6
+    ResultMode 0
+    NumberOfLoops 15
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 26
+  KEY 27
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 36
       CommandType 122
       CommandName counter - 1
       Enabled 1
@@ -2634,14 +2697,14 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 26
-  KEY 27
+  END_KEY 27
+  KEY 28
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 35
+      Position 37
       CommandType 1040
-      CommandName Add Boolean 16 BYTES
+      CommandName Add Boolean 16 BYTES - UPDATE
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2682,7 +2745,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program ~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(145258 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~SetSendString(GetSendString() + sBooleans)~
+    Program ~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'Booleans'~'Read Text and value from Pickuplist~Dim sBooleans As String~Dim lBooleans As Long~Dim lBooleansUpdateMode As Long~Dim sBooleansName As String~lResult = CKTRANSGetStringFromPickupList(145258 , lBooleans, sBooleans, sBooleansName, lBooleansUpdateMode)~~SetSendString(GetSendString() + sBooleans)~~Dim s As String~~'End Early~'If dcable_NumberCri < 9  Then~If 16 < 9 Then~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)    ~    ~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2695,12 +2758,12 @@ START_PARM_LIST
       PickupListIndex 162777
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 27
-  KEY 28
+  END_KEY 28
+  KEY 29
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 36
+      Position 38
       CommandType 122
       CommandName Average (Gets Real Value)
       Enabled 2
@@ -2807,12 +2870,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 14,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 28
-  KEY 29
+  END_KEY 29
+  KEY 30
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 37
+      Position 39
       CommandType 1040
       CommandName Add Avg 4 BYTES + Bool 1 BYTE
       Enabled 1
@@ -2868,7 +2931,7 @@ START_PARM_LIST
       PickupListIndex 552579
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 29
+  END_KEY 30
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
