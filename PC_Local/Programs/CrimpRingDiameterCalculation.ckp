@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 54
+FILE_VERSION 59
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 11.01.2022 18:18:21
+LAST_MODIFIED 14.01.2022 17:24:59
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -975,7 +975,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_NumberCrimps'~'Read result and value from Pickuplist~Dim dring_NumberCrim As Double~Dim lring_NumberCrim As Long~Dim lring_NumberCrimUpdateMode As Long~Dim sring_NumberCrimName As String~lResult = CKTRANSGetResultFromPickupList(1000023 , lring_NumberCrim, dring_NumberCrim, sring_NumberCrimName, lring_NumberCrimUpdateMode)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(976357 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~Dim s As String~~'If (dbush_NumberCrim / 2) < 5 And dcounter > 4 Then~If (16 / 2) < 9 And dcounter > 8 Then~~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    JUMP_MARK = "EndLoop"~End If~~
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_NumberCrimps'~'Read result and value from Pickuplist~Dim dring_NumberCrim As Double~Dim lring_NumberCrim As Long~Dim lring_NumberCrimUpdateMode As Long~Dim sring_NumberCrimName As String~lResult = CKTRANSGetResultFromPickupList(1000023 , lring_NumberCrim, dring_NumberCrim, sring_NumberCrimName, lring_NumberCrimUpdateMode)~ ~'Accessing pickuplist element 'counter'~'Read result and value from Pickuplist~Dim dcounter As Double~Dim lcounter As Long~Dim lcounterUpdateMode As Long~Dim scounterName As String~lResult = CKTRANSGetResultFromPickupList(976357 , lcounter, dcounter, scounterName, lcounterUpdateMode)~~Dim s As String~~If dcounter > 8 Then~    JUMP_MARK = "EndLoop"~'ElseIf dring_NumberCrim < 9 And dcounter > 4 Then~ElseIf 16 < 9 And dcounter > 4 Then~~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    ~    JUMP_MARK = "EndLoop"~End If~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2407,7 +2407,7 @@ START_PARM_LIST
     DeterminationMode 12
     ResultMode 0
     NumberOfLoops 15
-    LoopCounter 4
+    LoopCounter 0
     ClearAllGoi 0
     CMDOffset 1
     ExecuteCommands 0
@@ -2814,7 +2814,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_DiamCrimps'~'Read result and value from Pickuplist~Dim dring_DiamCrimps As Double~Dim lring_DiamCrimps As Long~Dim lring_DiamCrimpsUpdateMode As Long~Dim sring_DiamCrimpsName As String~lResult = CKTRANSGetResultFromPickupList(1000029 , lring_DiamCrimps, dring_DiamCrimps, sring_DiamCrimpsName, lring_DiamCrimpsUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_PosTol_AvgDiam'~'Read result and value from Pickuplist~Dim dring_PosTol_Avg As Double~Dim lring_PosTol_Avg As Long~Dim lring_PosTol_AvgUpdateMode As Long~Dim sring_PosTol_AvgName As String~lResult = CKTRANSGetResultFromPickupList(1000032 , lring_PosTol_Avg, dring_PosTol_Avg, sring_PosTol_AvgName, lring_PosTol_AvgUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_NegTol_AvgDiam'~'Read result and value from Pickuplist~Dim dring_NegTol_Avg As Double~Dim lring_NegTol_Avg As Long~Dim lring_NegTol_AvgUpdateMode As Long~Dim sring_NegTol_AvgName As String~lResult = CKTRANSGetResultFromPickupList(1000033 , lring_NegTol_Avg, dring_NegTol_Avg, sring_NegTol_AvgName, lring_NegTol_AvgUpdateMode)~~~'Accessing pickuplist element 'Average'~'Read result and value from Pickuplist~Dim dAverage As Double~Dim lAverage As Long~Dim lAverageUpdateMode As Long~Dim sAverageName As String~lResult = CKTRANSGetResultFromPickupList(501636 , lAverage, dAverage, sAverageName, lAverageUpdateMode)~~Dim s As String~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dring_DiamCrimps - dring_NegTol_Avg And dAverage < dring_DiamCrimps + dring_PosTol_Avg Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)  ~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)    ~End If
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_DiamCrimps'~'Read result and value from Pickuplist~Dim dring_DiamCrimps As Double~Dim lring_DiamCrimps As Long~Dim lring_DiamCrimpsUpdateMode As Long~Dim sring_DiamCrimpsName As String~lResult = CKTRANSGetResultFromPickupList(1000029 , lring_DiamCrimps, dring_DiamCrimps, sring_DiamCrimpsName, lring_DiamCrimpsUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_PosTol_AvgDiam'~'Read result and value from Pickuplist~Dim dring_PosTol_Avg As Double~Dim lring_PosTol_Avg As Long~Dim lring_PosTol_AvgUpdateMode As Long~Dim sring_PosTol_AvgName As String~lResult = CKTRANSGetResultFromPickupList(1000032 , lring_PosTol_Avg, dring_PosTol_Avg, sring_PosTol_AvgName, lring_PosTol_AvgUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ring_NegTol_AvgDiam'~'Read result and value from Pickuplist~Dim dring_NegTol_Avg As Double~Dim lring_NegTol_Avg As Long~Dim lring_NegTol_AvgUpdateMode As Long~Dim sring_NegTol_AvgName As String~lResult = CKTRANSGetResultFromPickupList(1000033 , lring_NegTol_Avg, dring_NegTol_Avg, sring_NegTol_AvgName, lring_NegTol_AvgUpdateMode)~~~'Accessing pickuplist element 'Average'~'Read result and value from Pickuplist~Dim dAverage As Double~Dim lAverage As Long~Dim lAverageUpdateMode As Long~Dim sAverageName As String~lResult = CKTRANSGetResultFromPickupList(501636 , lAverage, dAverage, sAverageName, lAverageUpdateMode)~~Dim s As String~~HSConvUnsignedNumberToHexString(dAverage, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~If dAverage > dring_DiamCrimps - dring_NegTol_Avg And dAverage < dring_DiamCrimps + dring_PosTol_Avg Then~    'True~    Print("True")~    HSConvUnsignedNumberToHexString(1, 1, s)~    HSConvSwapByteOrder(s)  ~    SetSendString(GetSendString() + s)~Else~    'False~    Print("False")~    HSConvUnsignedNumberToHexString(0, 1, s)~    HSConvSwapByteOrder(s)   ~    SetSendString(GetSendString() + s) ~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0

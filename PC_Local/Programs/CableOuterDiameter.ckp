@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 147
+FILE_VERSION 149
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 10.01.2022 17:55:28
+LAST_MODIFIED 14.01.2022 17:23:40
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -40,7 +40,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
