@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 221
+FILE_VERSION 231
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 18.01.2022 16:46:07
+LAST_MODIFIED 19.01.2022 17:24:43
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -3423,7 +3423,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
@@ -3520,7 +3520,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
@@ -3617,7 +3617,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
@@ -3640,10 +3640,71 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 33
   KEY 34
-    ClassVersion 12
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 44
+      CommandType 1040
+      CommandName Fill Variable
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'timeStamp'~'Read Text and value from Pickuplist~Dim stimeStamp As String~Dim ltimeStamp As Long~Dim ltimeStampUpdateMode As Long~Dim stimeStampName As String~lResult = CKTRANSGetStringFromPickupList(871998 , ltimeStamp, stimeStamp, stimeStampName, ltimeStampUpdateMode)~~~Dim sError As String~Dim sValue As String: sValue = stimeStamp + "-screenshot-cable-distance.jpg"~If CKI_SetParameterString("Save Screenshot.FileName", sValue,sError) <> 1 Then~  Print (sError)~End If~~Print(sValue)~
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 918465
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 34
+  KEY 35
+    ClassVersion 12
+    CKGENERAL 
+      ClassVersion 3
+      Position 45
       CommandType 1
       CommandName Save Screenshot
       Enabled 1
@@ -3688,7 +3749,7 @@ START_PARM_LIST
     END_CKRESULT 
     CaptureWithVIC 0
     CaptureType 1
-    SaveType 1
+    SaveType 0
     OnlyOnActivate 0
     SaveWithGrafic 0
     TriggeredCapture 0
@@ -3699,7 +3760,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./CableDistance.jpg
+    FileName ./2022_01_19_17_23_17-screenshot-cable-distance.jpg
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3736,7 +3797,7 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 34
+  END_KEY 35
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
