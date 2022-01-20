@@ -1,9 +1,9 @@
 EVT 
-EYEVISION_VERSION 4.00.013
-FILE_VERSION 175
+EYEVISION_VERSION 4.00.015-11-g2ff7e11d3c
+FILE_VERSION 187
 CREATED 13.12.2021 10:01:14
 CREATED_BY Admin
-LAST_MODIFIED 19.01.2022 17:24:32
+LAST_MODIFIED 20.01.2022 17:58:44
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -40,7 +40,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
@@ -513,7 +513,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim AccessMode As Long: AccessMode = 2 + 4 + 8 '(static + var + user + init)~Dim i As Long: i = 1000001 ' address~Dim init As Double~init = 123~Dim name As String~Dim r As Long~Dim val As Double~Dim updatemode As Double~~Dim Start_Measurement_Cable_module As Double~Dim Start_Measurement_Bush_bearing As Double~Dim Cancel_Measurement As Double~Dim New_Dataset As Double~Dim Travelled_Dist_Camera As Double~Dim Measurement_No As Double~~Dim cable_NumberCrimps As Double~Dim cable_DistCrimps As Double~Dim cable_PosTol_Crimps As Double~Dim cable_NegTol_Crimps As Double~Dim cable_PosTol_AvgCrimps As Double~Dim cable_NegTol_AvgCrimps As Double ~Dim cable_DiamCrimps As Double~Dim cable_PosTol_Diam As Double ~Dim cable_NegTol_Diam As Double~Dim cable_PosTol_AvgDiam As Double~Dim cable_NegTol_AvgDiam As Double~~Dim bush_NumberCrimps As Double~Dim bush_DistCrimps As Double~Dim bush_PosTol_Crimps As Double~Dim bush_NegTol_Crimps As Double~Dim bush_PosTol_AvgCrimps As Double~Dim bush_NegTol_AvgCrimps  As Double~Dim bush_DiamCrimps As Double~Dim bush_PosTol_Diam As Double~Dim bush_NegTol_Diam As Double~Dim bush_PosTol_AvgDiam As Double~Dim bush_NegTol_AvgDiam As Double~~Dim ring_NumberCrimps As Double~Dim ring_DistCrimps As Double~Dim ring_PosTol_Crimps As Double~Dim ring_NegTol_Crimps As Double~Dim ring_PosTol_AvgCrimps As Double~Dim ring_NegTol_AvgCrimps  As Double~Dim ring_DiamCrimps As Double~Dim ring_PosTol_Diam As Double~Dim ring_NegTol_Diam As Double~Dim ring_PosTol_AvgDiam As Double~Dim ring_NegTol_AvgDiam As Double~~Dim With_crimp_ring As Double~Dim Length_Spindle As Double~Dim PosTol_Length_Spindle As Double~Dim NegTol_Length_Spindle As Double~~Dim begin As String~Dim cable As String~Dim bush As String~Dim ring As String~Dim final As String~Dim all As String~~Dim temp As String~Dim tempSwap As String~~begin = "01 00 00 01 00000014 00000011"~begin = "010000010000001400000011"~~cable= 	"0010 00020000 00900000 00004000 00030001 00030030 04000300 00073000 00080000 00004300 00030020"~cable= 	"001000020000009000000000400000030001000300300400030000073000000800000000430000030020"~    ~bush=	"0510 000A0000 00E00900 00804A00 00E30B01 0C030530 040D0300 00A73000 00085060 00034300 00E30020"~bush= 	"0510000A000000E0090000804A0000E30B010C030530040D030000A73000000850600003430000E30020"~~ring= 	"0410 000AE000 30980000 00074003 00030601 00230030 04900300 00073080 00080700 000C4300 0003C020"~ring= 	"0410000AE00030980000000740030003060100230030049003000007308000080700000C43000003C020"~~final = "01"~final = "01"~~'all = begin + cable + bush + ring + final~'SetSendString(all)~'LogEntry(all)~all = GetSendString()~~'Mid(x, position (fromLeft,and startsWith0), Length)~'2 hex digit 1 byte~~temp = Mid (all, 1, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Cable_module)~~~temp = Mid (all, 3, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Bush_bearing)~LogEntry(Start_Measurement_Bush_bearing)~~temp = Mid (all, 5, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Cancel_Measurement)~LogEntry(Cancel_Measurement)~~temp = Mid (all, 7, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, New_Dataset)~LogEntry(New_Dataset)~~temp = Mid (all, 9, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Travelled_Dist_Camera)~Travelled_Dist_Camera = Travelled_Dist_Camera / 1000~LogEntry(Travelled_Dist_Camera)~~temp = Mid (all, 17, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Measurement_No)~LogEntry(Measurement_No)~~'----Cable----~LogEntry("----Cable----")~~temp = Mid (all, 25, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NumberCrimps)~LogEntry(cable_NumberCrimps)~name= "cable_NumberCrimps": init = cable_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 29, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DistCrimps)~cable_DistCrimps = cable_DistCrimps / 1000~LogEntry(cable_DistCrimps)~name= "cable_DistCrimps": init = cable_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 37, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Crimps)~cable_PosTol_Crimps = cable_PosTol_Crimps / 1000~LogEntry(cable_PosTol_Crimps)~name= "cable_PosTol_Crimps": init = cable_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 45, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Crimps)~cable_NegTol_Crimps = cable_NegTol_Crimps / 1000~LogEntry(cable_NegTol_Crimps)~name= "cable_NegTol_Crimps": init = cable_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 53, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgCrimps)~cable_PosTol_AvgCrimps = cable_PosTol_AvgCrimps / 1000~LogEntry(cable_PosTol_AvgCrimps)~name= "cable_PosTol_AvgCrimps": init = cable_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 61, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgCrimps)~cable_NegTol_AvgCrimps = cable_NegTol_AvgCrimps / 1000~LogEntry(cable_NegTol_AvgCrimps)~name= "cable_NegTol_AvgCrimps": init = cable_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 69, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DiamCrimps)~cable_DiamCrimps = cable_DiamCrimps / 1000~LogEntry(cable_DiamCrimps)~name= "cable_DiamCrimps": init = cable_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 77, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Diam)~cable_PosTol_Diam = cable_PosTol_Diam / 1000~LogEntry(cable_PosTol_Diam)~name= "cable_PosTol_Diam": init = cable_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 85, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Diam)~cable_NegTol_Diam = cable_NegTol_Diam / 1000~LogEntry(cable_NegTol_Diam)~name= "cable_NegTol_Diam": init = cable_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 93, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgDiam)~cable_PosTol_AvgDiam = cable_PosTol_AvgDiam / 1000~LogEntry(cable_PosTol_AvgDiam)~name= "cable_PosTol_AvgDiam": init = cable_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 101, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgDiam)~cable_NegTol_AvgDiam = cable_NegTol_AvgDiam / 1000~LogEntry(cable_NegTol_AvgDiam)~name= "cable_NegTol_AvgDiam": init = cable_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Bush----~LogEntry("----Bush----")~~temp = Mid (all, 109, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NumberCrimps)~LogEntry(bush_NumberCrimps)~name= "bush_NumberCrimps": init = bush_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 113, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DistCrimps)~bush_DistCrimps = bush_DistCrimps / 1000~LogEntry(bush_DistCrimps)~name= "bush_DistCrimps": init = bush_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 121, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Crimps)~bush_PosTol_Crimps = bush_PosTol_Crimps / 1000~LogEntry(bush_PosTol_Crimps)~name= "bush_PosTol_Crimps": init = bush_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 129, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Crimps)~bush_NegTol_Crimps = bush_NegTol_Crimps / 1000~LogEntry(bush_NegTol_Crimps)~name= "bush_NegTol_Crimps": init = bush_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 137, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgCrimps)~bush_PosTol_AvgCrimps = bush_PosTol_AvgCrimps / 1000~LogEntry(bush_PosTol_AvgCrimps)~name= "bush_PosTol_AvgCrimps": init = bush_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 145, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgCrimps)~bush_NegTol_AvgCrimps = bush_NegTol_AvgCrimps / 1000~LogEntry(bush_NegTol_AvgCrimps)~name= "bush_NegTol_AvgCrimps": init = bush_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 153, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DiamCrimps)~bush_DiamCrimps = bush_DiamCrimps / 1000~LogEntry(bush_DiamCrimps)~name= "bush_DiamCrimps": init = bush_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 161, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Diam)~bush_PosTol_Diam = bush_PosTol_Diam / 1000~LogEntry(bush_PosTol_Diam)~name= "bush_PosTol_Diam": init = bush_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 169, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Diam)~bush_NegTol_Diam = bush_NegTol_Diam / 1000~LogEntry(bush_NegTol_Diam)~name= "bush_NegTol_Diam": init = bush_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 177, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgDiam)~bush_PosTol_AvgDiam = bush_PosTol_AvgDiam / 1000~LogEntry(bush_PosTol_AvgDiam)~name= "bush_PosTol_AvgDiam": init = bush_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 185, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgDiam)~bush_NegTol_AvgDiam = bush_NegTol_AvgDiam / 1000~LogEntry(bush_NegTol_AvgDiam)~name= "bush_NegTol_AvgDiam": init = bush_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Ring----~LogEntry("----Ring----")~~temp = Mid (all, 193, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NumberCrimps)~LogEntry(ring_NumberCrimps)~name= "ring_NumberCrimps": init = ring_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 197, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DistCrimps)~ring_DistCrimps = ring_DistCrimps / 1000~LogEntry(ring_DistCrimps)~name= "ring_DistCrimps": init = ring_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 205, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Crimps)~ring_PosTol_Crimps = ring_PosTol_Crimps / 1000~LogEntry(ring_PosTol_Crimps)~name= "ring_PosTol_Crimps": init = ring_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 213, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Crimps)~ring_NegTol_Crimps = ring_NegTol_Crimps / 1000~LogEntry(ring_NegTol_Crimps)~name= "ring_NegTol_Crimps": init = ring_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 221, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgCrimps)~ring_PosTol_AvgCrimps = ring_PosTol_AvgCrimps / 1000~LogEntry(ring_PosTol_AvgCrimps)~name= "ring_PosTol_AvgCrimps": init = ring_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 229, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgCrimps)~ring_NegTol_AvgCrimps = ring_NegTol_AvgCrimps / 1000~LogEntry(ring_NegTol_AvgCrimps)~name= "ring_NegTol_AvgCrimps": init = ring_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 237, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DiamCrimps)~ring_DiamCrimps = ring_DiamCrimps / 1000~LogEntry(ring_DiamCrimps)~name= "ring_DiamCrimps": init = ring_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 245, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Diam)~ring_PosTol_Diam = ring_PosTol_Diam / 1000~LogEntry(ring_PosTol_Diam)~name= "ring_PosTol_Diam": init = ring_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 253, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Diam)~ring_NegTol_Diam = ring_NegTol_Diam / 1000~LogEntry(ring_NegTol_Diam)~name= "ring_NegTol_Diam": init = ring_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 261, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgDiam)~ring_PosTol_AvgDiam = ring_PosTol_AvgDiam / 1000~LogEntry(ring_PosTol_AvgDiam)~name= "ring_PosTol_AvgDiam": init = ring_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 269, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgDiam)~ring_NegTol_AvgDiam = ring_NegTol_AvgDiam / 1000~LogEntry(ring_NegTol_AvgDiam)~name= "ring_NegTol_AvgDiam": init = ring_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'------final~~temp = Mid (all, 277, 2)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, With_crimp_ring)~LogEntry(With_crimp_ring)~name= "With_crimp_ring": init = With_crimp_ring: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'ends with 303~~name= "Travelled_Dist_Camera": init = Travelled_Dist_Camera: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~LogEntry(Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Bush_bearing)~~~
+    Program Dim AccessMode As Long: AccessMode = 2 + 4 + 8 '(static + var + user + init)~Dim i As Long: i = 1000001 ' address~Dim init As Double~init = 123~Dim name As String~Dim r As Long~Dim val As Double~Dim updatemode As Double~~Dim Start_Measurement_Cable_module As Double~Dim Start_Measurement_Bush_bearing As Double~Dim Cancel_Measurement As Double~Dim New_Dataset As Double~Dim Travelled_Dist_Camera As Double~Dim Measurement_No As Double~~Dim cable_NumberCrimps As Double~Dim cable_DistCrimps As Double~Dim cable_PosTol_Crimps As Double~Dim cable_NegTol_Crimps As Double~Dim cable_PosTol_AvgCrimps As Double~Dim cable_NegTol_AvgCrimps As Double ~Dim cable_DiamCrimps As Double~Dim cable_PosTol_Diam As Double ~Dim cable_NegTol_Diam As Double~Dim cable_PosTol_AvgDiam As Double~Dim cable_NegTol_AvgDiam As Double~~Dim bush_NumberCrimps As Double~Dim bush_DistCrimps As Double~Dim bush_PosTol_Crimps As Double~Dim bush_NegTol_Crimps As Double~Dim bush_PosTol_AvgCrimps As Double~Dim bush_NegTol_AvgCrimps  As Double~Dim bush_DiamCrimps As Double~Dim bush_PosTol_Diam As Double~Dim bush_NegTol_Diam As Double~Dim bush_PosTol_AvgDiam As Double~Dim bush_NegTol_AvgDiam As Double~~Dim ring_NumberCrimps As Double~Dim ring_DistCrimps As Double~Dim ring_PosTol_Crimps As Double~Dim ring_NegTol_Crimps As Double~Dim ring_PosTol_AvgCrimps As Double~Dim ring_NegTol_AvgCrimps  As Double~Dim ring_DiamCrimps As Double~Dim ring_PosTol_Diam As Double~Dim ring_NegTol_Diam As Double~Dim ring_PosTol_AvgDiam As Double~Dim ring_NegTol_AvgDiam As Double~~Dim With_crimp_ring As Double~'Dim Length_Spindle As Double~'Dim PosTol_Length_Spindle As Double~'Dim NegTol_Length_Spindle As Double~~Dim begin As String~Dim cable As String~Dim bush As String~Dim ring As String~Dim final As String~Dim all As String~~Dim temp As String~Dim tempSwap As String~~begin = "01 00 00 01 00000014 00000011"~begin = "010000010000001400000011"~~cable= 	"0010 00020000 00900000 00004000 00030001 00030030 04000300 00073000 00080000 00004300 00030020"~cable= 	"001000020000009000000000400000030001000300300400030000073000000800000000430000030020"~    ~bush=	"0510 000A0000 00E00900 00804A00 00E30B01 0C030530 040D0300 00A73000 00085060 00034300 00E30020"~bush= 	"0510000A000000E0090000804A0000E30B010C030530040D030000A73000000850600003430000E30020"~~ring= 	"0410 000AE000 30980000 00074003 00030601 00230030 04900300 00073080 00080700 000C4300 0003C020"~ring= 	"0410000AE00030980000000740030003060100230030049003000007308000080700000C43000003C020"~~final = "01"~final = "01"~~'all = begin + cable + bush + ring + final~~'Get Signal Into Variable~all = GetSendString()~LogEntry(all)~~'Mid(x, position (fromLeft,and startsWith0), Length)~'2 hex digit 1 byte~~temp = Mid (all, 1, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Cable_module)~~~temp = Mid (all, 3, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Bush_bearing)~LogEntry(Start_Measurement_Bush_bearing)~~temp = Mid (all, 5, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Cancel_Measurement)~LogEntry(Cancel_Measurement)~~temp = Mid (all, 7, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, New_Dataset)~LogEntry(New_Dataset)~~temp = Mid (all, 9, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Travelled_Dist_Camera)~Travelled_Dist_Camera = Travelled_Dist_Camera / 1000~LogEntry(Travelled_Dist_Camera)~~temp = Mid (all, 17, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Measurement_No)~LogEntry(Measurement_No)~~'----Cable----~LogEntry("----Cable----")~~temp = Mid (all, 25, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NumberCrimps)~LogEntry(cable_NumberCrimps)~name= "cable_NumberCrimps": init = cable_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 29, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DistCrimps)~cable_DistCrimps = cable_DistCrimps / 1000~LogEntry(cable_DistCrimps)~name= "cable_DistCrimps": init = cable_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 37, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Crimps)~cable_PosTol_Crimps = cable_PosTol_Crimps / 1000~LogEntry(cable_PosTol_Crimps)~name= "cable_PosTol_Crimps": init = cable_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 45, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Crimps)~cable_NegTol_Crimps = cable_NegTol_Crimps / 1000~LogEntry(cable_NegTol_Crimps)~name= "cable_NegTol_Crimps": init = cable_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 53, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgCrimps)~cable_PosTol_AvgCrimps = cable_PosTol_AvgCrimps / 1000~LogEntry(cable_PosTol_AvgCrimps)~name= "cable_PosTol_AvgCrimps": init = cable_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 61, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgCrimps)~cable_NegTol_AvgCrimps = cable_NegTol_AvgCrimps / 1000~LogEntry(cable_NegTol_AvgCrimps)~name= "cable_NegTol_AvgCrimps": init = cable_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 69, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DiamCrimps)~cable_DiamCrimps = cable_DiamCrimps / 1000~LogEntry(cable_DiamCrimps)~name= "cable_DiamCrimps": init = cable_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 77, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Diam)~cable_PosTol_Diam = cable_PosTol_Diam / 1000~LogEntry(cable_PosTol_Diam)~name= "cable_PosTol_Diam": init = cable_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 85, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Diam)~cable_NegTol_Diam = cable_NegTol_Diam / 1000~LogEntry(cable_NegTol_Diam)~name= "cable_NegTol_Diam": init = cable_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 93, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgDiam)~cable_PosTol_AvgDiam = cable_PosTol_AvgDiam / 1000~LogEntry(cable_PosTol_AvgDiam)~name= "cable_PosTol_AvgDiam": init = cable_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 101, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgDiam)~cable_NegTol_AvgDiam = cable_NegTol_AvgDiam / 1000~LogEntry(cable_NegTol_AvgDiam)~name= "cable_NegTol_AvgDiam": init = cable_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Bush----~LogEntry("----Bush----")~~temp = Mid (all, 109, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NumberCrimps)~LogEntry(bush_NumberCrimps)~name= "bush_NumberCrimps": init = bush_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 113, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DistCrimps)~bush_DistCrimps = bush_DistCrimps / 1000~LogEntry(bush_DistCrimps)~name= "bush_DistCrimps": init = bush_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 121, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Crimps)~bush_PosTol_Crimps = bush_PosTol_Crimps / 1000~LogEntry(bush_PosTol_Crimps)~name= "bush_PosTol_Crimps": init = bush_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 129, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Crimps)~bush_NegTol_Crimps = bush_NegTol_Crimps / 1000~LogEntry(bush_NegTol_Crimps)~name= "bush_NegTol_Crimps": init = bush_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 137, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgCrimps)~bush_PosTol_AvgCrimps = bush_PosTol_AvgCrimps / 1000~LogEntry(bush_PosTol_AvgCrimps)~name= "bush_PosTol_AvgCrimps": init = bush_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 145, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgCrimps)~bush_NegTol_AvgCrimps = bush_NegTol_AvgCrimps / 1000~LogEntry(bush_NegTol_AvgCrimps)~name= "bush_NegTol_AvgCrimps": init = bush_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 153, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DiamCrimps)~bush_DiamCrimps = bush_DiamCrimps / 1000~LogEntry(bush_DiamCrimps)~name= "bush_DiamCrimps": init = bush_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 161, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Diam)~bush_PosTol_Diam = bush_PosTol_Diam / 1000~LogEntry(bush_PosTol_Diam)~name= "bush_PosTol_Diam": init = bush_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 169, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Diam)~bush_NegTol_Diam = bush_NegTol_Diam / 1000~LogEntry(bush_NegTol_Diam)~name= "bush_NegTol_Diam": init = bush_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 177, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgDiam)~bush_PosTol_AvgDiam = bush_PosTol_AvgDiam / 1000~LogEntry(bush_PosTol_AvgDiam)~name= "bush_PosTol_AvgDiam": init = bush_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 185, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgDiam)~bush_NegTol_AvgDiam = bush_NegTol_AvgDiam / 1000~LogEntry(bush_NegTol_AvgDiam)~name= "bush_NegTol_AvgDiam": init = bush_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Ring----~LogEntry("----Ring----")~~temp = Mid (all, 193, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NumberCrimps)~LogEntry(ring_NumberCrimps)~name= "ring_NumberCrimps": init = ring_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 197, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DistCrimps)~ring_DistCrimps = ring_DistCrimps / 1000~LogEntry(ring_DistCrimps)~name= "ring_DistCrimps": init = ring_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 205, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Crimps)~ring_PosTol_Crimps = ring_PosTol_Crimps / 1000~LogEntry(ring_PosTol_Crimps)~name= "ring_PosTol_Crimps": init = ring_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 213, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Crimps)~ring_NegTol_Crimps = ring_NegTol_Crimps / 1000~LogEntry(ring_NegTol_Crimps)~name= "ring_NegTol_Crimps": init = ring_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 221, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgCrimps)~ring_PosTol_AvgCrimps = ring_PosTol_AvgCrimps / 1000~LogEntry(ring_PosTol_AvgCrimps)~name= "ring_PosTol_AvgCrimps": init = ring_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 229, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgCrimps)~ring_NegTol_AvgCrimps = ring_NegTol_AvgCrimps / 1000~LogEntry(ring_NegTol_AvgCrimps)~name= "ring_NegTol_AvgCrimps": init = ring_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 237, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DiamCrimps)~ring_DiamCrimps = ring_DiamCrimps / 1000~LogEntry(ring_DiamCrimps)~name= "ring_DiamCrimps": init = ring_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 245, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Diam)~ring_PosTol_Diam = ring_PosTol_Diam / 1000~LogEntry(ring_PosTol_Diam)~name= "ring_PosTol_Diam": init = ring_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 253, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Diam)~ring_NegTol_Diam = ring_NegTol_Diam / 1000~LogEntry(ring_NegTol_Diam)~name= "ring_NegTol_Diam": init = ring_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 261, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgDiam)~ring_PosTol_AvgDiam = ring_PosTol_AvgDiam / 1000~LogEntry(ring_PosTol_AvgDiam)~name= "ring_PosTol_AvgDiam": init = ring_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 269, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgDiam)~ring_NegTol_AvgDiam = ring_NegTol_AvgDiam / 1000~LogEntry(ring_NegTol_AvgDiam)~name= "ring_NegTol_AvgDiam": init = ring_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'------final~~temp = Mid (all, 277, 2)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, With_crimp_ring)~LogEntry(With_crimp_ring)~name= "With_crimp_ring": init = With_crimp_ring: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~name= "New_Dataset": init = New_Dataset: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~LogEntry(Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Bush_bearing)~~If Start_Measurement_Cable_module = 1 Or Start_Measurement_Bush_bearing = 0 Then~    JUMP_MARK = "Start"~    Print("Start Signal Received")~Else~    JUMP_MARK = "Beginning"~End If~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -1742,7 +1742,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim AccessMode As Long: AccessMode = 2 + 4 + 8 '(static + var + user + init)~Dim i As Long: i = 1000001 ' address~Dim init As Double~init = 123~Dim name As String~Dim r As Long~Dim val As Double~Dim updatemode As Double~~Dim Start_Measurement_Cable_module As Double~Dim Start_Measurement_Bush_bearing As Double~Dim Cancel_Measurement As Double~Dim New_Dataset As Double~Dim Travelled_Dist_Camera As Double~Dim Measurement_No As Double~~Dim cable_NumberCrimps As Double~Dim cable_DistCrimps As Double~Dim cable_PosTol_Crimps As Double~Dim cable_NegTol_Crimps As Double~Dim cable_PosTol_AvgCrimps As Double~Dim cable_NegTol_AvgCrimps As Double ~Dim cable_DiamCrimps As Double~Dim cable_PosTol_Diam As Double ~Dim cable_NegTol_Diam As Double~Dim cable_PosTol_AvgDiam As Double~Dim cable_NegTol_AvgDiam As Double~~Dim bush_NumberCrimps As Double~Dim bush_DistCrimps As Double~Dim bush_PosTol_Crimps As Double~Dim bush_NegTol_Crimps As Double~Dim bush_PosTol_AvgCrimps As Double~Dim bush_NegTol_AvgCrimps  As Double~Dim bush_DiamCrimps As Double~Dim bush_PosTol_Diam As Double~Dim bush_NegTol_Diam As Double~Dim bush_PosTol_AvgDiam As Double~Dim bush_NegTol_AvgDiam As Double~~Dim ring_NumberCrimps As Double~Dim ring_DistCrimps As Double~Dim ring_PosTol_Crimps As Double~Dim ring_NegTol_Crimps As Double~Dim ring_PosTol_AvgCrimps As Double~Dim ring_NegTol_AvgCrimps  As Double~Dim ring_DiamCrimps As Double~Dim ring_PosTol_Diam As Double~Dim ring_NegTol_Diam As Double~Dim ring_PosTol_AvgDiam As Double~Dim ring_NegTol_AvgDiam As Double~~Dim With_crimp_ring As Double~'Dim Length_Spindle As Double~'Dim PosTol_Length_Spindle As Double~'Dim NegTol_Length_Spindle As Double~~Dim begin As String~Dim cable As String~Dim bush As String~Dim ring As String~Dim final As String~Dim all As String~~Dim temp As String~Dim tempSwap As String~~begin = "01 00 00 01 00000014 00000011"~begin = "010000010000001400000011"~~cable= 	"0010 00020000 00900000 00004000 00030001 00030030 04000300 00073000 00080000 00004300 00030020"~cable= 	"001000020000009000000000400000030001000300300400030000073000000800000000430000030020"~    ~bush=	"0510 000A0000 00E00900 00804A00 00E30B01 0C030530 040D0300 00A73000 00085060 00034300 00E30020"~bush= 	"0510000A000000E0090000804A0000E30B010C030530040D030000A73000000850600003430000E30020"~~ring= 	"0410 000AE000 30980000 00074003 00030601 00230030 04900300 00073080 00080700 000C4300 0003C020"~ring= 	"0410000AE00030980000000740030003060100230030049003000007308000080700000C43000003C020"~~final = "01"~final = "01"~~'all = begin + cable + bush + ring + final~~'Get Signal Into Variable~all = GetSendString()~LogEntry(all)~~'Mid(x, position (fromLeft,and startsWith0), Length)~'2 hex digit 1 byte~~temp = Mid (all, 1, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Cable_module)~~~temp = Mid (all, 3, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Bush_bearing)~LogEntry(Start_Measurement_Bush_bearing)~~temp = Mid (all, 5, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Cancel_Measurement)~LogEntry(Cancel_Measurement)~~temp = Mid (all, 7, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, New_Dataset)~LogEntry(New_Dataset)~~temp = Mid (all, 9, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Travelled_Dist_Camera)~Travelled_Dist_Camera = Travelled_Dist_Camera / 1000~LogEntry(Travelled_Dist_Camera)~~temp = Mid (all, 17, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Measurement_No)~LogEntry(Measurement_No)~~'----Cable----~LogEntry("----Cable----")~~temp = Mid (all, 25, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NumberCrimps)~LogEntry(cable_NumberCrimps)~name= "cable_NumberCrimps": init = cable_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 29, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DistCrimps)~cable_DistCrimps = cable_DistCrimps / 1000~LogEntry(cable_DistCrimps)~name= "cable_DistCrimps": init = cable_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 37, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Crimps)~cable_PosTol_Crimps = cable_PosTol_Crimps / 1000~LogEntry(cable_PosTol_Crimps)~name= "cable_PosTol_Crimps": init = cable_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 45, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Crimps)~cable_NegTol_Crimps = cable_NegTol_Crimps / 1000~LogEntry(cable_NegTol_Crimps)~name= "cable_NegTol_Crimps": init = cable_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 53, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgCrimps)~cable_PosTol_AvgCrimps = cable_PosTol_AvgCrimps / 1000~LogEntry(cable_PosTol_AvgCrimps)~name= "cable_PosTol_AvgCrimps": init = cable_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 61, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgCrimps)~cable_NegTol_AvgCrimps = cable_NegTol_AvgCrimps / 1000~LogEntry(cable_NegTol_AvgCrimps)~name= "cable_NegTol_AvgCrimps": init = cable_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 69, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DiamCrimps)~cable_DiamCrimps = cable_DiamCrimps / 1000~LogEntry(cable_DiamCrimps)~name= "cable_DiamCrimps": init = cable_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 77, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Diam)~cable_PosTol_Diam = cable_PosTol_Diam / 1000~LogEntry(cable_PosTol_Diam)~name= "cable_PosTol_Diam": init = cable_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 85, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Diam)~cable_NegTol_Diam = cable_NegTol_Diam / 1000~LogEntry(cable_NegTol_Diam)~name= "cable_NegTol_Diam": init = cable_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 93, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgDiam)~cable_PosTol_AvgDiam = cable_PosTol_AvgDiam / 1000~LogEntry(cable_PosTol_AvgDiam)~name= "cable_PosTol_AvgDiam": init = cable_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 101, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgDiam)~cable_NegTol_AvgDiam = cable_NegTol_AvgDiam / 1000~LogEntry(cable_NegTol_AvgDiam)~name= "cable_NegTol_AvgDiam": init = cable_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Bush----~LogEntry("----Bush----")~~temp = Mid (all, 109, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NumberCrimps)~LogEntry(bush_NumberCrimps)~name= "bush_NumberCrimps": init = bush_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 113, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DistCrimps)~bush_DistCrimps = bush_DistCrimps / 1000~LogEntry(bush_DistCrimps)~name= "bush_DistCrimps": init = bush_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 121, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Crimps)~bush_PosTol_Crimps = bush_PosTol_Crimps / 1000~LogEntry(bush_PosTol_Crimps)~name= "bush_PosTol_Crimps": init = bush_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 129, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Crimps)~bush_NegTol_Crimps = bush_NegTol_Crimps / 1000~LogEntry(bush_NegTol_Crimps)~name= "bush_NegTol_Crimps": init = bush_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 137, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgCrimps)~bush_PosTol_AvgCrimps = bush_PosTol_AvgCrimps / 1000~LogEntry(bush_PosTol_AvgCrimps)~name= "bush_PosTol_AvgCrimps": init = bush_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 145, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgCrimps)~bush_NegTol_AvgCrimps = bush_NegTol_AvgCrimps / 1000~LogEntry(bush_NegTol_AvgCrimps)~name= "bush_NegTol_AvgCrimps": init = bush_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 153, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DiamCrimps)~bush_DiamCrimps = bush_DiamCrimps / 1000~LogEntry(bush_DiamCrimps)~name= "bush_DiamCrimps": init = bush_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 161, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Diam)~bush_PosTol_Diam = bush_PosTol_Diam / 1000~LogEntry(bush_PosTol_Diam)~name= "bush_PosTol_Diam": init = bush_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 169, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Diam)~bush_NegTol_Diam = bush_NegTol_Diam / 1000~LogEntry(bush_NegTol_Diam)~name= "bush_NegTol_Diam": init = bush_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 177, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgDiam)~bush_PosTol_AvgDiam = bush_PosTol_AvgDiam / 1000~LogEntry(bush_PosTol_AvgDiam)~name= "bush_PosTol_AvgDiam": init = bush_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 185, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgDiam)~bush_NegTol_AvgDiam = bush_NegTol_AvgDiam / 1000~LogEntry(bush_NegTol_AvgDiam)~name= "bush_NegTol_AvgDiam": init = bush_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Ring----~LogEntry("----Ring----")~~temp = Mid (all, 193, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NumberCrimps)~LogEntry(ring_NumberCrimps)~name= "ring_NumberCrimps": init = ring_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 197, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DistCrimps)~ring_DistCrimps = ring_DistCrimps / 1000~LogEntry(ring_DistCrimps)~name= "ring_DistCrimps": init = ring_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 205, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Crimps)~ring_PosTol_Crimps = ring_PosTol_Crimps / 1000~LogEntry(ring_PosTol_Crimps)~name= "ring_PosTol_Crimps": init = ring_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 213, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Crimps)~ring_NegTol_Crimps = ring_NegTol_Crimps / 1000~LogEntry(ring_NegTol_Crimps)~name= "ring_NegTol_Crimps": init = ring_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 221, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgCrimps)~ring_PosTol_AvgCrimps = ring_PosTol_AvgCrimps / 1000~LogEntry(ring_PosTol_AvgCrimps)~name= "ring_PosTol_AvgCrimps": init = ring_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 229, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgCrimps)~ring_NegTol_AvgCrimps = ring_NegTol_AvgCrimps / 1000~LogEntry(ring_NegTol_AvgCrimps)~name= "ring_NegTol_AvgCrimps": init = ring_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 237, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DiamCrimps)~ring_DiamCrimps = ring_DiamCrimps / 1000~LogEntry(ring_DiamCrimps)~name= "ring_DiamCrimps": init = ring_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 245, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Diam)~ring_PosTol_Diam = ring_PosTol_Diam / 1000~LogEntry(ring_PosTol_Diam)~name= "ring_PosTol_Diam": init = ring_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 253, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Diam)~ring_NegTol_Diam = ring_NegTol_Diam / 1000~LogEntry(ring_NegTol_Diam)~name= "ring_NegTol_Diam": init = ring_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 261, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgDiam)~ring_PosTol_AvgDiam = ring_PosTol_AvgDiam / 1000~LogEntry(ring_PosTol_AvgDiam)~name= "ring_PosTol_AvgDiam": init = ring_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 269, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgDiam)~ring_NegTol_AvgDiam = ring_NegTol_AvgDiam / 1000~LogEntry(ring_NegTol_AvgDiam)~name= "ring_NegTol_AvgDiam": init = ring_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'------final~~temp = Mid (all, 277, 2)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, With_crimp_ring)~LogEntry(With_crimp_ring)~name= "With_crimp_ring": init = With_crimp_ring: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'temp = Mid (all, 279, 8)~'LogEntry(temp)~'HSConvSwapByteOrder(temp)~'HSConvHexStringToNumber(temp, Length_Spindle)~'Length_Spindle = Length_Spindle / 1000~'LogEntry(Length_Spindle)~'name= "Length_Spindle": init = Length_Spindle: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'temp = Mid (all, 287, 8)~'LogEntry(temp)~'HSConvSwapByteOrder(temp)~'HSConvHexStringToNumber(temp, PosTol_Length_Spindle)~'PosTol_Length_Spindle = PosTol_Length_Spindle / 1000~'LogEntry(PosTol_Length_Spindle)~'name= "PosTol_Length_Spindle": init = PosTol_Length_Spindle: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'temp = Mid (all, 295, 8)~'LogEntry(temp)~'HSConvSwapByteOrder(temp)~'HSConvHexStringToNumber(temp, NegTol_Length_Spindle)~'NegTol_Length_Spindle = NegTol_Length_Spindle / 1000~'LogEntry(NegTol_Length_Spindle)~'name= "NegTol_Length_Spindle": init = NegTol_Length_Spindle: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'ends with 303~~'name= "Travelled_Dist_Camera": init = Travelled_Dist_Camera: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~LogEntry(Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Bush_bearing)~~If Start_Measurement_Cable_module = 1 Or Start_Measurement_Bush_bearing = 0 Then~    JUMP_MARK = "Start"~    Print("Start Signal Received")~Else~    JUMP_MARK = "Beginning"~End If~~
+    Program Dim AccessMode As Long: AccessMode = 2 + 4 + 8 '(static + var + user + init)~Dim i As Long: i = 1000001 ' address~Dim init As Double~init = 123~Dim name As String~Dim r As Long~Dim val As Double~Dim updatemode As Double~~Dim Start_Measurement_Cable_module As Double~Dim Start_Measurement_Bush_bearing As Double~Dim Cancel_Measurement As Double~Dim New_Dataset As Double~Dim Travelled_Dist_Camera As Double~Dim Measurement_No As Double~~Dim cable_NumberCrimps As Double~Dim cable_DistCrimps As Double~Dim cable_PosTol_Crimps As Double~Dim cable_NegTol_Crimps As Double~Dim cable_PosTol_AvgCrimps As Double~Dim cable_NegTol_AvgCrimps As Double ~Dim cable_DiamCrimps As Double~Dim cable_PosTol_Diam As Double ~Dim cable_NegTol_Diam As Double~Dim cable_PosTol_AvgDiam As Double~Dim cable_NegTol_AvgDiam As Double~~Dim bush_NumberCrimps As Double~Dim bush_DistCrimps As Double~Dim bush_PosTol_Crimps As Double~Dim bush_NegTol_Crimps As Double~Dim bush_PosTol_AvgCrimps As Double~Dim bush_NegTol_AvgCrimps  As Double~Dim bush_DiamCrimps As Double~Dim bush_PosTol_Diam As Double~Dim bush_NegTol_Diam As Double~Dim bush_PosTol_AvgDiam As Double~Dim bush_NegTol_AvgDiam As Double~~Dim ring_NumberCrimps As Double~Dim ring_DistCrimps As Double~Dim ring_PosTol_Crimps As Double~Dim ring_NegTol_Crimps As Double~Dim ring_PosTol_AvgCrimps As Double~Dim ring_NegTol_AvgCrimps  As Double~Dim ring_DiamCrimps As Double~Dim ring_PosTol_Diam As Double~Dim ring_NegTol_Diam As Double~Dim ring_PosTol_AvgDiam As Double~Dim ring_NegTol_AvgDiam As Double~~Dim With_crimp_ring As Double~'Dim Length_Spindle As Double~'Dim PosTol_Length_Spindle As Double~'Dim NegTol_Length_Spindle As Double~~Dim begin As String~Dim cable As String~Dim bush As String~Dim ring As String~Dim final As String~Dim all As String~~Dim temp As String~Dim tempSwap As String~~begin = "01 00 00 01 00000014 00000011"~begin = "010000010000001400000011"~~cable= 	"0010 00020000 00900000 00004000 00030001 00030030 04000300 00073000 00080000 00004300 00030020"~cable= 	"001000020000009000000000400000030001000300300400030000073000000800000000430000030020"~    ~bush=	"0510 000A0000 00E00900 00804A00 00E30B01 0C030530 040D0300 00A73000 00085060 00034300 00E30020"~bush= 	"0510000A000000E0090000804A0000E30B010C030530040D030000A73000000850600003430000E30020"~~ring= 	"0410 000AE000 30980000 00074003 00030601 00230030 04900300 00073080 00080700 000C4300 0003C020"~ring= 	"0410000AE00030980000000740030003060100230030049003000007308000080700000C43000003C020"~~final = "01"~final = "01"~~'all = begin + cable + bush + ring + final~~'Get Signal Into Variable~all = GetSendString()~LogEntry(all)~~'Mid(x, position (fromLeft,and startsWith0), Length)~'2 hex digit 1 byte~~temp = Mid (all, 1, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Cable_module)~~~temp = Mid (all, 3, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Start_Measurement_Bush_bearing)~LogEntry(Start_Measurement_Bush_bearing)~~temp = Mid (all, 5, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, Cancel_Measurement)~LogEntry(Cancel_Measurement)~~temp = Mid (all, 7, 2)~LogEntry(temp)~HSConvSwapByteOrder (temp)~HSConvHexStringToNumber(temp, New_Dataset)~LogEntry(New_Dataset)~~temp = Mid (all, 9, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Travelled_Dist_Camera)~Travelled_Dist_Camera = Travelled_Dist_Camera / 1000~LogEntry(Travelled_Dist_Camera)~~temp = Mid (all, 17, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, Measurement_No)~LogEntry(Measurement_No)~~'----Cable----~LogEntry("----Cable----")~~temp = Mid (all, 25, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NumberCrimps)~LogEntry(cable_NumberCrimps)~name= "cable_NumberCrimps": init = cable_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 29, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DistCrimps)~cable_DistCrimps = cable_DistCrimps / 1000~LogEntry(cable_DistCrimps)~name= "cable_DistCrimps": init = cable_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 37, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Crimps)~cable_PosTol_Crimps = cable_PosTol_Crimps / 1000~LogEntry(cable_PosTol_Crimps)~name= "cable_PosTol_Crimps": init = cable_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 45, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Crimps)~cable_NegTol_Crimps = cable_NegTol_Crimps / 1000~LogEntry(cable_NegTol_Crimps)~name= "cable_NegTol_Crimps": init = cable_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 53, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgCrimps)~cable_PosTol_AvgCrimps = cable_PosTol_AvgCrimps / 1000~LogEntry(cable_PosTol_AvgCrimps)~name= "cable_PosTol_AvgCrimps": init = cable_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 61, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgCrimps)~cable_NegTol_AvgCrimps = cable_NegTol_AvgCrimps / 1000~LogEntry(cable_NegTol_AvgCrimps)~name= "cable_NegTol_AvgCrimps": init = cable_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 69, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_DiamCrimps)~cable_DiamCrimps = cable_DiamCrimps / 1000~LogEntry(cable_DiamCrimps)~name= "cable_DiamCrimps": init = cable_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 77, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_Diam)~cable_PosTol_Diam = cable_PosTol_Diam / 1000~LogEntry(cable_PosTol_Diam)~name= "cable_PosTol_Diam": init = cable_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 85, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_Diam)~cable_NegTol_Diam = cable_NegTol_Diam / 1000~LogEntry(cable_NegTol_Diam)~name= "cable_NegTol_Diam": init = cable_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 93, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_PosTol_AvgDiam)~cable_PosTol_AvgDiam = cable_PosTol_AvgDiam / 1000~LogEntry(cable_PosTol_AvgDiam)~name= "cable_PosTol_AvgDiam": init = cable_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 101, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, cable_NegTol_AvgDiam)~cable_NegTol_AvgDiam = cable_NegTol_AvgDiam / 1000~LogEntry(cable_NegTol_AvgDiam)~name= "cable_NegTol_AvgDiam": init = cable_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Bush----~LogEntry("----Bush----")~~temp = Mid (all, 109, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NumberCrimps)~LogEntry(bush_NumberCrimps)~name= "bush_NumberCrimps": init = bush_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 113, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DistCrimps)~bush_DistCrimps = bush_DistCrimps / 1000~LogEntry(bush_DistCrimps)~name= "bush_DistCrimps": init = bush_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 121, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Crimps)~bush_PosTol_Crimps = bush_PosTol_Crimps / 1000~LogEntry(bush_PosTol_Crimps)~name= "bush_PosTol_Crimps": init = bush_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 129, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Crimps)~bush_NegTol_Crimps = bush_NegTol_Crimps / 1000~LogEntry(bush_NegTol_Crimps)~name= "bush_NegTol_Crimps": init = bush_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 137, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgCrimps)~bush_PosTol_AvgCrimps = bush_PosTol_AvgCrimps / 1000~LogEntry(bush_PosTol_AvgCrimps)~name= "bush_PosTol_AvgCrimps": init = bush_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 145, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgCrimps)~bush_NegTol_AvgCrimps = bush_NegTol_AvgCrimps / 1000~LogEntry(bush_NegTol_AvgCrimps)~name= "bush_NegTol_AvgCrimps": init = bush_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 153, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_DiamCrimps)~bush_DiamCrimps = bush_DiamCrimps / 1000~LogEntry(bush_DiamCrimps)~name= "bush_DiamCrimps": init = bush_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 161, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_Diam)~bush_PosTol_Diam = bush_PosTol_Diam / 1000~LogEntry(bush_PosTol_Diam)~name= "bush_PosTol_Diam": init = bush_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 169, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_Diam)~bush_NegTol_Diam = bush_NegTol_Diam / 1000~LogEntry(bush_NegTol_Diam)~name= "bush_NegTol_Diam": init = bush_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 177, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_PosTol_AvgDiam)~bush_PosTol_AvgDiam = bush_PosTol_AvgDiam / 1000~LogEntry(bush_PosTol_AvgDiam)~name= "bush_PosTol_AvgDiam": init = bush_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 185, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, bush_NegTol_AvgDiam)~bush_NegTol_AvgDiam = bush_NegTol_AvgDiam / 1000~LogEntry(bush_NegTol_AvgDiam)~name= "bush_NegTol_AvgDiam": init = bush_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'----Ring----~LogEntry("----Ring----")~~temp = Mid (all, 193, 4)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NumberCrimps)~LogEntry(ring_NumberCrimps)~name= "ring_NumberCrimps": init = ring_NumberCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 197, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DistCrimps)~ring_DistCrimps = ring_DistCrimps / 1000~LogEntry(ring_DistCrimps)~name= "ring_DistCrimps": init = ring_DistCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 205, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Crimps)~ring_PosTol_Crimps = ring_PosTol_Crimps / 1000~LogEntry(ring_PosTol_Crimps)~name= "ring_PosTol_Crimps": init = ring_PosTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 213, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Crimps)~ring_NegTol_Crimps = ring_NegTol_Crimps / 1000~LogEntry(ring_NegTol_Crimps)~name= "ring_NegTol_Crimps": init = ring_NegTol_Crimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 221, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgCrimps)~ring_PosTol_AvgCrimps = ring_PosTol_AvgCrimps / 1000~LogEntry(ring_PosTol_AvgCrimps)~name= "ring_PosTol_AvgCrimps": init = ring_PosTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 229, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgCrimps)~ring_NegTol_AvgCrimps = ring_NegTol_AvgCrimps / 1000~LogEntry(ring_NegTol_AvgCrimps)~name= "ring_NegTol_AvgCrimps": init = ring_NegTol_AvgCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 237, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_DiamCrimps)~ring_DiamCrimps = ring_DiamCrimps / 1000~LogEntry(ring_DiamCrimps)~name= "ring_DiamCrimps": init = ring_DiamCrimps: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 245, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_Diam)~ring_PosTol_Diam = ring_PosTol_Diam / 1000~LogEntry(ring_PosTol_Diam)~name= "ring_PosTol_Diam": init = ring_PosTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 253, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_Diam)~ring_NegTol_Diam = ring_NegTol_Diam / 1000~LogEntry(ring_NegTol_Diam)~name= "ring_NegTol_Diam": init = ring_NegTol_Diam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 261, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_PosTol_AvgDiam)~ring_PosTol_AvgDiam = ring_PosTol_AvgDiam / 1000~LogEntry(ring_PosTol_AvgDiam)~name= "ring_PosTol_AvgDiam": init = ring_PosTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~temp = Mid (all, 269, 8)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, ring_NegTol_AvgDiam)~ring_NegTol_AvgDiam = ring_NegTol_AvgDiam / 1000~LogEntry(ring_NegTol_AvgDiam)~name= "ring_NegTol_AvgDiam": init = ring_NegTol_AvgDiam: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~'------final~~temp = Mid (all, 277, 2)~LogEntry(temp)~HSConvSwapByteOrder(temp)~HSConvHexStringToNumber(temp, With_crimp_ring)~LogEntry(With_crimp_ring)~name= "With_crimp_ring": init = With_crimp_ring: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~name= "New_Dataset": init = New_Dataset: CKTRANSEnterResultToPickupList(i , 0, init , name , AccessMode): i = i + 1~~LogEntry(Start_Measurement_Cable_module)~LogEntry(Start_Measurement_Bush_bearing)~~If Start_Measurement_Cable_module = 1 Or Start_Measurement_Bush_bearing = 0 Then~    JUMP_MARK = "Start"~    Print("Start Signal Received")~Else~    JUMP_MARK = "Beginning"~End If~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2530,7 +2530,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 42
       CommandType 1004
-      CommandName SCAN 1
+      CommandName SCAN 1 - CABLE
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2728,13 +2728,13 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 36
   KEY 37
-    ClassVersion 6
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 46
-      CommandType 3
-      CommandName Asynchronous image capture
-      Enabled 2
+      CommandType 1000
+      CommandName Jump to SCAN
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2747,7 +2747,7 @@ START_PARM_LIST
     END_CKGENERAL 
     CKRESULT 
       ClassVersion 1
-      Name Asynchronous image capture
+      Name Sub program
       EnterResultToRTDisplay 0
       RTDisplayIndex 0
       RTWidthOfToleranceRegion 80
@@ -2774,22 +2774,16 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Determination 0
-    TriggerMode 1
-    WaitUntilSnapComplete 0
-    VICCamera 0
-    ApplyTimeout 0
-    TriggerTimeout 5000
-    RestartCaptureAfterWait 0
-    CaptureWithFlash 0
-    CKPICKUP_TYPE_WRITE 
+    NameOfSubProgram ./Rotational-Encoder-Scan_Cable.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
-      PickupObjectType 5
-      PickupListIndex 149563
-    END_CKPICKUP_TYPE_WRITE 
-    RestartCaptureOnError 0
-    StartCaptureIfNotActive 0
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
     TeachInCounter 0
   END_KEY 37
   KEY 38
@@ -2852,7 +2846,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_01_19_17_23_17_675-record.e3c
+    FileName ./2022_01_20_17_58_32_427-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3497,7 +3491,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 58
       CommandType 1004
-      CommandName RESULT
+      CommandName PREPARE FINAL RESULT
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -3691,12 +3685,73 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 49
   KEY 50
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 61
+      CommandType 1040
+      CommandName Disable Based on Message
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'New_Dataset'~'Read result and value from Pickuplist~Dim dNew_Dataset As Double~Dim lNew_Dataset As Long~Dim lNew_DatasetUpdateMode As Long~Dim sNew_DatasetName As String~lResult = CKTRANSGetResultFromPickupList(1000035 , lNew_Dataset, dNew_Dataset, sNew_DatasetName, lNew_DatasetUpdateMode)~~If dNew_Dataset = 0 Then~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CableOuterDiamScale Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~Else~Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CableOuterDiamScale Calculationn.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~End If
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 784813
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 50
+  KEY 51
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 62
+      Position 63
       CommandType 1004
-      CommandName CABLE
+      CommandName CABLE COMPUTATIONS
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -3710,12 +3765,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 50
-  KEY 51
+  END_KEY 51
+  KEY 52
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 63
+      Position 64
       CommandType 1000
       CommandName Jump to CableDistance Calculation
       Enabled 1
@@ -3769,12 +3824,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 51
-  KEY 52
+  END_KEY 52
+  KEY 53
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 64
+      Position 65
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -3832,14 +3887,14 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 52
-  KEY 53
+  END_KEY 53
+  KEY 54
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 65
+      Position 66
       CommandType 1000
-      CommandName Jump to CableOuterDiam Calculation
+      CommandName Jump to CableOuterDiamScale Calculation
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -3891,12 +3946,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 53
-  KEY 54
+  END_KEY 54
+  KEY 55
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 66
+      Position 67
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -3954,12 +4009,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 54
-  KEY 55
+  END_KEY 55
+  KEY 56
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 67
+      Position 68
       CommandType 1000
       CommandName Jump to CableDiameter Calculation
       Enabled 1
@@ -4013,12 +4068,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 55
-  KEY 56
+  END_KEY 56
+  KEY 57
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 68
+      Position 69
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -4076,12 +4131,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 56
-  KEY 57
+  END_KEY 57
+  KEY 58
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 69
+      Position 70
       CommandType 1000
       CommandName Jump to CableOuterDiam Calculation
       Enabled 1
@@ -4135,12 +4190,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 57
-  KEY 58
+  END_KEY 58
+  KEY 59
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 70
+      Position 71
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -4198,12 +4253,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 58
-  KEY 59
+  END_KEY 59
+  KEY 60
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 71
+      Position 72
       CommandType 1000
       CommandName Jump to Cable Edge
       Enabled 1
@@ -4257,12 +4312,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 59
-  KEY 60
+  END_KEY 60
+  KEY 61
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 72
+      Position 73
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -4320,12 +4375,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 60
-  KEY 61
+  END_KEY 61
+  KEY 62
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 73
+      Position 74
       CommandType 124
       CommandName Text
       Enabled 1
@@ -4445,14 +4500,14 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 61
-  KEY 62
+  END_KEY 62
+  KEY 63
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 75
+      Position 76
       CommandType 1004
-      CommandName SCAN 2
+      CommandName SCAN 2 - BUSH
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -4466,12 +4521,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 62
-  KEY 63
+  END_KEY 63
+  KEY 64
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 76
+      Position 77
       CommandType 1
       CommandName Capture image
       Enabled 3
@@ -4564,15 +4619,15 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 63
-  KEY 64
-    ClassVersion 6
+  END_KEY 64
+  KEY 65
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 77
-      CommandType 3
-      CommandName Asynchronous image capture
-      Enabled 2
+      Position 78
+      CommandType 1000
+      CommandName Jump to SCAN
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -4585,7 +4640,7 @@ START_PARM_LIST
     END_CKGENERAL 
     CKRESULT 
       ClassVersion 1
-      Name Asynchronous image capture
+      Name Sub program
       EnterResultToRTDisplay 0
       RTDisplayIndex 0
       RTWidthOfToleranceRegion 80
@@ -4612,29 +4667,121 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Determination 0
-    TriggerMode 1
-    WaitUntilSnapComplete 0
-    VICCamera 0
+    NameOfSubProgram ./Rotational-Encoder-Scan_Bush.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 65
+  KEY 66
+    ClassVersion 12
+    CKGENERAL 
+      ClassVersion 3
+      Position 79
+      CommandType 1
+      CommandName Save Image
+      Enabled 2
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Capture image
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    CaptureWithVIC 0
+    CaptureType 1
+    SaveType 0
+    OnlyOnActivate 0
+    SaveWithGrafic 0
+    TriggeredCapture 0
     ApplyTimeout 0
-    TriggerTimeout 5000
-    RestartCaptureAfterWait 0
     CaptureWithFlash 0
+    NumberOfCyclicFiles 10
+    CurrentCycleNumber 0
+    TriggerTimeout 0
+    TriggerInputLine 0
+    MinimumSignalDuration 0
+    FileName ./2022_01_20_17_58_32_427-record.e3c
+    AVIframes 1
+    AVImode 0
+    HWTriggeredCapture 1
+    CaptureWithVIC2 1
+    DualSnap 0
+    ImageMem2 1
+    ImageAdjust 0
+    ImageRefresh 0
+    SourceImageMode 0
+    SourceVIC 0
+    LoadOption 1
+    LoadImageIndex 0
+    LoadDirectory ./
+    RawDataConversionActive 0
+    RawDataType 1
+    PixelDataSize 2
+    ByteOrder 0
+    NumberOfChannels 1
+    ChannelOrder 0
+    DataRangeLow 0,0
+    DataRangeHigh 65535,0
+    UseDisplayValues 1
+    DisplayRangeLow 0,0
+    DisplayRangeHigh 65535,0
+    DeleteFile 0
+    FileNameToGlobalString 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 330558
+      PickupListIndex 190921
     END_CKPICKUP_TYPE_WRITE 
-    RestartCaptureOnError 0
-    StartCaptureIfNotActive 0
+    NoRestartOfCyclicLoad 0
+    SaveAsynchronous 1
+    FilenameType 0
     TeachInCounter 0
-  END_KEY 64
-  KEY 65
+  END_KEY 66
+  KEY 67
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 79
+      Position 81
       CommandType 1004
       CommandName Enabled/Disabled based on Message
       Enabled 1
@@ -4650,12 +4797,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 65
-  KEY 66
+  END_KEY 67
+  KEY 68
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 80
+      Position 82
       CommandType 1040
       CommandName Disable Based on Message
       Enabled 1
@@ -4698,7 +4845,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'With_crimp_ring'~'Read result and value from Pickuplist~Dim dWith_crimp_ring As Double~Dim lWith_crimp_ring As Long~Dim lWith_crimp_ringUpdateMode As Long~Dim sWith_crimp_ringName As String~lResult = CKTRANSGetResultFromPickupList(1000034 , lWith_crimp_ring, dWith_crimp_ring, sWith_crimp_ringName, lWith_crimp_ringUpdateMode)~~If dWith_crimp_ring = 0 Then~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingDistance Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingDiameter Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    ~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("CRIMP_RING_NOT_AVAILABLE.General.Enabled", lValue,sError) <> 1 Then~	Print (sError)~    End If~~Else~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingDistance Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingDiameter Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If    ~    ~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("CRIMP_RING_NOT_AVAILABLE.General.Enabled", lValue,sError) <> 1 Then~	Print (sError)~    End If~End If
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'With_crimp_ring'~'Read result and value from Pickuplist~Dim dWith_crimp_ring As Double~Dim lWith_crimp_ring As Long~Dim lWith_crimp_ringUpdateMode As Long~Dim sWith_crimp_ringName As String~lResult = CKTRANSGetResultFromPickupList(1000034 , lWith_crimp_ring, dWith_crimp_ring, sWith_crimp_ringName, lWith_crimp_ringUpdateMode)~~If dWith_crimp_ring = 0 Then~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingDistance Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingDiameter Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    ~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("CRIMP_RING_NOT_AVAILABLE.General.Enabled", lValue,sError) <> 1 Then~	Print (sError)~    End If~~Else~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingDistance Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingDiameter Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CrimpRingOuterDiam Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If    ~    ~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("CRIMP_RING_NOT_AVAILABLE.General.Enabled", lValue,sError) <> 1 Then~	Print (sError)~    End If~End If~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'New_Dataset'~'Read result and value from Pickuplist~Dim dNew_Dataset As Double~Dim lNew_Dataset As Long~Dim lNew_DatasetUpdateMode As Long~Dim sNew_DatasetName As String~lResult = CKTRANSGetResultFromPickupList(1000035 , lNew_Dataset, dNew_Dataset, sNew_DatasetName, lNew_DatasetUpdateMode)~~If dNew_Dataset = 0 Then~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to BushOuterDiamScale Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~Else~Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to BushOuterDiamScale Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~End If
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -4711,14 +4858,14 @@ START_PARM_LIST
       PickupListIndex 391398
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 66
-  KEY 67
+  END_KEY 68
+  KEY 69
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 82
+      Position 84
       CommandType 1004
-      CommandName BUSH
+      CommandName BUSH COMPUTATIONS
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -4732,12 +4879,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 67
-  KEY 68
+  END_KEY 69
+  KEY 70
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 83
+      Position 85
       CommandType 1000
       CommandName Jump to BushDistance Calculation
       Enabled 1
@@ -4781,128 +4928,6 @@ START_PARM_LIST
       END_CKSTATISTIC 
     END_CKRESULT 
     NameOfSubProgram ./BushDistanceCalculation.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
-  END_KEY 68
-  KEY 69
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 84
-      CommandType 2
-      CommandName Delete Graphics
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Interpreter control
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Marker Beginning
-    DeterminationMode 8
-    ResultMode 1
-    NumberOfLoops 0
-    LoopCounter 0
-    ClearAllGoi 0
-    CMDOffset 1
-    ExecuteCommands 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 606664
-    END_CKPICKUP_TYPE_READ 
-    TeachInCounter 0
-  END_KEY 69
-  KEY 70
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 85
-      CommandType 1000
-      CommandName Jump to BushOuterDiam Calculation
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./BushOuterDiameter.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -4983,7 +5008,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 87
       CommandType 1000
-      CommandName Jump to BushDiameter Calculation
+      CommandName Jump to BushOuterDiamScale Calculation
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -5024,7 +5049,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    NameOfSubProgram ./BushDiameterCalculation.ckp
+    NameOfSubProgram ./BushOuterDiameter.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -5105,7 +5130,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 89
       CommandType 1000
-      CommandName Jump to BushOuterDiam Calculation
+      CommandName Jump to BushDiameter Calculation
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -5146,7 +5171,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    NameOfSubProgram ./BushOuterDiameterWithBytes.ckp
+    NameOfSubProgram ./BushDiameterCalculation.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -5222,10 +5247,132 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 75
   KEY 76
-    ClassVersion 7
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 91
+      CommandType 1000
+      CommandName Jump to BushOuterDiam Calculation
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./BushOuterDiameterWithBytes.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 76
+  KEY 77
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 92
+      CommandType 2
+      CommandName Delete Graphics
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker Beginning
+    DeterminationMode 8
+    ResultMode 1
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 606664
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 77
+  KEY 78
+    ClassVersion 7
+    CKGENERAL 
+      ClassVersion 3
+      Position 93
       CommandType 124
       CommandName Text
       Enabled 1
@@ -5345,12 +5492,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 76
-  KEY 77
+  END_KEY 78
+  KEY 79
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 93
+      Position 95
       CommandType 1004
       CommandName RING
       Enabled 0
@@ -5366,15 +5513,15 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 77
-  KEY 78
+  END_KEY 79
+  KEY 80
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 94
+      Position 96
       CommandType 1000
       CommandName Jump to CrimpRingDistance Calculation
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -5415,128 +5562,6 @@ START_PARM_LIST
       END_CKSTATISTIC 
     END_CKRESULT 
     NameOfSubProgram ./CrimpRingDistanceCalculation.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
-  END_KEY 78
-  KEY 79
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 95
-      CommandType 2
-      CommandName Delete Graphics
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Interpreter control
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Marker Beginning
-    DeterminationMode 8
-    ResultMode 1
-    NumberOfLoops 0
-    LoopCounter 0
-    ClearAllGoi 0
-    CMDOffset 1
-    ExecuteCommands 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 606664
-    END_CKPICKUP_TYPE_READ 
-    TeachInCounter 0
-  END_KEY 79
-  KEY 80
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 96
-      CommandType 1000
-      CommandName Jump to CrimpRingOuterDiam Calculation
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./CrimpRingOuterDiameter.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -5617,8 +5642,8 @@ START_PARM_LIST
       ClassVersion 3
       Position 98
       CommandType 1000
-      CommandName Jump to CrimpRingDiameter Calculation
-      Enabled 1
+      CommandName Jump to CrimpRingOuterDiam Calculation
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -5658,7 +5683,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    NameOfSubProgram ./CrimpRingDiameterCalculation.ckp
+    NameOfSubProgram ./CrimpRingOuterDiameter.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -5739,8 +5764,8 @@ START_PARM_LIST
       ClassVersion 3
       Position 100
       CommandType 1000
-      CommandName Jump to CrimpRingOuterDiam Calculation
-      Enabled 1
+      CommandName Jump to CrimpRingDiameter Calculation
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -5780,7 +5805,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    NameOfSubProgram ./CrimpRingOuterDiameterWithBytes.ckp
+    NameOfSubProgram ./CrimpRingDiameterCalculation.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -5860,9 +5885,131 @@ START_PARM_LIST
     CKGENERAL 
       ClassVersion 3
       Position 102
+      CommandType 1000
+      CommandName Jump to CrimpRingOuterDiam Calculation
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./CrimpRingOuterDiameterWithBytes.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 86
+  KEY 87
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 103
+      CommandType 2
+      CommandName Delete Graphics
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker Beginning
+    DeterminationMode 8
+    ResultMode 1
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 606664
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 87
+  KEY 88
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 104
       CommandType 1040
       CommandName CRIMP_RING_NOT_AVAILABLE
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -5915,12 +6062,12 @@ START_PARM_LIST
       PickupListIndex 838462
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 86
-  KEY 87
+  END_KEY 88
+  KEY 89
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 103
+      Position 105
       CommandType 124
       CommandName Text
       Enabled 1
@@ -6040,12 +6187,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 87
-  KEY 88
+  END_KEY 89
+  KEY 90
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 105
+      Position 107
       CommandType 1000
       CommandName Jump to Bush Edge
       Enabled 1
@@ -6099,12 +6246,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 88
-  KEY 89
+  END_KEY 90
+  KEY 91
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 106
+      Position 108
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -6162,12 +6309,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 89
-  KEY 90
+  END_KEY 91
+  KEY 92
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 108
+      Position 110
       CommandType 2
       CommandName End of Program
       Enabled 3
@@ -6225,12 +6372,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 90
-  KEY 91
+  END_KEY 92
+  KEY 93
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 110
+      Position 112
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -6246,12 +6393,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 91
-  KEY 92
+  END_KEY 93
+  KEY 94
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 111
+      Position 113
       CommandType 1004
       CommandName COM STEP3: PC -> PLC
       Enabled 1
@@ -6267,12 +6414,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 92
-  KEY 93
+  END_KEY 94
+  KEY 95
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 112
+      Position 114
       CommandType 246
       CommandName Send Results Signal Locally
       Enabled 1
@@ -6384,12 +6531,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 93
-  KEY 94
+  END_KEY 95
+  KEY 96
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 113
+      Position 115
       CommandType 246
       CommandName Send Results Signal
       Enabled 0
@@ -6501,12 +6648,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 94
-  KEY 95
+  END_KEY 96
+  KEY 97
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 114
+      Position 116
       CommandType 124
       CommandName Text
       Enabled 1
@@ -6626,12 +6773,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 95
-  KEY 96
+  END_KEY 97
+  KEY 98
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 116
+      Position 118
       CommandType 114
       CommandName Stop watch
       Enabled 0
@@ -6683,12 +6830,12 @@ START_PARM_LIST
       PickupListIndex 405628
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 96
-  KEY 97
+  END_KEY 98
+  KEY 99
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 118
+      Position 120
       CommandType 2
       CommandName Mark: Jump to Beginning
       Enabled 1
@@ -6746,7 +6893,7 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 97
+  END_KEY 99
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1

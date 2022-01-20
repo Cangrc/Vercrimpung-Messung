@@ -1,9 +1,9 @@
 EVT 
-EYEVISION_VERSION 4.00.011
-FILE_VERSION 4
-CREATED 20.12.2021 16:46:31
+EYEVISION_VERSION 4.00.013
+FILE_VERSION 107
+CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 25.12.2021 11:06:33
+LAST_MODIFIED 20.01.2022 17:13:23
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -12,8 +12,8 @@ START_PARM_LIST
       ClassVersion 3
       Position 0
       CommandType 1
-      CommandName Load Cable Side
-      Enabled 1
+      CommandName Load Bush Side
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -66,7 +66,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Processed/rotaryOffice-exp2000.e3c
+    FileName ./Processed/rotaryOfficeBush-noVibrations-exp2000.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -97,7 +97,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 199043
+      PickupListIndex 992519
     END_CKPICKUP_TYPE_WRITE 
     NoRestartOfCyclicLoad 0
     SaveAsynchronous 0
@@ -105,12 +105,85 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 1
   KEY 2
-    ClassVersion 3
+    ClassVersion 6
     CKGENERAL 
       ClassVersion 3
       Position 1
+      CommandType 19980126
+      CommandName 3D Filter Resampling
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    OutputIM 0
+    Resolution 0,05
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 834971
+    END_CKPICKUP_TYPE_WRITE 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 309118
+    END_CKPICKUP_TYPE_WRITE 
+    OrderedPointcloud 1
+    Method 3
+    DownsamplingY 3
+    UseSettingYforX 1
+    DownsamplingX 3
+    SubMethod 2
+    NoiseCutoff 0,1
+    FillSingleGaps 0
+    CloudWidth 0
+    CloudHeight 0
+    TeachInCounter 0
+  END_KEY 2
+  KEY 3
+    ClassVersion 3
+    CKGENERAL 
+      ClassVersion 3
+      Position 2
       CommandType 19980122
-      CommandName 3D Transformation Filter
+      CommandName 3D Transformation Filter - DELETE
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -200,12 +273,12 @@ START_PARM_LIST
     MirrorY 0
     MirrorZ 1
     TeachInCounter 0
-  END_KEY 2
-  KEY 3
+  END_KEY 3
+  KEY 4
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 2
+      Position 3
       CommandType 19980127
       CommandName Fill Empty areas
       Enabled 1
@@ -248,120 +321,8 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    TargetIM 1
+    TargetIM 0
     SearchRadius 3
-    TeachInCounter 0
-  END_KEY 3
-  KEY 4
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 3
-      CommandType 122
-      CommandName counter
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName counter
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 71028
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 310819
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 1,0
     TeachInCounter 0
   END_KEY 4
   KEY 5
@@ -418,7 +379,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 184577
+      PickupListIndex 218900
     END_CKPICKUP_TYPE_WRITE 
     Operation 2
     RegionSizeX 9
@@ -430,7 +391,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 895805
+      PickupListIndex 919446
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
@@ -586,13 +547,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 821913
+      PickupListIndex 206199
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 160944
+      PickupListIndex 18948
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -668,7 +629,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 868680
+      PickupListIndex 67179
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -737,11 +698,11 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 4
-        Value0 -19,749786377
-        Value1 20,2678203583
+        Value0 -10,9344177246
+        Value1 18,976644516
         Value2 0,0
-        Value3 5,4423027039
-        Value4 215,4631195068
+        Value3 -4,1741800308
+        Value4 214,1719360352
         Value5 0,0
         Value6 0,0
         Value7 0,0
@@ -764,25 +725,25 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 960394
+      PickupListIndex 441054
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 511138
+      PickupListIndex 167062
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 786457
+      PickupListIndex 940992
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 82974
+      PickupListIndex 917236
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 7
@@ -892,13 +853,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 553368
+      PickupListIndex 418459
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 166854
+      PickupListIndex 85886
     END_CKPICKUP_TYPE_WRITE 
       CKSOURCEVALUE 
       ClassVersion 2
@@ -992,7 +953,7 @@ START_PARM_LIST
     VariableType 0
     ConstantValue 32721,6258550837
     IniFileName goldenSample.ini
-    SegmentName Cable
+    SegmentName Bush
     EntryName distance
     PointType 2
     PointRegisterIndex 0
@@ -1022,7 +983,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 873582
+      PickupListIndex 71347
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 9
@@ -1124,14 +1085,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 671348
+      PickupListIndex 441953
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 207243
+      PickupListIndex 695746
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
@@ -1236,14 +1197,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 607877
+      PickupListIndex 473814
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 443352
+      PickupListIndex 242311
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
@@ -1251,215 +1212,12 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 11
   KEY 12
-    ClassVersion 7
+    ClassVersion 5
     CKGENERAL 
       ClassVersion 3
       Position 12
-      CommandType 137
-      CommandName Radius
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Ini file access
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Entry 0,0
-    AccessType 2
-    ObjectType 2
-    RegisterIndex 0
-    UpdateFile 1
-    ApplyCorrection 0
-    CorrectionType 1
-    VariableType 0
-    ConstantValue 32721,6258550837
-    IniFileName goldenSample.ini
-    SegmentName Cable
-    EntryName radius
-    PointType 2
-    PointRegisterIndex 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 1
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    TextStringType 0
-    TextString 
-    WriteSendString 1
-    SendStringWriteType 0
-    SeparationIndex 0
-    SegmentType 0
-    EntryType 0
-    FloatingPointPrecision 1
-    FloatingPointMode 0
-    IniFileSource 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 70799
-    END_CKPICKUP_TYPE_WRITE 
-    TeachInCounter 0
-  END_KEY 12
-  KEY 13
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 13
       CommandType 122
-      CommandName Find New Radius
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 4
-    VarType 0
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName 
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 0
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 0
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 736538
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 220763
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 13
-  KEY 14
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 14
-      CommandType 122
-      CommandName x2 find diameter
+      CommandName x2
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -1551,27 +1309,118 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 975548
+      PickupListIndex 311417
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 706321
+      PickupListIndex 37716
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 14
-  KEY 15
+  END_KEY 12
+  KEY 13
+    ClassVersion 7
+    CKGENERAL 
+      ClassVersion 3
+      Position 13
+      CommandType 137
+      CommandName Reference Diameter
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Ini file access
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Entry 0,0
+    AccessType 2
+    ObjectType 2
+    RegisterIndex 0
+    UpdateFile 1
+    ApplyCorrection 0
+    CorrectionType 1
+    VariableType 0
+    ConstantValue 32721,6258550837
+    IniFileName goldenSample.ini
+    SegmentName Bush
+    EntryName Diameter
+    PointType 2
+    PointRegisterIndex 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 1
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    TextStringType 0
+    TextString 
+    WriteSendString 1
+    SendStringWriteType 0
+    SeparationIndex 0
+    SegmentType 0
+    EntryType 0
+    FloatingPointPrecision 1
+    FloatingPointMode 0
+    IniFileSource 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 438298
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 13
+  KEY 14
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 15
+      Position 14
       CommandType 122
-      CommandName x Pi = Circumference
+      CommandName / 1000 (to keep precision up to 3 decimal)
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -1615,7 +1464,7 @@ START_PARM_LIST
     DetType 4
     VarType 0
     RegisterIndex 0
-    OperatorType 2
+    OperatorType 3
     VarIndex -1
     Value 0,0
     PointX 0,0
@@ -1639,7 +1488,7 @@ START_PARM_LIST
     ArithmeticElementRegisterIndex1 0
     ArithmeticElementType2 2
     ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 3,142
+    ArithmeticManualElementX 1000,0
     ArithmeticManualElementY 0,0
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -1663,27 +1512,27 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 227634
+      PickupListIndex 949005
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 787999
+      PickupListIndex 525133
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 15
-  KEY 16
+  END_KEY 14
+  KEY 15
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 17
-      CommandType 19980118
-      CommandName UpperEdge
+      Position 15
+      CommandType 122
+      CommandName Find New Diameter
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -1698,214 +1547,6 @@ START_PARM_LIST
     CKRESULT 
       ClassVersion 1
       Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 10,0
-        PlusTolerance 10000000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName 
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-      CKSOURCEVALUE 
-      ClassVersion 2
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      TransformToCurrent 1
-      CKGEO3D 
-        ClassVersion 2
-        Name 
-        Type 4
-        Value0 -19,651216507
-        Value1 54,8244171143
-        Value2 0,0
-        Value3 5,0443291664
-        Value4 184,857421875
-        Value5 0,0
-        Value6 0,0
-        Value7 0,0
-        Value8 0,0
-      END_CKGEO3D 
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 8
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    ProbeDirection 2
-    ProbeOnlyForeground 0
-    AutoThreshold 1
-    Threshold 0,0
-    UseDispersionFilter 0
-    DispersionFilterStdDev 2,0
-    ConeAngle 60,0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 617857
-    END_CKPICKUP_TYPE_WRITE 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 990097
-    END_CKPICKUP_TYPE_WRITE 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 943746
-    END_CKPICKUP_TYPE_WRITE 
-    OutputGeometry 3
-    RansacPercentage 55,0
-    RansacIterations 100
-    TeachInCounter 0
-  END_KEY 16
-  KEY 17
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 18
-      CommandType 19980118
-      CommandName LowerEdge
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 10,0
-        PlusTolerance 10000000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName 
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-      CKSOURCEVALUE 
-      ClassVersion 2
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      TransformToCurrent 1
-      CKGEO3D 
-        ClassVersion 2
-        Name 
-        Type 4
-        Value0 -19,651216507
-        Value1 54,8244171143
-        Value2 0,0
-        Value3 5,0443291664
-        Value4 184,857421875
-        Value5 0,0
-        Value6 0,0
-        Value7 0,0
-        Value8 0,0
-      END_CKGEO3D 
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 8
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    ProbeDirection 5
-    ProbeOnlyForeground 0
-    AutoThreshold 1
-    Threshold 0,0
-    UseDispersionFilter 0
-    DispersionFilterStdDev 2,0
-    ConeAngle 60,0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 357361
-    END_CKPICKUP_TYPE_WRITE 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 534849
-    END_CKPICKUP_TYPE_WRITE 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 435279
-    END_CKPICKUP_TYPE_WRITE 
-    OutputGeometry 3
-    RansacPercentage 55,0
-    RansacIterations 100
-    TeachInCounter 0
-  END_KEY 17
-  KEY 18
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 19
-      CommandType 108
-      CommandName Distance
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Distance
       EnterResultToRTDisplay 0
       RTDisplayIndex 0
       RTWidthOfToleranceRegion 80
@@ -1919,7 +1560,7 @@ START_PARM_LIST
         WarnPlusTolerance 0,0
         WarnMinusTolerance 0,0
         DynamicEvaluation 0
-        FileName 
+        FileName ./
         Section 
         CorrectionActive 0
         CorrectionType 0
@@ -1932,65 +1573,132 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Determination 0
-    DistancePPType 2
+    DetType 4
+    VarType 0
+    RegisterIndex 0
+    OperatorType 0
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName 
+    ArithmeticResultToPickup 0
+    ArithmeticElementType1 0
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 0
+    ArithmeticElementRegisterIndex2 2
+    ArithmeticManualElementX 0,0
+    ArithmeticManualElementY 0,0
     CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
-      PickupObjectType 1
+      PickupObjectType 0
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
-      PickupObjectType 1
+      PickupObjectType 0
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
       Name 
-      PickupObjectType 2
+      PickupObjectType 0
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
-    SourcePoint1 2
-    SourcePoint1_RegisterIndex 0
-    SourcePoint2 2
-    SourcePoint2_RegisterIndex 2
-    SourceLine 2
-    SourceLine_RegisterIndex 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
-      PickupObjectType 1
-      PickupListIndex 980219
+      PickupObjectType 0
+      PickupListIndex 490637
     END_CKPICKUP_TYPE_WRITE 
+    Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
-      PickupObjectType 2
-      PickupListIndex 913363
+      PickupObjectType 0
+      PickupListIndex 95234
     END_CKPICKUP_TYPE_WRITE 
-    ResultWithSign 0
-    InvertSignOfResult 0
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
+  END_KEY 15
+  KEY 16
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 17
+      CommandType 1040
+      CommandName Add Distance 4 BYTES
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim s As String~~Dim lResult As Long 'Only needed once ~ ~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~dReg0 = dReg0 * 1000~Print(dReg0)~~HSConvUnsignedNumberToHexString(dReg0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 594521
+      PickupListIndex 25980
     END_CKPICKUP_TYPE_WRITE 
-    CKPOINT 
-      ClassVersion 1
-      Name 
-      X 0,0
-      Y 0,0
-    END_CKPOINT 
-    SourceUseWorldCoordinates1 1
-    DisplayResultText 1
-    DisplayPositionItem 0
-    DisplayDistance 0
-    FontSize 24
     TeachInCounter 0
-  END_KEY 18
+  END_KEY 16
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1

@@ -1,113 +1,16 @@
 EVT 
-EYEVISION_VERSION 4.00.013
-FILE_VERSION 152
+EYEVISION_VERSION 4.00.015-11-g2ff7e11d3c
+FILE_VERSION 156
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 14.01.2022 17:24:03
+LAST_MODIFIED 20.01.2022 17:46:35
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
-    ClassVersion 3
-    CKGENERAL 
-      ClassVersion 3
-      Position 0
-      CommandType 19980122
-      CommandName 3D Transformation Filter
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Transformation 0
-    CKSOURCEVALUE 
-      ClassVersion 1
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      ManualValue 0,0
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 5
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    CKSOURCEVALUE 
-      ClassVersion 1
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      ManualValue 0,0
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 5
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    CKSOURCEVALUE 
-      ClassVersion 1
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      ManualValue 0,0
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 5
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    TargetIM 0
-    InvertParams 0
-    ShearAxis 1
-    ShearUnit 1
-    UseOutputIM 0
-    MirrorX 0
-    MirrorY 0
-    MirrorZ 1
-    TeachInCounter 0
-  END_KEY 1
-  KEY 2
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 1
+      Position 0
       CommandType 1
       CommandName Load Cable Side
       Enabled 1
@@ -200,109 +103,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 2
-  KEY 3
-    ClassVersion 3
-    CKGENERAL 
-      ClassVersion 3
-      Position 2
-      CommandType 19980122
-      CommandName 3D Transformation Filter - DELETE
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Transformation 0
-    CKSOURCEVALUE 
-      ClassVersion 1
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      ManualValue 0,0
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 5
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    CKSOURCEVALUE 
-      ClassVersion 1
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      ManualValue 0,0
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 5
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    CKSOURCEVALUE 
-      ClassVersion 1
-      Name 
-      SourceMode 3
-      RegisterIndex 0
-      ManualValue 2,0
-      CKPICKUP_TYPE_READ 
-        ClassVersion 1
-        Name 
-        PickupObjectType 5
-        PickupListIndex -1
-      END_CKPICKUP_TYPE_READ 
-      END_CKSOURCEVALUE 
-    TargetIM 0
-    InvertParams 0
-    ShearAxis 1
-    ShearUnit 1
-    UseOutputIM 0
-    MirrorX 0
-    MirrorY 0
-    MirrorZ 1
-    TeachInCounter 0
-  END_KEY 3
-  KEY 4
+  END_KEY 1
+  KEY 2
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 3
+      Position 1
       CommandType 19980127
       CommandName Fill Empty areas
       Enabled 1
@@ -348,12 +154,12 @@ START_PARM_LIST
     TargetIM 0
     SearchRadius 3
     TeachInCounter 0
-  END_KEY 4
-  KEY 5
+  END_KEY 2
+  KEY 3
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 4
+      Position 2
       CommandType 19980123
       CommandName Remove Outliers
       Enabled 1
@@ -419,12 +225,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 5
-  KEY 6
+  END_KEY 3
+  KEY 4
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 6
+      Position 4
       CommandType 19980107
       CommandName Create Z Plane
       Enabled 1
@@ -664,12 +470,12 @@ START_PARM_LIST
     EulerAngleConversionDirection 0
     FormatType 2
     TeachInCounter 0
-  END_KEY 6
-  KEY 7
+  END_KEY 4
+  KEY 5
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 7
+      Position 5
       CommandType 19980101
       CommandName 3D Height
       Enabled 1
@@ -770,12 +576,12 @@ START_PARM_LIST
       PickupListIndex 991566
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 7
-  KEY 8
+  END_KEY 5
+  KEY 6
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 8
+      Position 6
       CommandType 19980132
       CommandName 3D Distance
       Enabled 1
@@ -919,12 +725,12 @@ START_PARM_LIST
     PKResult 1
     3DRegVector 0
     TeachInCounter 0
-  END_KEY 8
-  KEY 9
+  END_KEY 6
+  KEY 7
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 9
+      Position 7
       CommandType 137
       CommandName Distance
       Enabled 1
@@ -1010,12 +816,12 @@ START_PARM_LIST
       PickupListIndex 108358
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 9
-  KEY 10
+  END_KEY 7
+  KEY 8
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 10
+      Position 8
       CommandType 122
       CommandName / 1000 (to keep precision up to 3 decimal)
       Enabled 1
@@ -1122,12 +928,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 10
-  KEY 11
+  END_KEY 8
+  KEY 9
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 11
+      Position 9
       CommandType 122
       CommandName Calculate the Difference
       Enabled 1
@@ -1234,12 +1040,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 11
-  KEY 12
+  END_KEY 9
+  KEY 10
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 12
+      Position 10
       CommandType 122
       CommandName x2
       Enabled 1
@@ -1346,12 +1152,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 12
-  KEY 13
+  END_KEY 10
+  KEY 11
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 13
+      Position 11
       CommandType 137
       CommandName Reference Diameter
       Enabled 1
@@ -1437,12 +1243,12 @@ START_PARM_LIST
       PickupListIndex 342771
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 13
-  KEY 14
+  END_KEY 11
+  KEY 12
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 14
+      Position 12
       CommandType 122
       CommandName / 1000 (to keep precision up to 3 decimal)
       Enabled 1
@@ -1549,12 +1355,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 14
-  KEY 15
+  END_KEY 12
+  KEY 13
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 15
+      Position 13
       CommandType 122
       CommandName Find New Diameter
       Enabled 1
@@ -1661,12 +1467,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 15
-  KEY 16
+  END_KEY 13
+  KEY 14
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 17
+      Position 15
       CommandType 1040
       CommandName Add Distance 4 BYTES
       Enabled 1
@@ -1722,7 +1528,7 @@ START_PARM_LIST
       PickupListIndex 254862
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 16
+  END_KEY 14
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1

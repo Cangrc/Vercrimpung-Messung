@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 181
+FILE_VERSION 182
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 19.01.2022 17:24:45
+LAST_MODIFIED 20.01.2022 17:11:35
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -237,7 +237,7 @@ START_PARM_LIST
       Position 4
       CommandType 1
       CommandName Load Bush Side
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2

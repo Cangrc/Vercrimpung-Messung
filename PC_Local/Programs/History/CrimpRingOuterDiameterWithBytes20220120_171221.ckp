@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 112
+FILE_VERSION 106
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 10.01.2022 18:00:12
+LAST_MODIFIED 20.01.2022 17:12:21
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -13,7 +13,7 @@ START_PARM_LIST
       Position 0
       CommandType 1
       CommandName Load Bush Side
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -97,7 +97,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 248045
+      PickupListIndex 992519
     END_CKPICKUP_TYPE_WRITE 
     NoRestartOfCyclicLoad 0
     SaveAsynchronous 0
@@ -157,13 +157,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 343333
+      PickupListIndex 834971
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 951247
+      PickupListIndex 309118
     END_CKPICKUP_TYPE_WRITE 
     OrderedPointcloud 1
     Method 3
@@ -379,7 +379,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 48381
+      PickupListIndex 218900
     END_CKPICKUP_TYPE_WRITE 
     Operation 2
     RegionSizeX 9
@@ -391,7 +391,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 492393
+      PickupListIndex 919446
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
@@ -547,13 +547,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 346703
+      PickupListIndex 206199
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 234329
+      PickupListIndex 18948
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -629,7 +629,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 507516
+      PickupListIndex 67179
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -698,11 +698,11 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 4
-        Value0 7,2568817139
-        Value1 19,8671245575
+        Value0 -10,9344177246
+        Value1 18,976644516
         Value2 0,0
-        Value3 14,0171194077
-        Value4 215,0624237061
+        Value3 -4,1741800308
+        Value4 214,1719360352
         Value5 0,0
         Value6 0,0
         Value7 0,0
@@ -725,25 +725,25 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 885324
+      PickupListIndex 441054
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 559900
+      PickupListIndex 167062
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 312310
+      PickupListIndex 940992
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 966999
+      PickupListIndex 917236
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 7
@@ -853,13 +853,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 539322
+      PickupListIndex 418459
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 980913
+      PickupListIndex 85886
     END_CKPICKUP_TYPE_WRITE 
       CKSOURCEVALUE 
       ClassVersion 2
@@ -983,7 +983,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 691585
+      PickupListIndex 71347
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 9
@@ -1085,14 +1085,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 687629
+      PickupListIndex 441953
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 443956
+      PickupListIndex 695746
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
@@ -1197,14 +1197,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 644585
+      PickupListIndex 473814
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 761573
+      PickupListIndex 242311
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
@@ -1309,14 +1309,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 819110
+      PickupListIndex 311417
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 249653
+      PickupListIndex 37716
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
@@ -1410,7 +1410,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 837107
+      PickupListIndex 438298
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 13
@@ -1512,14 +1512,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 632862
+      PickupListIndex 949005
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 199387
+      PickupListIndex 525133
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
@@ -1624,14 +1624,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 728759
+      PickupListIndex 490637
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 397698
+      PickupListIndex 95234
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 0,0
     ArithmeticFirstManualElementY 0,0
@@ -1695,7 +1695,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 348487
+      PickupListIndex 25980
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 16
