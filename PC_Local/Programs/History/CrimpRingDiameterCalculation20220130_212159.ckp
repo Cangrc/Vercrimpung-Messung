@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.011
-FILE_VERSION 94
+FILE_VERSION 93
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 30.01.2022 22:09:54
+LAST_MODIFIED 30.01.2022 21:21:59
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -398,12 +398,12 @@ START_PARM_LIST
       CKGEO3D 
         ClassVersion 2
         Name 
-        Type 4
+        Type 5
         Value0 -31,2193
-        Value1 67,822052002
+        Value1 64,812
         Value2 -0,8246965408
         Value3 28,18
-        Value4 86,0705032349
+        Value4 86,0705
         Value5 14,1866
         Value6 0,0
         Value7 0,0
@@ -427,19 +427,19 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 463357
+      PickupListIndex 514493
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 224214
+      PickupListIndex 704611
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 718324
+      PickupListIndex 722499
     END_CKPICKUP_TYPE_WRITE 
     OutputGeometry 3
     RansacPercentage 55,0
