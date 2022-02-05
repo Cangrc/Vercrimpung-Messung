@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 537
+FILE_VERSION 494
 CREATED 03.05.2018 11:09:14
 CREATED_BY Admin
-LAST_MODIFIED 03.02.2022 21:21:43
+LAST_MODIFIED 31.01.2022 17:59:14
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -118,9 +118,9 @@ START_PARM_LIST
     ConstantValue 0,0
     ObjectName Length
     ArithmeticResultToPickup 1
-    ArithmeticElementType1 3
+    ArithmeticElementType1 2
     ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 3
+    ArithmeticElementType2 2
     ArithmeticElementRegisterIndex2 1
     ArithmeticManualElementX 20,0
     ArithmeticManualElementY 0,0
@@ -146,14 +146,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 27643
+      PickupListIndex 267984
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 691573
+      PickupListIndex 450614
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 100,0
     ArithmeticFirstManualElementY 0,0
@@ -166,7 +166,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 3
       CommandType 122
-      CommandName Create Variable Yres in mm = 0.05 mm
+      CommandName Create Variable Yres in mm = 0.1 mm
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -230,9 +230,9 @@ START_PARM_LIST
     ConstantValue 0,0
     ObjectName Yres
     ArithmeticResultToPickup 1
-    ArithmeticElementType1 3
+    ArithmeticElementType1 2
     ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 3
+    ArithmeticElementType2 2
     ArithmeticElementRegisterIndex2 1
     ArithmeticManualElementX 20,0
     ArithmeticManualElementY 0,0
@@ -258,18 +258,18 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 337298
+      PickupListIndex 601618
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 229522
+      PickupListIndex 737981
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 100,0
     ArithmeticFirstManualElementY 0,0
-    Initialization 0,05
+    Initialization 0,1
     TeachInCounter 0
   END_KEY 4
   KEY 5
@@ -448,7 +448,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 10
       CommandType 122
-      CommandName 93.95*1.027 / YRes = Number of Profiles
+      CommandName 82.478*1.027 / YRes = Number of Profiles
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -540,16 +540,16 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 386172
+      PickupListIndex 810032
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 647813
+      PickupListIndex 138255
     END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 96,48
+    ArithmeticFirstManualElementX 82,5
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
@@ -717,14 +717,14 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 346569
+      PickupListIndex 477202
     END_CKPICKUP_TYPE_WRITE 
     Static 0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 966894
+      PickupListIndex 96156
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 244000,0
     ArithmeticFirstManualElementY 0,0
@@ -2163,7 +2163,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 40
       CommandType 1040
-      CommandName FIR GAIN and Reset Encoder
+      CommandName FIR GAIN
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2204,7 +2204,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program 'SET FIR GAIN~~Dim lValue As Long: lValue = 2~EVHDCCTLSetParameterLongByName(0, "/GeniCam/Camera/GenICam/CameraControl/FIRControl/FIRGain", lValue)~~'Executing the camera command: Clear Trigger Coordinate(/GeniCam/Camera/GenICam/TriggerControl/ResolverRS422/ClearTriggerCoord@i)~EVHDCCTLSetParameterLongByName(0, "/GeniCam/Camera/GenICam/TriggerControl/ResolverRS422/ClearTriggerCoord@i", 1)
+    Program 'SET FIR GAIN~~Dim lValue As Long: lValue = 3~EVHDCCTLSetParameterLongByName(0, "/GeniCam/Camera/GenICam/CameraControl/FIRControl/FIRGain", lValue)
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2214,7 +2214,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 250075
+      PickupListIndex 647992
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 40
@@ -2338,7 +2338,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 802212
+      PickupListIndex 293698
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 44
@@ -2433,7 +2433,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 936009
+      PickupListIndex 997499
     END_CKPICKUP_TYPE_WRITE 
     NoRestartOfCyclicLoad 0
     SaveAsynchronous 0
@@ -2499,7 +2499,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 505335
+      PickupListIndex 608870
     END_CKPICKUP_TYPE_WRITE 
     RestartCaptureOnError 0
     StartCaptureIfNotActive 0
