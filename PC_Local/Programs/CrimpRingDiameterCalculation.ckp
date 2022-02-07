@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 124
+FILE_VERSION 135
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 05.02.2022 09:43:32
+LAST_MODIFIED 07.02.2022 18:24:19
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -1782,7 +1782,7 @@ START_PARM_LIST
       CommandName Find Deepest Point1
       Enabled 1
       Hidden 0
-      GraficMode 2
+      GraficMode 0
       TextMode 2
       ImageMemory 0
       InvertResult 0
@@ -2044,7 +2044,7 @@ START_PARM_LIST
       CommandName Find Deepest Point2
       Enabled 1
       Hidden 0
-      GraficMode 2
+      GraficMode 0
       TextMode 2
       ImageMemory 0
       InvertResult 0
@@ -2188,7 +2188,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringOuterDiameter'~'Read result and value from Pickuplist~Dim dringOuterDiamet As Double~Dim lringOuterDiamet As Long~Dim lringOuterDiametUpdateMode As Long~Dim sringOuterDiametName As String~lResult = CKTRANSGetResultFromPickupList(977246 , lringOuterDiamet, dringOuterDiamet, sringOuterDiametName, lringOuterDiametUpdateMode)~~LogEntry(dringOuterDiamet)~ ~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringSurface'~'Read result and value from Pickuplist~Dim dringSurface As Double~Dim lringSurface As Long~Dim lringSurfaceUpdateMode As Long~Dim sringSurfaceName As String~lResult = CKTRANSGetResultFromPickupList(835982 , lringSurface, dringSurface, sringSurfaceName, lringSurfaceUpdateMode)~LogEntry(dringSurface)~~Dim dReg0 As Double~Dim dReg1 As Double~CKGetValueRegister (0,dReg0, "")~CKGetValueRegister (1,dReg1, "") ~~Dim innerDiam As Double~innerDiam = dringOuterDiamet - Abs(dringSurface-dReg0) - Abs(dringSurface-dReg1)~~LogEntry(innerDiam)~CKSetValueRegister(innerDiam, "innerDiam")
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringOuterDiameter'~'Read result and value from Pickuplist~Dim dringOuterDiamet As Double~Dim lringOuterDiamet As Long~Dim lringOuterDiametUpdateMode As Long~Dim sringOuterDiametName As String~lResult = CKTRANSGetResultFromPickupList(977246 , lringOuterDiamet, dringOuterDiamet, sringOuterDiametName, lringOuterDiametUpdateMode)~~LogEntry(dringOuterDiamet)~ ~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringSurface'~'Read result and value from Pickuplist~Dim dringSurface As Double~Dim lringSurface As Long~Dim lringSurfaceUpdateMode As Long~Dim sringSurfaceName As String~lResult = CKTRANSGetResultFromPickupList(835982 , lringSurface, dringSurface, sringSurfaceName, lringSurfaceUpdateMode)~LogEntry(dringSurface)~~Dim dReg0 As Double~Dim dReg1 As Double~CKGetValueRegister (0,dReg0, "")~CKGetValueRegister (1,dReg1, "") ~~Dim offset As Double~offset = 0.100~Dim innerDiam As Double~innerDiam = dringOuterDiamet - Abs(dringSurface-dReg0) - Abs(dringSurface-dReg1) + offset~~LogEntry(innerDiam)~CKSetValueRegister(innerDiam, "innerDiam")
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -2206,7 +2206,151 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 22
+      Position 21
+      CommandType 19980108
+      CommandName Write Diameter
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    OverlayType 0
+    Text 
+    ValueInText 1
+    CKSOURCEVALUE 
+      ClassVersion 1
+      Name 
+      SourceMode 2
+      RegisterIndex 0
+      ManualValue 0,0
+      CKPICKUP_TYPE_READ 
+        ClassVersion 1
+        Name 
+        PickupObjectType 5
+        PickupListIndex -1
+      END_CKPICKUP_TYPE_READ 
+      END_CKSOURCEVALUE 
+      CKSOURCEVALUE 
+      ClassVersion 2
+      Name 
+      SourceMode 2
+      RegisterIndex 0
+      TransformToCurrent 1
+      CKGEO3D 
+        ClassVersion 2
+        Name 
+        Type 1
+        Value0 0,0
+        Value1 0,0
+        Value2 0,0
+        Value3 0,0
+        Value4 0,0
+        Value5 0,0
+        Value6 0,0
+        Value7 0,0
+        Value8 0,0
+      END_CKGEO3D 
+      CKPICKUP_TYPE_READ 
+        ClassVersion 1
+        Name 
+        PickupObjectType 8
+        PickupListIndex -1
+      END_CKPICKUP_TYPE_READ 
+      END_CKSOURCEVALUE 
+    Color 0
+    FontSize 12
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 485951
+    END_CKPICKUP_TYPE_WRITE 
+    CommandSourceMode 0
+    CommandNBack 1
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    ColorHex 0x3030ff
+      CKSOURCEVALUE 
+      ClassVersion 2
+      Name 
+      SourceMode 2
+      RegisterIndex 0
+      TransformToCurrent 1
+      CKGEO3D 
+        ClassVersion 2
+        Name 
+        Type 0
+        Value0 0,0
+        Value1 0,0
+        Value2 0,0
+        Value3 0,0
+        Value4 0,0
+        Value5 0,0
+        Value6 0,0
+        Value7 0,0
+        Value8 0,0
+      END_CKGEO3D 
+      CKPICKUP_TYPE_READ 
+        ClassVersion 1
+        Name 
+        PickupObjectType 8
+        PickupListIndex -1
+      END_CKPICKUP_TYPE_READ 
+      END_CKSOURCEVALUE 
+    GeometryInText 0
+    DrawFixedSize 0
+    Size 10,0
+    NumberFormat 
+    UseNumberFormat 0
+    AppendToPrevious 0
+    TextAfter 
+    GlobalStringInText 0
+    TeachInCounter 0
+  END_KEY 18
+  KEY 19
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 23
       CommandType 2
       CommandName ADD BYTES
       Enabled 1
@@ -2264,12 +2408,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 18
-  KEY 19
+  END_KEY 19
+  KEY 20
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 23
+      Position 24
       CommandType 1040
       CommandName Add Distance 4 BYTES
       Enabled 1
@@ -2325,12 +2469,12 @@ START_PARM_LIST
       PickupListIndex 692899
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 19
-  KEY 20
+  END_KEY 20
+  KEY 21
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 24
+      Position 25
       CommandType 1040
       CommandName Prepare Boolean 1 BYTES
       Enabled 1
@@ -2386,12 +2530,12 @@ START_PARM_LIST
       PickupListIndex 494649
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 20
-  KEY 21
+  END_KEY 21
+  KEY 22
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 25
+      Position 26
       CommandType 122
       CommandName Average
       Enabled 1
@@ -2498,12 +2642,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 14,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 21
-  KEY 22
+  END_KEY 22
+  KEY 23
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 26
+      Position 27
       CommandType 19980107
       CommandName Start Coordinate
       Enabled 1
@@ -2743,12 +2887,12 @@ START_PARM_LIST
     EulerAngleConversionDirection 0
     FormatType 2
     TeachInCounter 0
-  END_KEY 22
-  KEY 23
+  END_KEY 23
+  KEY 24
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 27
+      Position 28
       CommandType 19980107
       CommandName End Coordinate
       Enabled 1
@@ -2988,12 +3132,12 @@ START_PARM_LIST
     EulerAngleConversionDirection 0
     FormatType 2
     TeachInCounter 0
-  END_KEY 23
-  KEY 24
+  END_KEY 24
+  KEY 25
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 28
+      Position 29
       CommandType 19980107
       CommandName Create a Box
       Enabled 1
@@ -3233,12 +3377,12 @@ START_PARM_LIST
     EulerAngleConversionDirection 0
     FormatType 2
     TeachInCounter 0
-  END_KEY 24
-  KEY 25
+  END_KEY 25
+  KEY 26
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 29
+      Position 30
       CommandType 19980108
       CommandName 3D Overlay
       Enabled 0
@@ -3377,12 +3521,12 @@ START_PARM_LIST
     TextAfter 
     GlobalStringInText 0
     TeachInCounter 0
-  END_KEY 25
-  KEY 26
+  END_KEY 26
+  KEY 27
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 32
+      Position 33
       CommandType 122
       CommandName counter + 1
       Enabled 1
@@ -3489,12 +3633,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 26
-  KEY 27
+  END_KEY 27
+  KEY 28
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 34
+      Position 35
       CommandType 2
       CommandName Jump Start
       Enabled 1
@@ -3552,12 +3696,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 27
-  KEY 28
+  END_KEY 28
+  KEY 29
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 36
+      Position 37
       CommandType 2
       CommandName ENDLOOP
       Enabled 1
@@ -3615,12 +3759,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 28
-  KEY 29
+  END_KEY 29
+  KEY 30
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 38
+      Position 39
       CommandType 122
       CommandName counter - 1
       Enabled 1
@@ -3727,12 +3871,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 29
-  KEY 30
+  END_KEY 30
+  KEY 31
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 39
+      Position 40
       CommandType 1040
       CommandName Add Boolean 16 BYTES - UPDATE
       Enabled 1
@@ -3788,12 +3932,12 @@ START_PARM_LIST
       PickupListIndex 216008
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 30
-  KEY 31
+  END_KEY 31
+  KEY 32
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 40
+      Position 41
       CommandType 122
       CommandName Average (Gets Real Value)
       Enabled 1
@@ -3900,12 +4044,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 14,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 31
-  KEY 32
+  END_KEY 32
+  KEY 33
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 41
+      Position 42
       CommandType 1040
       CommandName Add Avg 4 BYTES + Bool 1 BYTE
       Enabled 1
@@ -3961,12 +4105,12 @@ START_PARM_LIST
       PickupListIndex 345709
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 32
-  KEY 33
+  END_KEY 33
+  KEY 34
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 43
+      Position 44
       CommandType 19980104
       CommandName AutoCenter
       Enabled 1
@@ -4058,12 +4202,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     Activate 1
     TeachInCounter 0
-  END_KEY 33
-  KEY 34
+  END_KEY 34
+  KEY 35
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 44
+      Position 45
       CommandType 19980104
       CommandName TopDown
       Enabled 1
@@ -4155,12 +4299,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     Activate 1
     TeachInCounter 0
-  END_KEY 34
-  KEY 35
+  END_KEY 35
+  KEY 36
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 45
+      Position 46
       CommandType 19980115
       CommandName 3D Screenshot
       Enabled 1
@@ -4211,12 +4355,12 @@ START_PARM_LIST
       PickupListIndex 390230
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 35
-  KEY 36
+  END_KEY 36
+  KEY 37
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 46
+      Position 47
       CommandType 1040
       CommandName Fill Variable
       Enabled 1
@@ -4272,12 +4416,12 @@ START_PARM_LIST
       PickupListIndex 653984
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 36
-  KEY 37
+  END_KEY 37
+  KEY 38
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 47
+      Position 48
       CommandType 1
       CommandName Save Screenshot
       Enabled 1
@@ -4333,7 +4477,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_05_09_00_42-screenshot-crimp-diameter.jpg
+    FileName ./2022_02_07_18_21_19-screenshot-crimp-diameter.jpg
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -4370,7 +4514,7 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 37
+  END_KEY 38
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
