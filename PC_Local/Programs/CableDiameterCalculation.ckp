@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 224
+FILE_VERSION 226
 CREATED 13.12.2021 09:58:25
 CREATED_BY Admin
-LAST_MODIFIED 07.02.2022 18:24:16
+LAST_MODIFIED 09.02.2022 00:14:53
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -531,9 +531,9 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 2
-        Value0 -11,0
+        Value0 -5,0
         Value1 100,0
-        Value2 3,5
+        Value2 3,0
         Value3 0,0
         Value4 0,0
         Value5 0,0
@@ -597,13 +597,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 753176
+      PickupListIndex 736594
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 814647
+      PickupListIndex 529237
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -679,7 +679,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 212979
+      PickupListIndex 975643
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -776,9 +776,9 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 1
-        Value0 -4,9
+        Value0 -11,0
         Value1 -100,0
-        Value2 -5,0
+        Value2 -2,0
         Value3 0,0
         Value4 0,0
         Value5 0,0
@@ -842,13 +842,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 367513
+      PickupListIndex 826650
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 548066
+      PickupListIndex 17969
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -924,7 +924,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 703494
+      PickupListIndex 32991
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -1087,13 +1087,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 686224
+      PickupListIndex 544105
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 827908
+      PickupListIndex 622952
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -1169,7 +1169,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 686013
+      PickupListIndex 611241
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -2167,7 +2167,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableOuterDiameter'~'Read result and value from Pickuplist~Dim dcableOuterDiame As Double~Dim lcableOuterDiame As Long~Dim lcableOuterDiameUpdateMode As Long~Dim scableOuterDiameName As String~lResult = CKTRANSGetResultFromPickupList(155461 , lcableOuterDiame, dcableOuterDiame, scableOuterDiameName, lcableOuterDiameUpdateMode)~LogEntry(dcableOuterDiame)~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableSurface'~'Read result and value from Pickuplist~Dim dcableSurface As Double~Dim lcableSurface As Long~Dim lcableSurfaceUpdateMode As Long~Dim scableSurfaceName As String~lResult = CKTRANSGetResultFromPickupList(998395 , lcableSurface, dcableSurface, scableSurfaceName, lcableSurfaceUpdateMode)~LogEntry(dcableSurface)~Dim dReg0 As Double~Dim dReg1 As Double~CKGetValueRegister (0,dReg0, "")~CKGetValueRegister (1,dReg1, "") ~~Dim offset As Double~offset = 0.100~Dim innerDiam As Double~innerDiam = dcableOuterDiame - Abs(dcableSurface-dReg0) - Abs(dcableSurface-dReg1) + offset~LogEntry(innerDiam)~CKSetValueRegister(innerDiam, "innerDiam")
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableOuterDiameter'~'Read result and value from Pickuplist~Dim dcableOuterDiame As Double~Dim lcableOuterDiame As Long~Dim lcableOuterDiameUpdateMode As Long~Dim scableOuterDiameName As String~lResult = CKTRANSGetResultFromPickupList(155461 , lcableOuterDiame, dcableOuterDiame, scableOuterDiameName, lcableOuterDiameUpdateMode)~LogEntry(dcableOuterDiame)~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableSurface'~'Read result and value from Pickuplist~Dim dcableSurface As Double~Dim lcableSurface As Long~Dim lcableSurfaceUpdateMode As Long~Dim scableSurfaceName As String~lResult = CKTRANSGetResultFromPickupList(998395 , lcableSurface, dcableSurface, scableSurfaceName, lcableSurfaceUpdateMode)~LogEntry(dcableSurface)~Dim dReg0 As Double~Dim dReg1 As Double~CKGetValueRegister (0,dReg0, "")~CKGetValueRegister (1,dReg1, "") ~~Dim offset As Double~offset = 0.100~Dim innerDiam As Double~innerDiam = dcableOuterDiame - Abs(dcableSurface-dReg0) - Abs(dcableSurface-dReg1) + offset~LogEntry(innerDiam)~CKSetValueRegister(innerDiam, "innerDiam")~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -4456,7 +4456,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_18_21_19-screenshot-cable-diameter.jpg
+    FileName ./2022_02_08_17_20_46-screenshot-cable-diameter.jpg
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1

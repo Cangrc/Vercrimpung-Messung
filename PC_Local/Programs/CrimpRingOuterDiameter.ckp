@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 153
+FILE_VERSION 160
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 07.02.2022 18:19:07
+LAST_MODIFIED 09.02.2022 00:15:22
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -34,7 +34,7 @@ START_PARM_LIST
       Position 1
       CommandType 19980118
       CommandName Approach from the left and find the reference point
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -138,7 +138,7 @@ START_PARM_LIST
       Position 2
       CommandType 19980107
       CommandName 3D Geometry
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -383,7 +383,7 @@ START_PARM_LIST
       Position 3
       CommandType 19980107
       CommandName 3D Geometry
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -628,7 +628,7 @@ START_PARM_LIST
       Position 4
       CommandType 19980107
       CommandName 3D Geometry
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -873,7 +873,7 @@ START_PARM_LIST
       Position 6
       CommandType 19980107
       CommandName Create Z Plane
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1118,7 +1118,7 @@ START_PARM_LIST
       Position 7
       CommandType 19980101
       CommandName 3D Height
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1224,7 +1224,7 @@ START_PARM_LIST
       Position 8
       CommandType 122
       CommandName Ring SurfaceHeight
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1336,7 +1336,7 @@ START_PARM_LIST
       Position 9
       CommandType 19980132
       CommandName 3D Distance
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1485,7 +1485,7 @@ START_PARM_LIST
       Position 10
       CommandType 137
       CommandName Distance
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1576,7 +1576,7 @@ START_PARM_LIST
       Position 11
       CommandType 122
       CommandName / 1000 (to keep precision up to 3 decimal)
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1688,7 +1688,7 @@ START_PARM_LIST
       Position 12
       CommandType 122
       CommandName Calculate the Difference
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1800,7 +1800,7 @@ START_PARM_LIST
       Position 13
       CommandType 122
       CommandName x2
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1912,7 +1912,7 @@ START_PARM_LIST
       Position 14
       CommandType 137
       CommandName Outer Diam
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2003,7 +2003,7 @@ START_PARM_LIST
       Position 15
       CommandType 122
       CommandName / 1000 (to keep precision up to 3 decimal)
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2115,7 +2115,7 @@ START_PARM_LIST
       Position 16
       CommandType 122
       CommandName Find New Outer Diameter
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2248,7 +2248,7 @@ START_PARM_LIST
       Position 19
       CommandType 19980118
       CommandName Approach from the left and find the reference point
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2352,7 +2352,7 @@ START_PARM_LIST
       Position 20
       CommandType 19980107
       CommandName 3D Geometry
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2430,7 +2430,7 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 2
-        Value0 26,0
+        Value0 15,0
         Value1 100,0
         Value2 10,0
         Value3 0,0
@@ -2597,7 +2597,7 @@ START_PARM_LIST
       Position 21
       CommandType 19980107
       CommandName 3D Geometry
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -2675,7 +2675,7 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 2
-        Value0 22,0
+        Value0 8,0
         Value1 -100,0
         Value2 -10,0
         Value3 0,0
@@ -2842,7 +2842,7 @@ START_PARM_LIST
       Position 22
       CommandType 19980107
       CommandName 3D Geometry
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3084,10 +3084,10 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 24
+      Position 23
       CommandType 19980107
       CommandName Create Z Plane
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3329,10 +3329,10 @@ START_PARM_LIST
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 25
+      Position 24
       CommandType 19980101
       CommandName 3D Height
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3435,10 +3435,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 26
+      Position 25
       CommandType 122
       CommandName Ring SurfaceHeight
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3547,10 +3547,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 27
+      Position 26
       CommandType 19980132
       CommandName 3D Distance
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3696,10 +3696,10 @@ START_PARM_LIST
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 28
+      Position 27
       CommandType 137
       CommandName Distance
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3787,10 +3787,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 29
+      Position 28
       CommandType 122
       CommandName / 1000 (to keep precision up to 3 decimal)
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3899,10 +3899,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 30
+      Position 29
       CommandType 122
       CommandName Calculate the Difference
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -4011,10 +4011,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 31
+      Position 30
       CommandType 122
       CommandName x2
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -4123,10 +4123,10 @@ START_PARM_LIST
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 32
+      Position 31
       CommandType 137
       CommandName Outer Diam
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -4214,10 +4214,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 33
+      Position 32
       CommandType 122
       CommandName / 1000 (to keep precision up to 3 decimal)
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -4326,10 +4326,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 34
+      Position 33
       CommandType 122
       CommandName Find New Outer Diameter
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -4438,7 +4438,7 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 36
+      Position 35
       CommandType 19980118
       CommandName Approach from the left and find the reference point
       Enabled 0
@@ -4542,7 +4542,7 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 37
+      Position 36
       CommandType 19980107
       CommandName 3D Geometry
       Enabled 0
@@ -4591,7 +4591,7 @@ START_PARM_LIST
       Name 
       SourceMode 2
       RegisterIndex 0
-      TransformToCurrent 1
+      TransformToCurrent 0
       CKGEO3D 
         ClassVersion 2
         Name 
@@ -4623,7 +4623,7 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 2
-        Value0 17,0
+        Value0 15,0
         Value1 100,0
         Value2 10,0
         Value3 0,0
@@ -4689,13 +4689,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 135066
+      PickupListIndex 231218
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 916278
+      PickupListIndex 68742
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -4771,7 +4771,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 665085
+      PickupListIndex 413208
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -4787,7 +4787,7 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 38
+      Position 37
       CommandType 19980107
       CommandName 3D Geometry
       Enabled 0
@@ -4836,7 +4836,7 @@ START_PARM_LIST
       Name 
       SourceMode 2
       RegisterIndex 1
-      TransformToCurrent 1
+      TransformToCurrent 0
       CKGEO3D 
         ClassVersion 2
         Name 
@@ -4868,7 +4868,7 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 2
-        Value0 9,0
+        Value0 8,0
         Value1 -100,0
         Value2 -10,0
         Value3 0,0
@@ -4934,13 +4934,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 883481
+      PickupListIndex 142301
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 429098
+      PickupListIndex 615098
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -5016,7 +5016,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 129338
+      PickupListIndex 156599
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -5032,7 +5032,7 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 39
+      Position 38
       CommandType 19980107
       CommandName 3D Geometry
       Enabled 0
@@ -5081,7 +5081,7 @@ START_PARM_LIST
       Name 
       SourceMode 2
       RegisterIndex 0
-      TransformToCurrent 1
+      TransformToCurrent 0
       CKGEO3D 
         ClassVersion 2
         Name 
@@ -5108,7 +5108,7 @@ START_PARM_LIST
       Name 
       SourceMode 2
       RegisterIndex 1
-      TransformToCurrent 1
+      TransformToCurrent 0
       CKGEO3D 
         ClassVersion 2
         Name 
@@ -5179,13 +5179,13 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 361527
+      PickupListIndex 479933
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 543302
+      PickupListIndex 18603
     END_CKPICKUP_TYPE_WRITE 
     DoTranslate 1
     DoRotate 0
@@ -5261,7 +5261,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 461223
+      PickupListIndex 903900
     END_CKPICKUP_TYPE_WRITE 
     DoInvert 0
     DistanceTolerance 0,01
@@ -5277,7 +5277,7 @@ START_PARM_LIST
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 40
+      Position 39
       CommandType 19980105
       CommandName 3D Plane - Big Update ***
       Enabled 0
@@ -5324,7 +5324,7 @@ START_PARM_LIST
       ClassVersion 2
       Name 
       SourceMode 2
-      RegisterIndex 0
+      RegisterIndex 2
       TransformToCurrent 1
       CKGEO3D 
         ClassVersion 2
@@ -5367,7 +5367,7 @@ START_PARM_LIST
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 41
+      Position 40
       CommandType 19980101
       CommandName 3D Height
       Enabled 0
@@ -5414,7 +5414,7 @@ START_PARM_LIST
       ClassVersion 2
       Name 
       SourceMode 2
-      RegisterIndex 1
+      RegisterIndex 3
       TransformToCurrent 1
       CKGEO3D 
         ClassVersion 2
@@ -5473,10 +5473,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 42
+      Position 41
       CommandType 122
       CommandName SurfaceHeight
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -5518,7 +5518,7 @@ START_PARM_LIST
     END_CKRESULT 
     DetType 2
     VarType 0
-    RegisterIndex 0
+    RegisterIndex 8
     OperatorType 0
     VarIndex -1
     Value 0,0
@@ -5585,7 +5585,7 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 44
+      Position 43
       CommandType 19980118
       CommandName Approach from the left and find the reference point
       Enabled 0
@@ -5689,7 +5689,7 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 45
+      Position 44
       CommandType 19980107
       CommandName 3D Geometry
       Enabled 0
@@ -5934,7 +5934,7 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 46
+      Position 45
       CommandType 19980107
       CommandName 3D Geometry
       Enabled 0
@@ -6179,7 +6179,7 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 47
+      Position 46
       CommandType 19980107
       CommandName 3D Geometry
       Enabled 0
@@ -6424,7 +6424,7 @@ START_PARM_LIST
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 48
+      Position 47
       CommandType 19980101
       CommandName 3D Height
       Enabled 0
@@ -6530,10 +6530,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 49
+      Position 48
       CommandType 122
       CommandName SurfaceHeight
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -6575,7 +6575,7 @@ START_PARM_LIST
     END_CKRESULT 
     DetType 2
     VarType 0
-    RegisterIndex 0
+    RegisterIndex 8
     OperatorType 0
     VarIndex -1
     Value 0,0

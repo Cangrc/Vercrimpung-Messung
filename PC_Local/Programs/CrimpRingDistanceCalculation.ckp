@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 197
+FILE_VERSION 204
 CREATED 13.12.2021 17:28:22
 CREATED_BY Admin
-LAST_MODIFIED 07.02.2022 18:24:19
+LAST_MODIFIED 09.02.2022 00:15:19
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -1455,7 +1455,7 @@ START_PARM_LIST
     SaveRegisterCenter 0
     SaveRegisterRegion 1
     MaxObjectMergeSize 2000
-    MaxObjectHeightDifference 0,445977807
+    MaxObjectHeightDifference 0,6931644678
     HeightDifferenceAveragingLength 10
     Algorithm 4
     Threshold1 123,0
@@ -3618,10 +3618,177 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 27
   KEY 28
-    ClassVersion 5
+    ClassVersion 3
+    CKGENERAL 
+      ClassVersion 3
+      Position 33
+      CommandType 19980101
+      CommandName Find Deepest Point
+      Enabled 1
+      Hidden 0
+      GraficMode 0
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+      CKSOURCEVALUE 
+      ClassVersion 2
+      Name 
+      SourceMode 2
+      RegisterIndex 4
+      TransformToCurrent 1
+      CKGEO3D 
+        ClassVersion 2
+        Name 
+        Type 4
+        Value0 0,0
+        Value1 0,0
+        Value2 0,0
+        Value3 0,0
+        Value4 0,0
+        Value5 0,0
+        Value6 0,0
+        Value7 0,0
+        Value8 0,0
+      END_CKGEO3D 
+      CKPICKUP_TYPE_READ 
+        ClassVersion 1
+        Name 
+        PickupObjectType 8
+        PickupListIndex -1
+      END_CKPICKUP_TYPE_READ 
+      END_CKSOURCEVALUE 
+    OutlierRemovalMode 1
+    OutlierRemovalValue 5,0
+    Statistics1Percentile 25,0
+    Statistics2Percentile 75,0
+    StatisticsMode1 2
+    StatisticsMode2 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 343126
+    END_CKPICKUP_TYPE_WRITE 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 595650
+    END_CKPICKUP_TYPE_WRITE 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 22194
+    END_CKPICKUP_TYPE_WRITE 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 381533
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 28
+  KEY 29
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 34
+      CommandType 1040
+      CommandName Find Each Depth and Append
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringSurface'~'Read result and value from Pickuplist~Dim dringSurface As Double~Dim lringSurface As Long~Dim lringSurfaceUpdateMode As Long~Dim sringSurfaceName As String~lResult = CKTRANSGetResultFromPickupList(835982 , lringSurface, dringSurface, sringSurfaceName, lringSurfaceUpdateMode)~~~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~~Dim thick As Double~Dim thickStr As String~thick = Abs(lringSurface-dReg0) ~LogEntry(thick)~~HSConvUnsignedNumberToHexString(thick*1000, 4, thickStr)~LogEntry(thickStr)~HSConvSwapByteOrder(thickStr)~LogEntry(thickStr)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Read Text and value from Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(794586 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Write string to Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~sringDepth16 = sringDepth16 + thickStr~lringDepth16 = 0 'Default Result~lringDepth16UpdateMode = 14 'Default UpdateMode~sringDepth16Name = "ringDepth16"~lResult = CKTRANSEnterStringToPickupList(794586 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~~
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 223851
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 29
+  KEY 30
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 36
       CommandType 122
       CommandName counter + 1
       Enabled 1
@@ -3728,12 +3895,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 28
-  KEY 29
+  END_KEY 30
+  KEY 31
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 36
+      Position 38
       CommandType 2
       CommandName Jump Start
       Enabled 1
@@ -3791,12 +3958,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 29
-  KEY 30
+  END_KEY 31
+  KEY 32
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 38
+      Position 40
       CommandType 2
       CommandName ENDLOOP
       Enabled 1
@@ -3854,12 +4021,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 30
-  KEY 31
+  END_KEY 32
+  KEY 33
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 40
+      Position 42
       CommandType 122
       CommandName counter - 1
       Enabled 1
@@ -3966,12 +4133,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 31
-  KEY 32
+  END_KEY 33
+  KEY 34
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 41
+      Position 43
       CommandType 1040
       CommandName Add Boolean 16 BYTES - UPDATE
       Enabled 1
@@ -4027,12 +4194,12 @@ START_PARM_LIST
       PickupListIndex 94620
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 32
-  KEY 33
+  END_KEY 34
+  KEY 35
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 42
+      Position 44
       CommandType 122
       CommandName Average (Gets Real Value)
       Enabled 1
@@ -4139,12 +4306,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 14,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 33
-  KEY 34
+  END_KEY 35
+  KEY 36
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 43
+      Position 45
       CommandType 1040
       CommandName Add Avg 4 BYTES + Bool 1 BYTE
       Enabled 1
@@ -4200,12 +4367,73 @@ START_PARM_LIST
       PickupListIndex 593002
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 34
-  KEY 35
+  END_KEY 36
+  KEY 37
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 46
+      CommandType 1040
+      CommandName Add Missing Depth 4x8 BYTES
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cable_NumberCrimps'~'Read result and value from Pickuplist~Dim dcable_NumberCri As Double~Dim lcable_NumberCri As Long~Dim lcable_NumberCriUpdateMode As Long~Dim scable_NumberCriName As String~lResult = CKTRANSGetResultFromPickupList(1000001 , lcable_NumberCri, dcable_NumberCri, scable_NumberCriName, lcable_NumberCriUpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Read Text and value from Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(794586 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~~Dim s As String~~'Add Missing Bytes~If dcable_NumberCri < 9 Then~    ~    HSConvUnsignedNumberToHexString(0, 32, s)~    HSConvSwapByteOrder(s)~    s = s + s + s + s + s + s + s + s~    LogEntry(s)~    ~End If~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Write string to Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~sringDepth16 = sringDepth16 + s~lringDepth16 = 0 'Default Result~lringDepth16UpdateMode = 14 'Default UpdateMode~sringDepth16Name = "ringDepth16"~lResult = CKTRANSEnterStringToPickupList(794586 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~~
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 263360
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 37
+  KEY 38
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 45
+      Position 48
       CommandType 19980104
       CommandName AutoCenter
       Enabled 1
@@ -4297,12 +4525,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     Activate 1
     TeachInCounter 0
-  END_KEY 35
-  KEY 36
+  END_KEY 38
+  KEY 39
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 46
+      Position 49
       CommandType 19980104
       CommandName TopDown
       Enabled 1
@@ -4394,12 +4622,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     Activate 1
     TeachInCounter 0
-  END_KEY 36
-  KEY 37
+  END_KEY 39
+  KEY 40
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 47
+      Position 50
       CommandType 19980115
       CommandName 3D Screenshot
       Enabled 1
@@ -4450,12 +4678,12 @@ START_PARM_LIST
       PickupListIndex 183094
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 37
-  KEY 38
+  END_KEY 40
+  KEY 41
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 48
+      Position 51
       CommandType 1040
       CommandName Fill Variable
       Enabled 1
@@ -4511,12 +4739,12 @@ START_PARM_LIST
       PickupListIndex 97771
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 38
-  KEY 39
+  END_KEY 41
+  KEY 42
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 49
+      Position 52
       CommandType 1
       CommandName Save Screenshot
       Enabled 1
@@ -4572,7 +4800,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_18_21_19-screenshot-crimp-distance.jpg
+    FileName ./2022_02_08_17_20_46-screenshot-crimp-distance.jpg
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -4609,7 +4837,7 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 39
+  END_KEY 42
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1

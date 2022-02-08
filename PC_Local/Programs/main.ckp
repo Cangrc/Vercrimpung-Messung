@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 371
+FILE_VERSION 381
 CREATED 13.12.2021 10:01:14
 CREATED_BY Admin
-LAST_MODIFIED 07.02.2022 18:22:15
+LAST_MODIFIED 09.02.2022 00:13:43
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -791,10 +791,346 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 7
   KEY 8
-    ClassVersion 4
+    ClassVersion 5
     CKGENERAL 
       ClassVersion 3
       Position 7
+      CommandType 122
+      CommandName cableDepth16
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo Could not load command ( file format error). Command must be reconfigured.
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 1
+    VarType 6
+    RegisterIndex 0
+    OperatorType 0
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName cableDepth16
+    ArithmeticResultToPickup 0
+    ArithmeticElementType1 1
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 1
+    ArithmeticElementRegisterIndex2 1
+    ArithmeticManualElementX 0,0
+    ArithmeticManualElementY 0,0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex 560538
+    END_CKPICKUP_TYPE_WRITE 
+    Static 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 682955
+    END_CKPICKUP_TYPE_WRITE 
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
+  END_KEY 8
+  KEY 9
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 8
+      CommandType 122
+      CommandName bushDepth16
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo Could not load command ( file format error). Command must be reconfigured.
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 1
+    VarType 6
+    RegisterIndex 0
+    OperatorType 0
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName bushDepth16
+    ArithmeticResultToPickup 0
+    ArithmeticElementType1 1
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 1
+    ArithmeticElementRegisterIndex2 1
+    ArithmeticManualElementX 0,0
+    ArithmeticManualElementY 0,0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex 937436
+    END_CKPICKUP_TYPE_WRITE 
+    Static 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 749059
+    END_CKPICKUP_TYPE_WRITE 
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
+  END_KEY 9
+  KEY 10
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 9
+      CommandType 122
+      CommandName ringDepth16
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo Could not load command ( file format error). Command must be reconfigured.
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 1
+    VarType 6
+    RegisterIndex 0
+    OperatorType 0
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName ringDepth16
+    ArithmeticResultToPickup 0
+    ArithmeticElementType1 1
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 1
+    ArithmeticElementRegisterIndex2 1
+    ArithmeticManualElementX 0,0
+    ArithmeticManualElementY 0,0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex 794586
+    END_CKPICKUP_TYPE_WRITE 
+    Static 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 820457
+    END_CKPICKUP_TYPE_WRITE 
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
+  END_KEY 10
+  KEY 11
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 10
       CommandType 1040
       CommandName Fill Variable
       Enabled 3
@@ -850,12 +1186,12 @@ START_PARM_LIST
       PickupListIndex 393197
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 8
-  KEY 9
+  END_KEY 11
+  KEY 12
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 9
+      Position 12
       CommandType 122
       CommandName Variable Cable Edge
       Enabled 1
@@ -962,12 +1298,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 9
-  KEY 10
+  END_KEY 12
+  KEY 13
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 10
+      Position 13
       CommandType 122
       CommandName Variable Bush Edge
       Enabled 1
@@ -1074,12 +1410,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 10
-  KEY 11
+  END_KEY 13
+  KEY 14
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 11
+      Position 14
       CommandType 2
       CommandName Delete Graphics
       Enabled 3
@@ -1137,12 +1473,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 11
-  KEY 12
+  END_KEY 14
+  KEY 15
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 12
+      Position 15
       CommandType 1040
       CommandName PLC->PC - DELETE Gen2 8x8
       Enabled 0
@@ -1198,15 +1534,15 @@ START_PARM_LIST
       PickupListIndex 993432
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 12
-  KEY 13
+  END_KEY 15
+  KEY 16
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 13
+      Position 16
       CommandType 1040
       CommandName PLC->PC - DELETE CalibrationMaster
-      Enabled 0
+      Enabled 3
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1259,12 +1595,12 @@ START_PARM_LIST
       PickupListIndex 329706
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 13
-  KEY 14
+  END_KEY 16
+  KEY 17
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 14
+      Position 17
       CommandType 1040
       CommandName PLC->PC - DELETE Gen2 16x8
       Enabled 0
@@ -1320,12 +1656,12 @@ START_PARM_LIST
       PickupListIndex 240636
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 14
-  KEY 15
+  END_KEY 17
+  KEY 18
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 15
+      Position 18
       CommandType 1040
       CommandName PLC->PC - DELETE Gen2.5
       Enabled 0
@@ -1381,12 +1717,12 @@ START_PARM_LIST
       PickupListIndex 434140
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 15
-  KEY 16
+  END_KEY 18
+  KEY 19
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 17
+      Position 20
       CommandType 2
       CommandName Jump to Config
       Enabled 3
@@ -1444,12 +1780,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 16
-  KEY 17
+  END_KEY 19
+  KEY 20
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 19
+      Position 22
       CommandType 1004
       CommandName ##### Start of the Program #####
       Enabled 1
@@ -1465,12 +1801,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 17
-  KEY 18
+  END_KEY 20
+  KEY 21
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 20
+      Position 23
       CommandType 2
       CommandName Mark: Beginning
       Enabled 1
@@ -1528,12 +1864,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 18
-  KEY 19
+  END_KEY 21
+  KEY 22
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 21
+      Position 24
       CommandType 1040
       CommandName Fill Variable
       Enabled 1
@@ -1589,12 +1925,12 @@ START_PARM_LIST
       PickupListIndex 724532
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 19
-  KEY 20
+  END_KEY 22
+  KEY 23
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 22
+      Position 25
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -1706,12 +2042,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 20
-  KEY 21
+  END_KEY 23
+  KEY 24
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 23
+      Position 26
       CommandType 124
       CommandName Text
       Enabled 1
@@ -1831,12 +2167,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 21
-  KEY 22
+  END_KEY 24
+  KEY 25
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 24
+      Position 27
       CommandType 246
       CommandName Close After Connection
       Enabled 1
@@ -1948,12 +2284,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 22
-  KEY 23
+  END_KEY 25
+  KEY 26
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 26
+      Position 29
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -1969,12 +2305,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 23
-  KEY 24
+  END_KEY 26
+  KEY 27
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 27
+      Position 30
       CommandType 1004
       CommandName COM STEP1: PLC -> PC
       Enabled 1
@@ -1990,12 +2326,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 24
-  KEY 25
+  END_KEY 27
+  KEY 28
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 28
+      Position 31
       CommandType 246
       CommandName Receive Start Signal
       Enabled 2
@@ -2107,12 +2443,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 25
-  KEY 26
+  END_KEY 28
+  KEY 29
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 30
+      Position 33
       CommandType 1040
       CommandName If Something Received Then Cont
       Enabled 2
@@ -2168,12 +2504,12 @@ START_PARM_LIST
       PickupListIndex 43364
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 26
-  KEY 27
+  END_KEY 29
+  KEY 30
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 32
+      Position 35
       CommandType 2
       CommandName Mark: InputArrived
       Enabled 1
@@ -2231,12 +2567,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 27
-  KEY 28
+  END_KEY 30
+  KEY 31
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 33
+      Position 36
       CommandType 124
       CommandName Text
       Enabled 1
@@ -2356,12 +2692,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 28
-  KEY 29
+  END_KEY 31
+  KEY 32
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 34
+      Position 37
       CommandType 1040
       CommandName PLC->PC - check start signal
       Enabled 1
@@ -2417,12 +2753,12 @@ START_PARM_LIST
       PickupListIndex 689559
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 29
-  KEY 30
+  END_KEY 32
+  KEY 33
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 36
+      Position 39
       CommandType 2
       CommandName Mark: Start Signal OK
       Enabled 1
@@ -2480,12 +2816,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 30
-  KEY 31
+  END_KEY 33
+  KEY 34
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 37
+      Position 40
       CommandType 124
       CommandName Text
       Enabled 1
@@ -2605,12 +2941,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 31
-  KEY 32
+  END_KEY 34
+  KEY 35
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 39
+      Position 42
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -2626,12 +2962,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 32
-  KEY 33
+  END_KEY 35
+  KEY 36
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 40
+      Position 43
       CommandType 1004
       CommandName COM STEP2: PC -> PLC
       Enabled 1
@@ -2647,12 +2983,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 33
-  KEY 34
+  END_KEY 36
+  KEY 37
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 41
+      Position 44
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -2764,12 +3100,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 34
-  KEY 35
+  END_KEY 37
+  KEY 38
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 42
+      Position 45
       CommandType 1040
       CommandName PC->PLC
       Enabled 1
@@ -2826,12 +3162,73 @@ START_PARM_LIST
       PickupListIndex 993269
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 35
-  KEY 36
+  END_KEY 38
+  KEY 39
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 46
+      CommandType 1040
+      CommandName Add Depth 48*4 BYTES
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~~
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 19214
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 39
+  KEY 40
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 43
+      Position 47
       CommandType 246
       CommandName Send Acknowledge Signal
       Enabled 1
@@ -2943,12 +3340,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 36
-  KEY 37
+  END_KEY 40
+  KEY 41
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 44
+      Position 48
       CommandType 124
       CommandName Text
       Enabled 1
@@ -3068,12 +3465,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 37
-  KEY 38
+  END_KEY 41
+  KEY 42
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 46
+      Position 50
       CommandType 1004
       CommandName SCAN 1 - CABLE
       Enabled 1
@@ -3089,12 +3486,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 38
-  KEY 39
+  END_KEY 42
+  KEY 43
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 47
+      Position 51
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -3110,12 +3507,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 39
-  KEY 40
+  END_KEY 43
+  KEY 44
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 48
+      Position 52
       CommandType 2
       CommandName Mark Config
       Enabled 1
@@ -3173,12 +3570,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 40
-  KEY 41
+  END_KEY 44
+  KEY 45
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 50
+      Position 54
       CommandType 1
       CommandName Gen2 8x8
       Enabled 0
@@ -3234,7 +3631,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Gen2 8x8/2022_02_04_10_02_01_990cable-record.e3c
+    FileName ./2022_02_08_09_40_45_806cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3271,12 +3668,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 41
-  KEY 42
+  END_KEY 45
+  KEY 46
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 51
+      Position 55
       CommandType 1
       CommandName Gen2.5
       Enabled 0
@@ -3369,12 +3766,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 42
-  KEY 43
+  END_KEY 46
+  KEY 47
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 52
+      Position 56
       CommandType 1
       CommandName Gen2 16x8
       Enabled 0
@@ -3467,12 +3864,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 43
-  KEY 44
+  END_KEY 47
+  KEY 48
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 53
+      Position 57
       CommandType 1
       CommandName CalibMaster
       Enabled 0
@@ -3565,12 +3962,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 44
-  KEY 45
+  END_KEY 48
+  KEY 49
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 54
+      Position 58
       CommandType 1
       CommandName Gen2 16x8
       Enabled 0
@@ -3663,12 +4060,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 45
-  KEY 46
+  END_KEY 49
+  KEY 50
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 55
+      Position 59
       CommandType 1
       CommandName Gen2 16x8
       Enabled 0
@@ -3761,15 +4158,15 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 46
-  KEY 47
+  END_KEY 50
+  KEY 51
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 56
+      Position 60
       CommandType 1
       CommandName CalibMaster
-      Enabled 0
+      Enabled 3
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -3822,7 +4219,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_18_15_58_182cable-record.e3c
+    FileName ./2022_02_08_15_28_29_910cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3859,12 +4256,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 47
-  KEY 48
+  END_KEY 51
+  KEY 52
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 58
+      Position 62
       CommandType 1000
       CommandName Jump to SCAN
       Enabled 2
@@ -3918,12 +4315,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 48
-  KEY 49
+  END_KEY 52
+  KEY 53
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 59
+      Position 63
       CommandType 1
       CommandName Save Image Cable
       Enabled 2
@@ -3979,7 +4376,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_18_21_19_283cable-record.e3c
+    FileName ./2022_02_09_00_13_08_207cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -4016,12 +4413,12 @@ START_PARM_LIST
     SaveAsynchronous 1
     FilenameType 0
     TeachInCounter 0
-  END_KEY 49
-  KEY 50
+  END_KEY 53
+  KEY 54
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 60
+      Position 64
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -4133,12 +4530,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 50
-  KEY 51
+  END_KEY 54
+  KEY 55
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 61
+      Position 65
       CommandType 1040
       CommandName PC->PLC
       Enabled 1
@@ -4195,12 +4592,73 @@ START_PARM_LIST
       PickupListIndex 886558
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 51
-  KEY 52
+  END_KEY 55
+  KEY 56
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 66
+      CommandType 1040
+      CommandName Add Depth 48*4 BYTES
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~~
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 228545
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 56
+  KEY 57
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 63
+      Position 68
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -4216,12 +4674,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 52
-  KEY 53
+  END_KEY 57
+  KEY 58
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 64
+      Position 69
       CommandType 1004
       CommandName COM STEP3: PC -> PLC
       Enabled 1
@@ -4237,12 +4695,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 53
-  KEY 54
+  END_KEY 58
+  KEY 59
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 65
+      Position 70
       CommandType 246
       CommandName Send Cable Finished Signal
       Enabled 2
@@ -4354,12 +4812,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 54
-  KEY 55
+  END_KEY 59
+  KEY 60
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 66
+      Position 71
       CommandType 124
       CommandName Text
       Enabled 1
@@ -4479,12 +4937,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 55
-  KEY 56
+  END_KEY 60
+  KEY 61
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 68
+      Position 73
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -4500,12 +4958,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 56
-  KEY 57
+  END_KEY 61
+  KEY 62
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 69
+      Position 74
       CommandType 1004
       CommandName PREPARE FINAL RESULT
       Enabled 1
@@ -4521,12 +4979,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 57
-  KEY 58
+  END_KEY 62
+  KEY 63
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 70
+      Position 75
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -4638,12 +5096,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 58
-  KEY 59
+  END_KEY 63
+  KEY 64
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 71
+      Position 76
       CommandType 1040
       CommandName PC->PLC Introduction
       Enabled 1
@@ -4699,12 +5157,12 @@ START_PARM_LIST
       PickupListIndex 791490
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 59
-  KEY 60
+  END_KEY 64
+  KEY 65
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 72
+      Position 77
       CommandType 1040
       CommandName Disable Based on Message
       Enabled 1
@@ -4760,12 +5218,12 @@ START_PARM_LIST
       PickupListIndex 784813
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 60
-  KEY 61
+  END_KEY 65
+  KEY 66
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 74
+      Position 79
       CommandType 1004
       CommandName CABLE PREPROCESS
       Enabled 1
@@ -4781,12 +5239,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 61
-  KEY 62
+  END_KEY 66
+  KEY 67
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 75
+      Position 80
       CommandType 19980121
       CommandName 3D Cut Filter-Chnage1-enlargeBox
       Enabled 1
@@ -4868,7 +5326,7 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 5
-        Value0 -14,0366401672
+        Value0 -34,5708198547
         Value1 -68,083694458
         Value2 -5,6455078125
         Value3 6,1795215607
@@ -4887,12 +5345,12 @@ START_PARM_LIST
       END_CKSOURCEVALUE 
     ShrinkOrderedToFit 1
     TeachInCounter 0
-  END_KEY 62
-  KEY 63
+  END_KEY 67
+  KEY 68
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 76
+      Position 81
       CommandType 19980123
       CommandName Remove Outliers
       Enabled 1
@@ -4958,12 +5416,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 63
-  KEY 64
+  END_KEY 68
+  KEY 69
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 77
+      Position 82
       CommandType 19980123
       CommandName Remove Outliers Slow
       Enabled 1
@@ -5029,12 +5487,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 64
-  KEY 65
+  END_KEY 69
+  KEY 70
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 78
+      Position 83
       CommandType 19980125
       CommandName 3D Ordered Filter
       Enabled 1
@@ -5085,12 +5543,12 @@ START_PARM_LIST
     FilterOptionBool 1
     FilterSizeMedian 5
     TeachInCounter 0
-  END_KEY 65
-  KEY 66
+  END_KEY 70
+  KEY 71
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 79
+      Position 84
       CommandType 19980127
       CommandName 3D Hole Filling Filter
       Enabled 1
@@ -5136,12 +5594,12 @@ START_PARM_LIST
     TargetIM 0
     SearchRadius 3
     TeachInCounter 0
-  END_KEY 66
-  KEY 67
+  END_KEY 71
+  KEY 72
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 81
+      Position 86
       CommandType 1000
       CommandName Jump to CableOuterDiam Calculation
       Enabled 1
@@ -5195,12 +5653,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 67
-  KEY 68
+  END_KEY 72
+  KEY 73
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 82
+      Position 87
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -5258,12 +5716,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 68
-  KEY 69
+  END_KEY 73
+  KEY 74
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 83
+      Position 88
       CommandType 1000
       CommandName Jump to CableDistance Calculation
       Enabled 1
@@ -5307,311 +5765,6 @@ START_PARM_LIST
       END_CKSTATISTIC 
     END_CKRESULT 
     NameOfSubProgram ./CableDistanceCalculation.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
-  END_KEY 69
-  KEY 70
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 84
-      CommandType 2
-      CommandName Delete Graphics
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Interpreter control
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Marker Beginning
-    DeterminationMode 8
-    ResultMode 1
-    NumberOfLoops 0
-    LoopCounter 0
-    ClearAllGoi 0
-    CMDOffset 1
-    ExecuteCommands 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 606664
-    END_CKPICKUP_TYPE_READ 
-    TeachInCounter 0
-  END_KEY 70
-  KEY 71
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 85
-      CommandType 1000
-      CommandName Jump to CableDiameter Calculation
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./CableDiameterCalculation.ckp
-    RunSubprogramMode 0
-    ResultMode 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CloseProgramOnTermination 0
-    TeachInCounter 0
-  END_KEY 71
-  KEY 72
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 86
-      CommandType 2
-      CommandName Delete Graphics
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Interpreter control
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Marker Beginning
-    DeterminationMode 8
-    ResultMode 1
-    NumberOfLoops 0
-    LoopCounter 0
-    ClearAllGoi 0
-    CMDOffset 1
-    ExecuteCommands 0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 606664
-    END_CKPICKUP_TYPE_READ 
-    TeachInCounter 0
-  END_KEY 72
-  KEY 73
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 87
-      CommandType 1040
-      CommandName Add Outer Diameter 4 BYTES
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Script interpreter
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~Dim s As String~~'Accessing pickuplist element 'cableOuterDiameter'~'Read result and value from Pickuplist~Dim dcableOuterDiame As Double~Dim lcableOuterDiame As Long~Dim lcableOuterDiameUpdateMode As Long~Dim scableOuterDiameName As String~lResult = CKTRANSGetResultFromPickupList(155461 , lcableOuterDiame, dcableOuterDiame, scableOuterDiameName, lcableOuterDiameUpdateMode)~~HSConvUnsignedNumberToHexString(dcableOuterDiame*1000, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)
-    EncodedBinary 
-    ExternProgramFileName 
-    UseExternProgram 0
-    NumberOfAdditionalLinesProgram 0
-    NumberOfAdditionalLinesBinary 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 494419
-    END_CKPICKUP_TYPE_WRITE 
-    TeachInCounter 0
-  END_KEY 73
-  KEY 74
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 88
-      CommandType 1000
-      CommandName Jump to Cable Edge
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Sub program
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    NameOfSubProgram ./CableEdge.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -5687,10 +5840,315 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 75
   KEY 76
-    ClassVersion 7
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 90
+      CommandType 1000
+      CommandName Jump to CableDiameter Calculation
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./CableDiameterCalculation.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 76
+  KEY 77
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 91
+      CommandType 2
+      CommandName Delete Graphics
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker Beginning
+    DeterminationMode 8
+    ResultMode 1
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 606664
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 77
+  KEY 78
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 92
+      CommandType 1040
+      CommandName Add Outer Diameter 4 BYTES
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim lResult As Long 'Only needed once ~Dim s As String~~'Accessing pickuplist element 'cableOuterDiameter'~'Read result and value from Pickuplist~Dim dcableOuterDiame As Double~Dim lcableOuterDiame As Long~Dim lcableOuterDiameUpdateMode As Long~Dim scableOuterDiameName As String~lResult = CKTRANSGetResultFromPickupList(155461 , lcableOuterDiame, dcableOuterDiame, scableOuterDiameName, lcableOuterDiameUpdateMode)~~HSConvUnsignedNumberToHexString(dcableOuterDiame*1000, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 494419
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 78
+  KEY 79
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 93
+      CommandType 1000
+      CommandName Jump to Cable Edge
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Sub program
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    NameOfSubProgram ./CableEdge.ckp
+    RunSubprogramMode 0
+    ResultMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CloseProgramOnTermination 0
+    TeachInCounter 0
+  END_KEY 79
+  KEY 80
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 94
+      CommandType 2
+      CommandName Delete Graphics
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Interpreter control
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Marker Beginning
+    DeterminationMode 8
+    ResultMode 1
+    NumberOfLoops 0
+    LoopCounter 0
+    ClearAllGoi 0
+    CMDOffset 1
+    ExecuteCommands 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 606664
+    END_CKPICKUP_TYPE_READ 
+    TeachInCounter 0
+  END_KEY 80
+  KEY 81
+    ClassVersion 7
+    CKGENERAL 
+      ClassVersion 3
+      Position 95
       CommandType 124
       CommandName Text
       Enabled 1
@@ -5810,12 +6268,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 76
-  KEY 77
+  END_KEY 81
+  KEY 82
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 92
+      Position 97
       CommandType 1040
       CommandName Reset Encoder
       Enabled 1
@@ -5871,15 +6329,15 @@ START_PARM_LIST
       PickupListIndex 90103
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 77
-  KEY 78
+  END_KEY 82
+  KEY 83
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 93
+      Position 98
       CommandType 2
       CommandName Mark Config
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -5934,12 +6392,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 78
-  KEY 79
+  END_KEY 83
+  KEY 84
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 94
+      Position 99
       CommandType 1004
       CommandName SCAN 2 - BUSH
       Enabled 1
@@ -5955,12 +6413,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 79
-  KEY 80
+  END_KEY 84
+  KEY 85
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 95
+      Position 100
       CommandType 1
       CommandName Gen2 8x8
       Enabled 0
@@ -6016,7 +6474,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Gen2 8x8/2022_02_04_10_02_01_990-bush-record.e3c
+    FileName ./2022_02_08_09_40_45_806-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6053,12 +6511,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 80
-  KEY 81
+  END_KEY 85
+  KEY 86
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 96
+      Position 101
       CommandType 1
       CommandName Gen2.5
       Enabled 0
@@ -6151,12 +6609,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 81
-  KEY 82
+  END_KEY 86
+  KEY 87
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 97
+      Position 102
       CommandType 1
       CommandName Gen2 16x8
       Enabled 0
@@ -6249,12 +6707,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 82
-  KEY 83
+  END_KEY 87
+  KEY 88
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 98
+      Position 103
       CommandType 1
       CommandName CalibMaster
       Enabled 0
@@ -6347,12 +6805,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 83
-  KEY 84
+  END_KEY 88
+  KEY 89
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 99
+      Position 104
       CommandType 1
       CommandName Gen2 16x8
       Enabled 0
@@ -6445,15 +6903,15 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 84
-  KEY 85
+  END_KEY 89
+  KEY 90
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 100
+      Position 105
       CommandType 1
       CommandName CalibMaster
-      Enabled 0
+      Enabled 3
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -6506,7 +6964,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_18_15_58_182-bush-record.e3c
+    FileName ./2022_02_08_15_28_29_910-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6543,12 +7001,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 85
-  KEY 86
+  END_KEY 90
+  KEY 91
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 101
+      Position 106
       CommandType 1000
       CommandName Jump to SCAN
       Enabled 2
@@ -6602,12 +7060,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 86
-  KEY 87
+  END_KEY 91
+  KEY 92
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 102
+      Position 107
       CommandType 1
       CommandName Save Image Bush
       Enabled 2
@@ -6663,7 +7121,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_18_21_19_283-bush-record.e3c
+    FileName ./2022_02_09_00_13_08_207-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6700,12 +7158,12 @@ START_PARM_LIST
     SaveAsynchronous 1
     FilenameType 0
     TeachInCounter 0
-  END_KEY 87
-  KEY 88
+  END_KEY 92
+  KEY 93
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 104
+      Position 109
       CommandType 1004
       CommandName Enabled/Disabled based on Message
       Enabled 1
@@ -6721,12 +7179,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 88
-  KEY 89
+  END_KEY 93
+  KEY 94
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 105
+      Position 110
       CommandType 1040
       CommandName Disable Based on Message
       Enabled 1
@@ -6782,12 +7240,12 @@ START_PARM_LIST
       PickupListIndex 391398
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 89
-  KEY 90
+  END_KEY 94
+  KEY 95
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 107
+      Position 112
       CommandType 1004
       CommandName BUSH PREPROCESS
       Enabled 1
@@ -6803,12 +7261,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 90
-  KEY 91
+  END_KEY 95
+  KEY 96
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 108
+      Position 113
       CommandType 19980121
       CommandName 3D Cut Filter
       Enabled 1
@@ -6909,12 +7367,12 @@ START_PARM_LIST
       END_CKSOURCEVALUE 
     ShrinkOrderedToFit 1
     TeachInCounter 0
-  END_KEY 91
-  KEY 92
+  END_KEY 96
+  KEY 97
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 109
+      Position 114
       CommandType 19980121
       CommandName 3D Cut Filter
       Enabled 1
@@ -7015,12 +7473,12 @@ START_PARM_LIST
       END_CKSOURCEVALUE 
     ShrinkOrderedToFit 1
     TeachInCounter 0
-  END_KEY 92
-  KEY 93
+  END_KEY 97
+  KEY 98
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 110
+      Position 115
       CommandType 19980123
       CommandName Remove Outliers
       Enabled 1
@@ -7086,12 +7544,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 93
-  KEY 94
+  END_KEY 98
+  KEY 99
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 111
+      Position 116
       CommandType 19980123
       CommandName Remove Outliers
       Enabled 1
@@ -7157,12 +7615,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 94
-  KEY 95
+  END_KEY 99
+  KEY 100
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 112
+      Position 117
       CommandType 19980123
       CommandName Remove Outliers
       Enabled 1
@@ -7228,12 +7686,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 95
-  KEY 96
+  END_KEY 100
+  KEY 101
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 113
+      Position 118
       CommandType 19980123
       CommandName Remove Outliers Slow
       Enabled 1
@@ -7299,12 +7757,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 96
-  KEY 97
+  END_KEY 101
+  KEY 102
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 114
+      Position 119
       CommandType 19980125
       CommandName 3D Ordered Filter
       Enabled 1
@@ -7355,12 +7813,12 @@ START_PARM_LIST
     FilterOptionBool 1
     FilterSizeMedian 5
     TeachInCounter 0
-  END_KEY 97
-  KEY 98
+  END_KEY 102
+  KEY 103
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 115
+      Position 120
       CommandType 19980127
       CommandName 3D Hole Filling Filter
       Enabled 1
@@ -7406,12 +7864,12 @@ START_PARM_LIST
     TargetIM 0
     SearchRadius 3
     TeachInCounter 0
-  END_KEY 98
-  KEY 99
+  END_KEY 103
+  KEY 104
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 117
+      Position 122
       CommandType 1000
       CommandName Jump to BushOuterDiamScale Calculation
       Enabled 1
@@ -7465,12 +7923,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 99
-  KEY 100
+  END_KEY 104
+  KEY 105
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 118
+      Position 123
       CommandType 1000
       CommandName Jump to CrimpRingOuterDiam Calculation
       Enabled 1
@@ -7524,12 +7982,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 100
-  KEY 101
+  END_KEY 105
+  KEY 106
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 119
+      Position 124
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -7587,12 +8045,33 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 101
-  KEY 102
+  END_KEY 106
+  KEY 107
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 126
+      CommandType 1004
+      CommandName BUSH
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    OldCMDType 0
+    TeachInCounter 0
+  END_KEY 107
+  KEY 108
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 120
+      Position 127
       CommandType 1000
       CommandName Jump to BushDistance Calculation
       Enabled 1
@@ -7646,12 +8125,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 102
-  KEY 103
+  END_KEY 108
+  KEY 109
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 121
+      Position 128
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -7709,12 +8188,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 103
-  KEY 104
+  END_KEY 109
+  KEY 110
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 122
+      Position 129
       CommandType 1000
       CommandName Jump to BushDiameter Calculation
       Enabled 1
@@ -7768,12 +8247,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 104
-  KEY 105
+  END_KEY 110
+  KEY 111
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 123
+      Position 130
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -7831,12 +8310,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 105
-  KEY 106
+  END_KEY 111
+  KEY 112
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 124
+      Position 131
       CommandType 1040
       CommandName Add Outer Diameter 4 BYTES
       Enabled 1
@@ -7889,15 +8368,15 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 124071
+      PickupListIndex 551799
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 106
-  KEY 107
+  END_KEY 112
+  KEY 113
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 125
+      Position 132
       CommandType 124
       CommandName Text
       Enabled 1
@@ -7950,7 +8429,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 1
-      PickupListIndex 739313
+      PickupListIndex 62510
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -7989,7 +8468,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 486716
+      PickupListIndex 400528
     END_CKPICKUP_TYPE_WRITE 
     ResultDisplay Result display.LE1
     FloatingPointMode 0
@@ -8017,12 +8496,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 107
-  KEY 108
+  END_KEY 113
+  KEY 114
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 127
+      Position 134
       CommandType 1004
       CommandName RING
       Enabled 0
@@ -8038,12 +8517,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 108
-  KEY 109
+  END_KEY 114
+  KEY 115
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 128
+      Position 135
       CommandType 1000
       CommandName Jump to CrimpRingDistance Calculation
       Enabled 1
@@ -8097,12 +8576,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 109
-  KEY 110
+  END_KEY 115
+  KEY 116
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 129
+      Position 136
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -8160,12 +8639,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 110
-  KEY 111
+  END_KEY 116
+  KEY 117
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 130
+      Position 137
       CommandType 1000
       CommandName Jump to CrimpRingDiameter Calculation
       Enabled 1
@@ -8219,12 +8698,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 111
-  KEY 112
+  END_KEY 117
+  KEY 118
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 131
+      Position 138
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -8282,12 +8761,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 112
-  KEY 113
+  END_KEY 118
+  KEY 119
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 132
+      Position 139
       CommandType 1040
       CommandName Add RingOuter Diameter 4 BYTES
       Enabled 1
@@ -8340,15 +8819,15 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 365144
+      PickupListIndex 93333
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 113
-  KEY 114
+  END_KEY 119
+  KEY 120
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 133
+      Position 140
       CommandType 1040
       CommandName CRIMP_RING_NOT_AVAILABLE
       Enabled 0
@@ -8401,15 +8880,15 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 838462
+      PickupListIndex 903127
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 114
-  KEY 115
+  END_KEY 120
+  KEY 121
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 134
+      Position 141
       CommandType 124
       CommandName Text
       Enabled 1
@@ -8462,7 +8941,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 1
-      PickupListIndex 801544
+      PickupListIndex 81703
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -8501,7 +8980,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 747137
+      PickupListIndex 361510
     END_CKPICKUP_TYPE_WRITE 
     ResultDisplay Result display.LE1
     FloatingPointMode 0
@@ -8529,12 +9008,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 115
-  KEY 116
+  END_KEY 121
+  KEY 122
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 136
+      Position 145
       CommandType 1000
       CommandName Jump to Bush Edge
       Enabled 1
@@ -8588,12 +9067,73 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 116
-  KEY 117
+  END_KEY 122
+  KEY 123
+    ClassVersion 4
+    CKGENERAL 
+      ClassVersion 3
+      Position 147
+      CommandType 1040
+      CommandName Add Depth 48*4 BYTES
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableDepth16'~'Read Text and value from Pickuplist~Dim scableDepth16 As String~Dim lcableDepth16 As Long~Dim lcableDepth16UpdateMode As Long~Dim scableDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(560538 , lcableDepth16, scableDepth16, scableDepth16Name, lcableDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bushDepth16'~'Read Text and value from Pickuplist~Dim sbushDepth16 As String~Dim lbushDepth16 As Long~Dim lbushDepth16UpdateMode As Long~Dim sbushDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(937436 , lbushDepth16, sbushDepth16, sbushDepth16Name, lbushDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Read Text and value from Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(794586 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'With_crimp_ring'~'Read result and value from Pickuplist~Dim dWith_crimp_ring As Double~Dim lWith_crimp_ring As Long~Dim lWith_crimp_ringUpdateMode As Long~Dim sWith_crimp_ringName As String~lResult = CKTRANSGetResultFromPickupList(1000034 , lWith_crimp_ring, dWith_crimp_ring, sWith_crimp_ringName, lWith_crimp_ringUpdateMode)~~Dim s As String~~If dWith_crimp_ring = 1 Then~    SetSendString(GetSendString() + scableDepth16)    ~    SetSendString(GetSendString() + sbushDepth16)~    SetSendString(GetSendString() + sringDepth16)~Else~    SetSendString(GetSendString() + scableDepth16)~    SetSendString(GetSendString() + sbushDepth16)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~End If~
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 971863
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 123
+  KEY 124
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 139
+      Position 149
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -8609,12 +9149,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 117
-  KEY 118
+  END_KEY 124
+  KEY 125
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 140
+      Position 150
       CommandType 1004
       CommandName COM STEP3: PC -> PLC
       Enabled 1
@@ -8630,12 +9170,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 118
-  KEY 119
+  END_KEY 125
+  KEY 126
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 141
+      Position 151
       CommandType 246
       CommandName Send Results Signal
       Enabled 1
@@ -8747,12 +9287,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 119
-  KEY 120
+  END_KEY 126
+  KEY 127
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 142
+      Position 152
       CommandType 124
       CommandName Text
       Enabled 1
@@ -8872,12 +9412,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 120
-  KEY 121
+  END_KEY 127
+  KEY 128
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 144
+      Position 154
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -8984,17 +9524,17 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 313750
+      PickupListIndex 677426
     END_CKPICKUP_TYPE_WRITE 
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 121
-  KEY 122
+  END_KEY 128
+  KEY 129
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 146
+      Position 156
       CommandType 2
       CommandName End of Program
       Enabled 3
@@ -9052,12 +9592,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 122
-  KEY 123
+  END_KEY 129
+  KEY 130
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 147
+      Position 157
       CommandType 114
       CommandName Stop watch
       Enabled 1
@@ -9109,12 +9649,12 @@ START_PARM_LIST
       PickupListIndex 742257
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 123
-  KEY 124
+  END_KEY 130
+  KEY 131
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 149
+      Position 159
       CommandType 2
       CommandName Jump to Beginning
       Enabled 2
@@ -9172,7 +9712,7 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 124
+  END_KEY 131
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
