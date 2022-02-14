@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 381
+FILE_VERSION 412
 CREATED 13.12.2021 10:01:14
 CREATED_BY Admin
-LAST_MODIFIED 09.02.2022 00:13:43
+LAST_MODIFIED 14.02.2022 18:49:11
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -791,346 +791,10 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 7
   KEY 8
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 7
-      CommandType 122
-      CommandName cableDepth16
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo Could not load command ( file format error). Command must be reconfigured.
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 6
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName cableDepth16
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 6
-      PickupListIndex 560538
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 682955
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 8
-  KEY 9
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 8
-      CommandType 122
-      CommandName bushDepth16
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo Could not load command ( file format error). Command must be reconfigured.
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 6
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName bushDepth16
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 6
-      PickupListIndex 937436
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 749059
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 9
-  KEY 10
-    ClassVersion 5
-    CKGENERAL 
-      ClassVersion 3
-      Position 9
-      CommandType 122
-      CommandName ringDepth16
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo Could not load command ( file format error). Command must be reconfigured.
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name 
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    DetType 1
-    VarType 6
-    RegisterIndex 0
-    OperatorType 0
-    VarIndex -1
-    Value 0,0
-    PointX 0,0
-    PointY 0,0
-    StartX 0,0
-    StartY 0,0
-    EndX 0,0
-    EndY 0,0
-    CenterX 0,0
-    CenterY 0,0
-    Radius 0,0
-    Result 0,0
-    WindowLeft 0,0
-    WindowTop 0,0
-    WindowWidth 0,0
-    WindowHeight 0,0
-    ConstantValue 0,0
-    ObjectName ringDepth16
-    ArithmeticResultToPickup 0
-    ArithmeticElementType1 1
-    ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 1
-    ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX 0,0
-    ArithmeticManualElementY 0,0
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_READ 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex -1
-    END_CKPICKUP_TYPE_READ 
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 6
-      PickupListIndex 794586
-    END_CKPICKUP_TYPE_WRITE 
-    Static 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 0
-      PickupListIndex 820457
-    END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 0,0
-    ArithmeticFirstManualElementY 0,0
-    Initialization 0,0
-    TeachInCounter 0
-  END_KEY 10
-  KEY 11
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 10
+      Position 7
       CommandType 1040
       CommandName Fill Variable
       Enabled 3
@@ -1186,12 +850,12 @@ START_PARM_LIST
       PickupListIndex 393197
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 11
-  KEY 12
+  END_KEY 8
+  KEY 9
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 12
+      Position 9
       CommandType 122
       CommandName Variable Cable Edge
       Enabled 1
@@ -1298,12 +962,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 12
-  KEY 13
+  END_KEY 9
+  KEY 10
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 13
+      Position 10
       CommandType 122
       CommandName Variable Bush Edge
       Enabled 1
@@ -1410,12 +1074,12 @@ START_PARM_LIST
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
-  END_KEY 13
-  KEY 14
+  END_KEY 10
+  KEY 11
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 14
+      Position 11
       CommandType 2
       CommandName Delete Graphics
       Enabled 3
@@ -1473,12 +1137,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 14
-  KEY 15
+  END_KEY 11
+  KEY 12
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 15
+      Position 12
       CommandType 1040
       CommandName PLC->PC - DELETE Gen2 8x8
       Enabled 0
@@ -1534,15 +1198,15 @@ START_PARM_LIST
       PickupListIndex 993432
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 15
-  KEY 16
+  END_KEY 12
+  KEY 13
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 16
+      Position 13
       CommandType 1040
       CommandName PLC->PC - DELETE CalibrationMaster
-      Enabled 3
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -1595,12 +1259,12 @@ START_PARM_LIST
       PickupListIndex 329706
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 16
-  KEY 17
+  END_KEY 13
+  KEY 14
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 17
+      Position 14
       CommandType 1040
       CommandName PLC->PC - DELETE Gen2 16x8
       Enabled 0
@@ -1656,12 +1320,12 @@ START_PARM_LIST
       PickupListIndex 240636
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 17
-  KEY 18
+  END_KEY 14
+  KEY 15
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 18
+      Position 15
       CommandType 1040
       CommandName PLC->PC - DELETE Gen2.5
       Enabled 0
@@ -1717,12 +1381,12 @@ START_PARM_LIST
       PickupListIndex 434140
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 18
-  KEY 19
+  END_KEY 15
+  KEY 16
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 20
+      Position 17
       CommandType 2
       CommandName Jump to Config
       Enabled 3
@@ -1780,12 +1444,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 19
-  KEY 20
+  END_KEY 16
+  KEY 17
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 22
+      Position 19
       CommandType 1004
       CommandName ##### Start of the Program #####
       Enabled 1
@@ -1801,12 +1465,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 20
-  KEY 21
+  END_KEY 17
+  KEY 18
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 23
+      Position 20
       CommandType 2
       CommandName Mark: Beginning
       Enabled 1
@@ -1864,6 +1528,342 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
+  END_KEY 18
+  KEY 19
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 21
+      CommandType 122
+      CommandName cableDepth16
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo Could not load command ( file format error). Command must be reconfigured.
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 1
+    VarType 6
+    RegisterIndex 0
+    OperatorType 0
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName cableDepth16
+    ArithmeticResultToPickup 0
+    ArithmeticElementType1 1
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 1
+    ArithmeticElementRegisterIndex2 1
+    ArithmeticManualElementX 0,0
+    ArithmeticManualElementY 0,0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex 914837
+    END_CKPICKUP_TYPE_WRITE 
+    Static 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 381570
+    END_CKPICKUP_TYPE_WRITE 
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
+  END_KEY 19
+  KEY 20
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 22
+      CommandType 122
+      CommandName bushDepth16
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo Could not load command ( file format error). Command must be reconfigured.
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 1
+    VarType 6
+    RegisterIndex 0
+    OperatorType 0
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName bushDepth16
+    ArithmeticResultToPickup 0
+    ArithmeticElementType1 1
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 1
+    ArithmeticElementRegisterIndex2 1
+    ArithmeticManualElementX 0,0
+    ArithmeticManualElementY 0,0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex 137211
+    END_CKPICKUP_TYPE_WRITE 
+    Static 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 683642
+    END_CKPICKUP_TYPE_WRITE 
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
+  END_KEY 20
+  KEY 21
+    ClassVersion 5
+    CKGENERAL 
+      ClassVersion 3
+      Position 23
+      CommandType 122
+      CommandName ringDepth16
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo Could not load command ( file format error). Command must be reconfigured.
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name 
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 1
+    VarType 6
+    RegisterIndex 0
+    OperatorType 0
+    VarIndex -1
+    Value 0,0
+    PointX 0,0
+    PointY 0,0
+    StartX 0,0
+    StartY 0,0
+    EndX 0,0
+    EndY 0,0
+    CenterX 0,0
+    CenterY 0,0
+    Radius 0,0
+    Result 0,0
+    WindowLeft 0,0
+    WindowTop 0,0
+    WindowWidth 0,0
+    WindowHeight 0,0
+    ConstantValue 0,0
+    ObjectName ringDepth16
+    ArithmeticResultToPickup 0
+    ArithmeticElementType1 1
+    ArithmeticElementRegisterIndex1 0
+    ArithmeticElementType2 1
+    ArithmeticElementRegisterIndex2 1
+    ArithmeticManualElementX 0,0
+    ArithmeticManualElementY 0,0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex 241557
+    END_CKPICKUP_TYPE_WRITE 
+    Static 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 0
+      PickupListIndex 121731
+    END_CKPICKUP_TYPE_WRITE 
+    ArithmeticFirstManualElementX 0,0
+    ArithmeticFirstManualElementY 0,0
+    Initialization 0,0
+    TeachInCounter 0
   END_KEY 21
   KEY 22
     ClassVersion 4
@@ -1912,7 +1912,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim s As String~s = EVTTimerGetTimeStamp()~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'timeStamp'~'Write string to Pickuplist~Dim stimeStamp As String~Dim ltimeStamp As Long~Dim ltimeStampUpdateMode As Long~Dim stimeStampName As String~stimeStamp = Mid(s, 1, 19) 'Please insert Value here~ltimeStamp = 0 'Default Result~ltimeStampUpdateMode = 14 'Default UpdateMode~stimeStampName = "timeStamp"~lResult = CKTRANSEnterStringToPickupList(871998 , ltimeStamp, stimeStamp, stimeStampName, ltimeStampUpdateMode)~~Print(stimeStamp)~~Dim sError As String~Dim sValue As String: sValue = s + "cable-record.e3c"~If CKI_SetParameterString("Save Image Cable.FileName", sValue,sError) <> 1 Then~  Print (sError)~End If~~Dim sError As String~Dim sValue As String: sValue = s + "-bush-record.e3c"~If CKI_SetParameterString("Save Image Bush.FileName", sValue,sError) <> 1 Then~  Print (sError)~End If~~
+    Program Dim s As String~s = EVTTimerGetTimeStamp()~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'timeStamp'~'Write string to Pickuplist~Dim stimeStamp As String~Dim ltimeStamp As Long~Dim ltimeStampUpdateMode As Long~Dim stimeStampName As String~stimeStamp = Mid(s, 1, 19) 'Please insert Value here~ltimeStamp = 0 'Default Result~ltimeStampUpdateMode = 14 'Default UpdateMode~stimeStampName = "timeStamp"~lResult = CKTRANSEnterStringToPickupList(871998 , ltimeStamp, stimeStamp, stimeStampName, ltimeStampUpdateMode)~~Print(stimeStamp)~~Dim sError As String~Dim sValue As String: sValue = s + "cable-record.e3c"~If CKI_SetParameterString("Save Image Cable.FileName", sValue,sError) <> 1 Then~  Print (sError)~End If~~Dim sError As String~Dim sValue As String: sValue = s + "-bush-record.e3c"~If CKI_SetParameterString("Save Image Bush.FileName", sValue,sError) <> 1 Then~  Print (sError)~End If~~Dim lResult As Long 'Only needed once ~ ~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableDepth16'~'Write string to Pickuplist~Dim scableDepth16 As String~Dim lcableDepth16 As Long~Dim lcableDepth16UpdateMode As Long~Dim scableDepth16Name As String~scableDepth16 = ""~lcableDepth16 = 0 'Default Result~lcableDepth16UpdateMode = 14 'Default UpdateMode~scableDepth16Name = "cableDepth16"~lResult = CKTRANSEnterStringToPickupList(914837 , lcableDepth16, scableDepth16, scableDepth16Name, lcableDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bushDepth16'~'Write string to Pickuplist~Dim sbushDepth16 As String~Dim lbushDepth16 As Long~Dim lbushDepth16UpdateMode As Long~Dim sbushDepth16Name As String~sbushDepth16 = ""~lbushDepth16 = 0 'Default Result~lbushDepth16UpdateMode = 14 'Default UpdateMode~sbushDepth16Name = "bushDepth16"~lResult = CKTRANSEnterStringToPickupList(137211 , lbushDepth16, sbushDepth16, sbushDepth16Name, lbushDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Write string to Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~sringDepth16 = ""~lringDepth16 = 0 'Default Result~lringDepth16UpdateMode = 14 'Default UpdateMode~sringDepth16Name = "ringDepth16"~lResult = CKTRANSEnterStringToPickupList(241557 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -1922,7 +1922,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 724532
+      PickupListIndex 266944
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 22
@@ -3210,7 +3210,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~~
+    Program Dim i As Long~Dim s As String~~For i=0 To 47~    ~    SetSendString(GetSendString() + "00000000")~    ~Next~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -3631,7 +3631,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_08_09_40_45_806cable-record.e3c
+    FileName ./2022_02_14_15_37_30_359cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3729,7 +3729,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_17_10_26_865cable-record.e3c
+    FileName ./2022_02_14_17_28_16_188cable-record2.5.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3827,7 +3827,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Gen2-Different Spindles/2022_02_03_09_20_36_173cable-record.e3c
+    FileName ./Gen2 16x8/2022_02_05_09_36_04_412cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3925,7 +3925,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Calibration Master/2022_02_03_18_12_33_643cable-record.e3c
+    FileName ./Calibration Master/2022_02_05_09_00_42_391cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -3968,6 +3968,104 @@ START_PARM_LIST
     CKGENERAL 
       ClassVersion 3
       Position 58
+      CommandType 1
+      CommandName CalibMaster Paper
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Capture image
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    CaptureWithVIC 0
+    CaptureType 2
+    SaveType 0
+    OnlyOnActivate 0
+    SaveWithGrafic 0
+    TriggeredCapture 0
+    ApplyTimeout 0
+    CaptureWithFlash 0
+    NumberOfCyclicFiles 10
+    CurrentCycleNumber 0
+    TriggerTimeout 0
+    TriggerInputLine 0
+    MinimumSignalDuration 0
+    FileName ./2022_02_14_11_16_32_427cable-record.e3c
+    AVIframes 1
+    AVImode 0
+    HWTriggeredCapture 1
+    CaptureWithVIC2 1
+    DualSnap 0
+    ImageMem2 1
+    ImageAdjust 0
+    ImageRefresh 1
+    SourceImageMode 0
+    SourceVIC 0
+    LoadOption 1
+    LoadImageIndex 0
+    LoadDirectory ./
+    RawDataConversionActive 0
+    RawDataType 1
+    PixelDataSize 2
+    ByteOrder 0
+    NumberOfChannels 1
+    ChannelOrder 0
+    DataRangeLow 0,0
+    DataRangeHigh 65535,0
+    UseDisplayValues 1
+    DisplayRangeLow 0,0
+    DisplayRangeHigh 65535,0
+    DeleteFile 0
+    FileNameToGlobalString 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 493819
+    END_CKPICKUP_TYPE_WRITE 
+    NoRestartOfCyclicLoad 0
+    SaveAsynchronous 0
+    FilenameType 0
+    TeachInCounter 0
+  END_KEY 49
+  KEY 50
+    ClassVersion 12
+    CKGENERAL 
+      ClassVersion 3
+      Position 59
       CommandType 1
       CommandName Gen2 16x8
       Enabled 0
@@ -4060,14 +4158,14 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 49
-  KEY 50
+  END_KEY 50
+  KEY 51
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 59
+      Position 60
       CommandType 1
-      CommandName Gen2 16x8
+      CommandName CalibMaster
       Enabled 0
       Hidden 0
       GraficMode 2
@@ -4121,105 +4219,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_11_31_00_502cable-record.e3c
-    AVIframes 1
-    AVImode 0
-    HWTriggeredCapture 1
-    CaptureWithVIC2 1
-    DualSnap 0
-    ImageMem2 1
-    ImageAdjust 0
-    ImageRefresh 0
-    SourceImageMode 0
-    SourceVIC 0
-    LoadOption 1
-    LoadImageIndex 0
-    LoadDirectory ./
-    RawDataConversionActive 0
-    RawDataType 1
-    PixelDataSize 2
-    ByteOrder 0
-    NumberOfChannels 1
-    ChannelOrder 0
-    DataRangeLow 0,0
-    DataRangeHigh 65535,0
-    UseDisplayValues 1
-    DisplayRangeLow 0,0
-    DisplayRangeHigh 65535,0
-    DeleteFile 0
-    FileNameToGlobalString 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 290039
-    END_CKPICKUP_TYPE_WRITE 
-    NoRestartOfCyclicLoad 0
-    SaveAsynchronous 0
-    FilenameType 0
-    TeachInCounter 0
-  END_KEY 50
-  KEY 51
-    ClassVersion 12
-    CKGENERAL 
-      ClassVersion 3
-      Position 60
-      CommandType 1
-      CommandName CalibMaster
-      Enabled 3
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Capture image
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    CaptureWithVIC 0
-    CaptureType 2
-    SaveType 0
-    OnlyOnActivate 0
-    SaveWithGrafic 0
-    TriggeredCapture 0
-    ApplyTimeout 0
-    CaptureWithFlash 0
-    NumberOfCyclicFiles 10
-    CurrentCycleNumber 0
-    TriggerTimeout 0
-    TriggerInputLine 0
-    MinimumSignalDuration 0
-    FileName ./2022_02_08_15_28_29_910cable-record.e3c
+    FileName ./2022_02_14_16_17_20_727cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -4376,7 +4376,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_09_00_13_08_207cable-record.e3c
+    FileName ./2022_02_14_18_47_32_514cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -4640,7 +4640,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~Dim s As String~  ~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~~
+    Program Dim i As Long~Dim s As String~~For i=0 To 47~    ~    SetSendString(GetSendString() + "00000000")~    ~Next~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -5159,71 +5159,10 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 64
   KEY 65
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 77
-      CommandType 1040
-      CommandName Disable Based on Message
-      Enabled 1
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Script interpreter
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'New_Dataset'~'Read result and value from Pickuplist~Dim dNew_Dataset As Double~Dim lNew_Dataset As Long~Dim lNew_DatasetUpdateMode As Long~Dim sNew_DatasetName As String~lResult = CKTRANSGetResultFromPickupList(1000035 , lNew_Dataset, dNew_Dataset, sNew_DatasetName, lNew_DatasetUpdateMode)~~If dNew_Dataset = 0 Then~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Jump to CableOuterDiamScale Calculation.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~Else~Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Jump to CableOuterDiamScale Calculationn.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~End If
-    EncodedBinary 
-    ExternProgramFileName 
-    UseExternProgram 0
-    NumberOfAdditionalLinesProgram 0
-    NumberOfAdditionalLinesBinary 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 784813
-    END_CKPICKUP_TYPE_WRITE 
-    TeachInCounter 0
-  END_KEY 65
-  KEY 66
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 79
+      Position 78
       CommandType 1004
       CommandName CABLE PREPROCESS
       Enabled 1
@@ -5239,12 +5178,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 66
-  KEY 67
+  END_KEY 65
+  KEY 66
     ClassVersion 3
     CKGENERAL 
       ClassVersion 3
-      Position 80
+      Position 79
       CommandType 19980121
       CommandName 3D Cut Filter-Chnage1-enlargeBox
       Enabled 1
@@ -5345,12 +5284,12 @@ START_PARM_LIST
       END_CKSOURCEVALUE 
     ShrinkOrderedToFit 1
     TeachInCounter 0
-  END_KEY 67
-  KEY 68
+  END_KEY 66
+  KEY 67
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 81
+      Position 80
       CommandType 19980123
       CommandName Remove Outliers
       Enabled 1
@@ -5416,15 +5355,15 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 68
-  KEY 69
+  END_KEY 67
+  KEY 68
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 82
+      Position 81
       CommandType 19980123
       CommandName Remove Outliers Slow
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -5487,12 +5426,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     FilterHorizontal 1
     TeachInCounter 0
-  END_KEY 69
-  KEY 70
+  END_KEY 68
+  KEY 69
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 83
+      Position 82
       CommandType 19980125
       CommandName 3D Ordered Filter
       Enabled 1
@@ -5543,12 +5482,12 @@ START_PARM_LIST
     FilterOptionBool 1
     FilterSizeMedian 5
     TeachInCounter 0
-  END_KEY 70
-  KEY 71
+  END_KEY 69
+  KEY 70
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 84
+      Position 83
       CommandType 19980127
       CommandName 3D Hole Filling Filter
       Enabled 1
@@ -5594,12 +5533,12 @@ START_PARM_LIST
     TargetIM 0
     SearchRadius 3
     TeachInCounter 0
-  END_KEY 71
-  KEY 72
+  END_KEY 70
+  KEY 71
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 86
+      Position 85
       CommandType 1000
       CommandName Jump to CableOuterDiam Calculation
       Enabled 1
@@ -5653,12 +5592,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 72
-  KEY 73
+  END_KEY 71
+  KEY 72
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 87
+      Position 86
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -5716,12 +5655,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 73
-  KEY 74
+  END_KEY 72
+  KEY 73
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 88
+      Position 87
       CommandType 1000
       CommandName Jump to CableDistance Calculation
       Enabled 1
@@ -5775,12 +5714,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 74
-  KEY 75
+  END_KEY 73
+  KEY 74
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 89
+      Position 88
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -5838,12 +5777,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 75
-  KEY 76
+  END_KEY 74
+  KEY 75
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 90
+      Position 89
       CommandType 1000
       CommandName Jump to CableDiameter Calculation
       Enabled 1
@@ -5897,12 +5836,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 76
-  KEY 77
+  END_KEY 75
+  KEY 76
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 91
+      Position 90
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -5960,12 +5899,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 77
-  KEY 78
+  END_KEY 76
+  KEY 77
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 92
+      Position 91
       CommandType 1040
       CommandName Add Outer Diameter 4 BYTES
       Enabled 1
@@ -6021,12 +5960,12 @@ START_PARM_LIST
       PickupListIndex 494419
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 78
-  KEY 79
+  END_KEY 77
+  KEY 78
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 93
+      Position 92
       CommandType 1000
       CommandName Jump to Cable Edge
       Enabled 1
@@ -6080,12 +6019,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 79
-  KEY 80
+  END_KEY 78
+  KEY 79
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 94
+      Position 93
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -6143,12 +6082,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 80
-  KEY 81
+  END_KEY 79
+  KEY 80
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 95
+      Position 94
       CommandType 124
       CommandName Text
       Enabled 1
@@ -6268,12 +6207,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 81
-  KEY 82
+  END_KEY 80
+  KEY 81
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 97
+      Position 96
       CommandType 1040
       CommandName Reset Encoder
       Enabled 1
@@ -6329,12 +6268,12 @@ START_PARM_LIST
       PickupListIndex 90103
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 82
-  KEY 83
+  END_KEY 81
+  KEY 82
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 98
+      Position 97
       CommandType 2
       CommandName Mark Config
       Enabled 0
@@ -6392,12 +6331,12 @@ START_PARM_LIST
       PickupListIndex -1
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 83
-  KEY 84
+  END_KEY 82
+  KEY 83
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 99
+      Position 98
       CommandType 1004
       CommandName SCAN 2 - BUSH
       Enabled 1
@@ -6413,12 +6352,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 84
-  KEY 85
+  END_KEY 83
+  KEY 84
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 100
+      Position 99
       CommandType 1
       CommandName Gen2 8x8
       Enabled 0
@@ -6474,7 +6413,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_08_09_40_45_806-bush-record.e3c
+    FileName ./2022_02_14_15_37_30_359-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6511,12 +6450,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 85
-  KEY 86
+  END_KEY 84
+  KEY 85
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 101
+      Position 100
       CommandType 1
       CommandName Gen2.5
       Enabled 0
@@ -6572,7 +6511,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_07_17_10_26_865-bush-record.e3c
+    FileName ./2022_02_14_17_28_16_188-bush-record-gen2.5.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6609,12 +6548,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 86
-  KEY 87
+  END_KEY 85
+  KEY 86
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 102
+      Position 101
       CommandType 1
       CommandName Gen2 16x8
       Enabled 0
@@ -6670,7 +6609,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Gen2-Different Spindles/2022_02_03_09_20_36_173-bush-record.e3c
+    FileName ./Gen2 16x8/2022_02_05_09_36_04_412-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6707,12 +6646,12 @@ START_PARM_LIST
     SaveAsynchronous 0
     FilenameType 0
     TeachInCounter 0
-  END_KEY 87
-  KEY 88
+  END_KEY 86
+  KEY 87
     ClassVersion 12
     CKGENERAL 
       ClassVersion 3
-      Position 103
+      Position 102
       CommandType 1
       CommandName CalibMaster
       Enabled 0
@@ -6768,7 +6707,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Calibration Master/2022_02_03_18_12_33_643-bush-record.e3c
+    FileName ./Calibration Master/2022_02_05_09_00_42_391-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6800,6 +6739,104 @@ START_PARM_LIST
       Name 
       PickupObjectType 5
       PickupListIndex 620829
+    END_CKPICKUP_TYPE_WRITE 
+    NoRestartOfCyclicLoad 0
+    SaveAsynchronous 0
+    FilenameType 0
+    TeachInCounter 0
+  END_KEY 87
+  KEY 88
+    ClassVersion 12
+    CKGENERAL 
+      ClassVersion 3
+      Position 103
+      CommandType 1
+      CommandName CalibMaster Paper
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Capture image
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    CaptureWithVIC 0
+    CaptureType 2
+    SaveType 0
+    OnlyOnActivate 0
+    SaveWithGrafic 0
+    TriggeredCapture 0
+    ApplyTimeout 0
+    CaptureWithFlash 0
+    NumberOfCyclicFiles 10
+    CurrentCycleNumber 0
+    TriggerTimeout 0
+    TriggerInputLine 0
+    MinimumSignalDuration 0
+    FileName ./2022_02_13_13_26_34_763-bush-record.e3c
+    AVIframes 1
+    AVImode 0
+    HWTriggeredCapture 1
+    CaptureWithVIC2 1
+    DualSnap 0
+    ImageMem2 1
+    ImageAdjust 0
+    ImageRefresh 1
+    SourceImageMode 0
+    SourceVIC 0
+    LoadOption 1
+    LoadImageIndex 0
+    LoadDirectory ./
+    RawDataConversionActive 0
+    RawDataType 1
+    PixelDataSize 2
+    ByteOrder 0
+    NumberOfChannels 1
+    ChannelOrder 0
+    DataRangeLow 0,0
+    DataRangeHigh 65535,0
+    UseDisplayValues 1
+    DisplayRangeLow 0,0
+    DisplayRangeHigh 65535,0
+    DeleteFile 0
+    FileNameToGlobalString 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 534845
     END_CKPICKUP_TYPE_WRITE 
     NoRestartOfCyclicLoad 0
     SaveAsynchronous 0
@@ -6911,7 +6948,7 @@ START_PARM_LIST
       Position 105
       CommandType 1
       CommandName CalibMaster
-      Enabled 3
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -6964,7 +7001,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_08_15_28_29_910-bush-record.e3c
+    FileName ./2022_02_14_17_07_19_082-bush-record-calib.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -7121,7 +7158,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_09_00_13_08_207-bush-record.e3c
+    FileName ./2022_02_14_18_47_32_514-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -8047,10 +8084,71 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 106
   KEY 107
-    ClassVersion 1
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 126
+      CommandType 1040
+      CommandName CRIMP_RING_NOT_AVAILABLE
+      Enabled 1
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim s As String~~'----------DISTANCE----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------BOOL----------~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------AVG----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------DIAMETER----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------BOOL----------~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------AVG----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------Outer----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~~
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 0
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 970438
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 107
+  KEY 108
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 127
       CommandType 1004
       CommandName BUSH
       Enabled 1
@@ -8066,12 +8164,12 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 107
-  KEY 108
+  END_KEY 108
+  KEY 109
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 127
+      Position 128
       CommandType 1000
       CommandName Jump to BushDistance Calculation
       Enabled 1
@@ -8125,12 +8223,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 108
-  KEY 109
+  END_KEY 109
+  KEY 110
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 128
+      Position 129
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -8188,12 +8286,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 109
-  KEY 110
+  END_KEY 110
+  KEY 111
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 129
+      Position 130
       CommandType 1000
       CommandName Jump to BushDiameter Calculation
       Enabled 1
@@ -8247,12 +8345,12 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 110
-  KEY 111
+  END_KEY 111
+  KEY 112
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 130
+      Position 131
       CommandType 2
       CommandName Delete Graphics
       Enabled 1
@@ -8310,12 +8408,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 111
-  KEY 112
+  END_KEY 112
+  KEY 113
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 131
+      Position 132
       CommandType 1040
       CommandName Add Outer Diameter 4 BYTES
       Enabled 1
@@ -8368,15 +8466,15 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 551799
+      PickupListIndex 898153
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 112
-  KEY 113
+  END_KEY 113
+  KEY 114
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 132
+      Position 133
       CommandType 124
       CommandName Text
       Enabled 1
@@ -8429,7 +8527,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 1
-      PickupListIndex 62510
+      PickupListIndex 757631
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -8468,7 +8566,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 400528
+      PickupListIndex 132921
     END_CKPICKUP_TYPE_WRITE 
     ResultDisplay Result display.LE1
     FloatingPointMode 0
@@ -8496,8 +8594,8 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 113
-  KEY 114
+  END_KEY 114
+  KEY 115
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
@@ -8517,15 +8615,15 @@ START_PARM_LIST
     END_CKGENERAL 
     OldCMDType 0
     TeachInCounter 0
-  END_KEY 114
-  KEY 115
+  END_KEY 115
+  KEY 116
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 135
       CommandType 1000
       CommandName Jump to CrimpRingDistance Calculation
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -8576,8 +8674,8 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 115
-  KEY 116
+  END_KEY 116
+  KEY 117
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
@@ -8639,15 +8737,15 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 116
-  KEY 117
+  END_KEY 117
+  KEY 118
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 137
       CommandType 1000
       CommandName Jump to CrimpRingDiameter Calculation
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -8698,8 +8796,8 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_READ 
     CloseProgramOnTermination 0
     TeachInCounter 0
-  END_KEY 117
-  KEY 118
+  END_KEY 118
+  KEY 119
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
@@ -8761,15 +8859,15 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 118
-  KEY 119
+  END_KEY 119
+  KEY 120
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 139
       CommandType 1040
       CommandName Add RingOuter Diameter 4 BYTES
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -8819,68 +8917,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 93333
-    END_CKPICKUP_TYPE_WRITE 
-    TeachInCounter 0
-  END_KEY 119
-  KEY 120
-    ClassVersion 4
-    CKGENERAL 
-      ClassVersion 3
-      Position 140
-      CommandType 1040
-      CommandName CRIMP_RING_NOT_AVAILABLE
-      Enabled 0
-      Hidden 0
-      GraficMode 2
-      TextMode 2
-      ImageMemory 0
-      InvertResult 0
-      Memo 
-      IgnoreResult 0
-      OverlayImageMemory 1
-      DisplayOverlayInDifferentIM 0
-    END_CKGENERAL 
-    CKRESULT 
-      ClassVersion 1
-      Name Script interpreter
-      EnterResultToRTDisplay 0
-      RTDisplayIndex 0
-      RTWidthOfToleranceRegion 80
-      CKEVALUATION 
-        ClassVersion 3
-        GlobalToleranceIndex -1
-        UseWarningTolerances 0
-        NominalValue 0,0
-        PlusTolerance 10000,0
-        MinusTolerance 0,0
-        WarnPlusTolerance 0,0
-        WarnMinusTolerance 0,0
-        DynamicEvaluation 0
-        FileName ./
-        Section 
-        CorrectionActive 0
-        CorrectionType 0
-        EnableAutoTeachIn 1
-        NumberOfUsedCorrections 0
-      END_CKEVALUATION 
-      CKSTATISTIC 
-        ClassVersion 1
-        EnterToStatistic 0
-        Index -1
-      END_CKSTATISTIC 
-    END_CKRESULT 
-    Program Dim s As String~~'----------DISTANCE----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------BOOL----------~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------AVG----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------DIAMETER----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------BOOL----------~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------AVG----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~HSConvUnsignedNumberToHexString(0, 1, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~'----------Outer----------~HSConvUnsignedNumberToHexString(0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)~~~
-    EncodedBinary 
-    ExternProgramFileName 
-    UseExternProgram 0
-    NumberOfAdditionalLinesProgram 0
-    NumberOfAdditionalLinesBinary 0
-    CKPICKUP_TYPE_WRITE 
-      ClassVersion 1
-      Name 
-      PickupObjectType 5
-      PickupListIndex 903127
+      PickupListIndex 91432
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
   END_KEY 120
@@ -8888,7 +8925,7 @@ START_PARM_LIST
     ClassVersion 7
     CKGENERAL 
       ClassVersion 3
-      Position 141
+      Position 140
       CommandType 124
       CommandName Text
       Enabled 1
@@ -8941,7 +8978,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 1
-      PickupListIndex 81703
+      PickupListIndex 916015
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -8980,7 +9017,7 @@ START_PARM_LIST
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 361510
+      PickupListIndex 146688
     END_CKPICKUP_TYPE_WRITE 
     ResultDisplay Result display.LE1
     FloatingPointMode 0
@@ -9013,7 +9050,7 @@ START_PARM_LIST
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 145
+      Position 143
       CommandType 1000
       CommandName Jump to Bush Edge
       Enabled 1
@@ -9072,7 +9109,7 @@ START_PARM_LIST
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 147
+      Position 145
       CommandType 1040
       CommandName Add Depth 48*4 BYTES
       Enabled 1
@@ -9115,7 +9152,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableDepth16'~'Read Text and value from Pickuplist~Dim scableDepth16 As String~Dim lcableDepth16 As Long~Dim lcableDepth16UpdateMode As Long~Dim scableDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(560538 , lcableDepth16, scableDepth16, scableDepth16Name, lcableDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bushDepth16'~'Read Text and value from Pickuplist~Dim sbushDepth16 As String~Dim lbushDepth16 As Long~Dim lbushDepth16UpdateMode As Long~Dim sbushDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(937436 , lbushDepth16, sbushDepth16, sbushDepth16Name, lbushDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Read Text and value from Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(794586 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'With_crimp_ring'~'Read result and value from Pickuplist~Dim dWith_crimp_ring As Double~Dim lWith_crimp_ring As Long~Dim lWith_crimp_ringUpdateMode As Long~Dim sWith_crimp_ringName As String~lResult = CKTRANSGetResultFromPickupList(1000034 , lWith_crimp_ring, dWith_crimp_ring, sWith_crimp_ringName, lWith_crimp_ringUpdateMode)~~Dim s As String~~If dWith_crimp_ring = 1 Then~    SetSendString(GetSendString() + scableDepth16)    ~    SetSendString(GetSendString() + sbushDepth16)~    SetSendString(GetSendString() + sringDepth16)~Else~    SetSendString(GetSendString() + scableDepth16)~    SetSendString(GetSendString() + sbushDepth16)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~    HSConvUnsignedNumberToHexString(0, 4, s)~    HSConvSwapByteOrder(s)~    SetSendString(GetSendString() + s)~End If~
+    Program Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableDepth16'~'Read Text and value from Pickuplist~Dim scableDepth16 As String~Dim lcableDepth16 As Long~Dim lcableDepth16UpdateMode As Long~Dim scableDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(914837 , lcableDepth16, scableDepth16, scableDepth16Name, lcableDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bushDepth16'~'Read Text and value from Pickuplist~Dim sbushDepth16 As String~Dim lbushDepth16 As Long~Dim lbushDepth16UpdateMode As Long~Dim sbushDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(137211 , lbushDepth16, sbushDepth16, sbushDepth16Name, lbushDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Read Text and value from Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~lResult = CKTRANSGetStringFromPickupList(241557 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'With_crimp_ring'~'Read result and value from Pickuplist~Dim dWith_crimp_ring As Double~Dim lWith_crimp_ring As Long~Dim lWith_crimp_ringUpdateMode As Long~Dim sWith_crimp_ringName As String~lResult = CKTRANSGetResultFromPickupList(1000034 , lWith_crimp_ring, dWith_crimp_ring, sWith_crimp_ringName, lWith_crimp_ringUpdateMode)~~Dim s As String~~If dWith_crimp_ring = 1 Then~    LogEntry("All Three")~    SetSendString(GetSendString() + scableDepth16)~    SetSendString(GetSendString() + sringDepth16)    ~    SetSendString(GetSendString() + sbushDepth16)   ~Else~    SetSendString(GetSendString() + scableDepth16)~    SetSendString(GetSendString() + sbushDepth16)~    LogEntry("No Crimp")~    Dim i As Long~    Dim s As String~~    For i=0 To 15~	~	SetSendString(GetSendString() + "00000000")~	~    Next~~End If~~Dim all As String~'Get Signal Into Variable~all = GetSendString()~LogEntry(all)~LogEntry(Len(all))~~~LogEntry("----------------------")~If Len(all) = 1208 Then~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Send Results Signal.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Reset Global.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Empty Result.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Wait Key.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~Else~    Dim sError As String~    Dim lValue As Long: lValue = 0~    If CKI_SetParameterLong("Send Results Signal.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Reset Global.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Empty Result.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~    Dim sError As String~    Dim lValue As Long: lValue = 1~    If CKI_SetParameterLong("Wait Key.General.Enabled", lValue,sError) <> 1 Then~      Print (sError)~    End If~End If~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'cableDepth16'~'Write string to Pickuplist~Dim scableDepth16 As String~Dim lcableDepth16 As Long~Dim lcableDepth16UpdateMode As Long~Dim scableDepth16Name As String~scableDepth16 = ""~lcableDepth16 = 0 'Default Result~lcableDepth16UpdateMode = 14 'Default UpdateMode~scableDepth16Name = "cableDepth16"~lResult = CKTRANSEnterStringToPickupList(914837 , lcableDepth16, scableDepth16, scableDepth16Name, lcableDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'bushDepth16'~'Write string to Pickuplist~Dim sbushDepth16 As String~Dim lbushDepth16 As Long~Dim lbushDepth16UpdateMode As Long~Dim sbushDepth16Name As String~sbushDepth16 = ""~lbushDepth16 = 0 'Default Result~lbushDepth16UpdateMode = 14 'Default UpdateMode~sbushDepth16Name = "bushDepth16"~lResult = CKTRANSEnterStringToPickupList(137211 , lbushDepth16, sbushDepth16, sbushDepth16Name, lbushDepth16UpdateMode)~~Dim lResult As Long 'Only needed once ~ ~'Accessing pickuplist element 'ringDepth16'~'Write string to Pickuplist~Dim sringDepth16 As String~Dim lringDepth16 As Long~Dim lringDepth16UpdateMode As Long~Dim sringDepth16Name As String~sringDepth16 = ""~lringDepth16 = 0 'Default Result~lringDepth16UpdateMode = 14 'Default UpdateMode~sringDepth16Name = "ringDepth16"~lResult = CKTRANSEnterStringToPickupList(241557 , lringDepth16, sringDepth16, sringDepth16Name, lringDepth16UpdateMode)~
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
@@ -9133,7 +9170,7 @@ START_PARM_LIST
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 149
+      Position 147
       CommandType 1004
       CommandName ----------------------------------------------------
       Enabled 1
@@ -9154,7 +9191,7 @@ START_PARM_LIST
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 150
+      Position 148
       CommandType 1004
       CommandName COM STEP3: PC -> PLC
       Enabled 1
@@ -9175,7 +9212,7 @@ START_PARM_LIST
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 151
+      Position 149
       CommandType 246
       CommandName Send Results Signal
       Enabled 1
@@ -9289,10 +9326,246 @@ START_PARM_LIST
     TeachInCounter 0
   END_KEY 126
   KEY 127
-    ClassVersion 7
+    ClassVersion 1
+    CKGENERAL 
+      ClassVersion 3
+      Position 150
+      CommandType 114
+      CommandName Wait Key
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Stop watch
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DeterminationType 2
+    ActTime 5000
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 430729
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 127
+  KEY 128
+    ClassVersion 17
+    CKGENERAL 
+      ClassVersion 3
+      Position 151
+      CommandType 246
+      CommandName Reset Global
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo Could not load command ( file format error). Command must be reconfigured.
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Global string
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    DetType 1
+    UseText 0
+    UseDate 0
+    UseWert 0
+    UsePoint 0
+    VariablesIndex 0
+    PointIndex 0
+    SeparationIndex 8
+    SendType 5
+    TextToDisplay 
+    Filename ./string.txt
+    AddIntegerOnly 0
+    SeperatorAtStartOfString 0
+    PortNumber 0
+    WithQuotes 1
+    IPAddress 127.0.0.1
+    NetPort 1214
+    FloatingPointPrecision 2
+    FloatingPointMode 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 1
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    SourceModeVal 2
+    SourceModePoint 2
+    ReceiveType 1
+    SocketType 1
+    EndChar <NONE>
+    Timeout 1000
+    TextVarDir 0
+    TextVarEnterMode 2
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    FilenameSource 0
+    CKPICKUP_TYPE_READ 
+      ClassVersion 1
+      Name 
+      PickupObjectType 6
+      PickupListIndex -1
+    END_CKPICKUP_TYPE_READ 
+    StringFormat String
+    Separator ;
+    TrimSeparator 1
+    ParserOutput 3
+    NoPickupEntriesString 0
+    NoPickupEntriesValue 0
+    CloseAfterCommunication 0
+    DataFormat 1
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 220715
+    END_CKPICKUP_TYPE_WRITE 
+    FileAccessMode 1
+    ClearStringBefore 0
+    TeachInCounter 0
+  END_KEY 128
+  KEY 129
+    ClassVersion 4
     CKGENERAL 
       ClassVersion 3
       Position 152
+      CommandType 1040
+      CommandName Empty Result
+      Enabled 0
+      Hidden 0
+      GraficMode 2
+      TextMode 2
+      ImageMemory 0
+      InvertResult 0
+      Memo 
+      IgnoreResult 0
+      OverlayImageMemory 1
+      DisplayOverlayInDifferentIM 0
+    END_CKGENERAL 
+    CKRESULT 
+      ClassVersion 1
+      Name Script interpreter
+      EnterResultToRTDisplay 0
+      RTDisplayIndex 0
+      RTWidthOfToleranceRegion 80
+      CKEVALUATION 
+        ClassVersion 3
+        GlobalToleranceIndex -1
+        UseWarningTolerances 0
+        NominalValue 0,0
+        PlusTolerance 10000,0
+        MinusTolerance 0,0
+        WarnPlusTolerance 0,0
+        WarnMinusTolerance 0,0
+        DynamicEvaluation 0
+        FileName ./
+        Section 
+        CorrectionActive 0
+        CorrectionType 0
+        EnableAutoTeachIn 1
+        NumberOfUsedCorrections 0
+      END_CKEVALUATION 
+      CKSTATISTIC 
+        ClassVersion 1
+        EnterToStatistic 0
+        Index -1
+      END_CKSTATISTIC 
+    END_CKRESULT 
+    Program Dim s As String~~Dim Finish_Measurement_Cable_module 	As Double	: Finish_Measurement_Cable_module = 0		: HSConvUnsignedNumberToHexString(Finish_Measurement_Cable_module, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim Finish_Measurement_Bush_bearing 	As Double 	: Finish_Measurement_Bush_bearing = 1		: HSConvUnsignedNumberToHexString(Finish_Measurement_Bush_bearing, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ACK_Start_Measurement_Cable_module 	As Double 	: ACK_Start_Measurement_Cable_module = 0	: HSConvUnsignedNumberToHexString(ACK_Start_Measurement_Cable_module, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ACK_Start_Measurement_Bush_bearing  As Double 	: ACK_Start_Measurement_Bush_bearing = 0	: HSConvUnsignedNumberToHexString(ACK_Start_Measurement_Bush_bearing, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ACK_Cancel As Double				: ACK_Cancel = 1				: HSConvUnsignedNumberToHexString(ACK_Cancel, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ACK_New_Dataset As Double				: ACK_New_Dataset = 0				: HSConvUnsignedNumberToHexString(ACK_New_Dataset, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~~Dim cable_Dist_1 As Double				: cable_Dist_1 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_1, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)				~Dim cable_Dist_2 As Double                              : cable_Dist_2 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_2, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_3 As Double                              : cable_Dist_3 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_3, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_4 As Double                              : cable_Dist_4 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_4, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_5 As Double                              : cable_Dist_5 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_5, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_6 As Double                              : cable_Dist_6 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_6, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_7 As Double                              : cable_Dist_7 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_7, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_8 As Double                              : cable_Dist_8 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_8, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_9 As Double                              : cable_Dist_9 	= 0		: HSConvUnsignedNumberToHexString(cable_Dist_9, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_10 As Double                             : cable_Dist_10 = 0		: HSConvUnsignedNumberToHexString(cable_Dist_10, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_11 As Double                             : cable_Dist_11 = 0		: HSConvUnsignedNumberToHexString(cable_Dist_11, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_12 As Double                             : cable_Dist_12 = 0		: HSConvUnsignedNumberToHexString(cable_Dist_12, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_13 As Double                             : cable_Dist_13 = 0		: HSConvUnsignedNumberToHexString(cable_Dist_13, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_14 As Double                             : cable_Dist_14 = 0		: HSConvUnsignedNumberToHexString(cable_Dist_14, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_15 As Double                             : cable_Dist_15 = 0		: HSConvUnsignedNumberToHexString(cable_Dist_15, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_16 As Double                             : cable_Dist_16 = 0		: HSConvUnsignedNumberToHexString(cable_Dist_16, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_1 As Double				: cable_bool_Dist_1 = 0		: HSConvUnsignedNumberToHexString(cable_bool_Dist_1, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_2 As Double                         : cable_bool_Dist_2 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_2, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_3 As Double                         : cable_bool_Dist_3 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_3, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_4 As Double                         : cable_bool_Dist_4 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_4, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_5 As Double                         : cable_bool_Dist_5 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_5, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_6 As Double                         : cable_bool_Dist_6 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_6, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_7 As Double                         : cable_bool_Dist_7 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_7, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_8 As Double                         : cable_bool_Dist_8 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_8, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_9 As Double                         : cable_bool_Dist_9 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Dist_9, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_10 As Double			: cable_bool_Dist_10 = 0        : HSConvUnsignedNumberToHexString(cable_bool_Dist_10, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_11 As Double                        : cable_bool_Dist_11 = 0        : HSConvUnsignedNumberToHexString(cable_bool_Dist_11, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_12 As Double                        : cable_bool_Dist_12 = 0        : HSConvUnsignedNumberToHexString(cable_bool_Dist_12, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_13 As Double                        : cable_bool_Dist_13 = 0        : HSConvUnsignedNumberToHexString(cable_bool_Dist_13, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_14 As Double                        : cable_bool_Dist_14 = 0        : HSConvUnsignedNumberToHexString(cable_bool_Dist_14, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_15 As Double                        : cable_bool_Dist_15 = 0        : HSConvUnsignedNumberToHexString(cable_bool_Dist_15, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Dist_16 As Double                        : cable_bool_Dist_16 = 0        : HSConvUnsignedNumberToHexString(cable_bool_Dist_16, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_Average As Double                        : cable_Dist_Average = 0	: HSConvUnsignedNumberToHexString(cable_Dist_Average, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Dist_Average_OK_NOK As Double			: cable_Dist_Average_OK_NOK = 0 : HSConvUnsignedNumberToHexString(cable_Dist_Average_OK_NOK, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_1 As Double				: cable_Diam_1 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_1, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_2 As Double                              : cable_Diam_2 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_2, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_3 As Double                              : cable_Diam_3 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_3, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_4 As Double                              : cable_Diam_4 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_4, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_5 As Double                              : cable_Diam_5 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_5, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_6 As Double                              : cable_Diam_6 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_6, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_7 As Double                              : cable_Diam_7 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_7, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_8 As Double                              : cable_Diam_8 = 0              : HSConvUnsignedNumberToHexString(cable_Diam_8, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_1 As Double				: cable_bool_Diam_1 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Diam_1, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_2 As Double                         : cable_bool_Diam_2 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Diam_2, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_3 As Double                         : cable_bool_Diam_3 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Diam_3, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_4 As Double                         : cable_bool_Diam_4 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Diam_4, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_5 As Double                         : cable_bool_Diam_5 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Diam_5, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_6 As Double                         : cable_bool_Diam_6 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Diam_6, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_7 As Double                         : cable_bool_Diam_7 = 0		: HSConvUnsignedNumberToHexString(cable_bool_Diam_7, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_bool_Diam_8 As Double                         : cable_bool_Diam_8 = 0         : HSConvUnsignedNumberToHexString(cable_bool_Diam_8, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_Average As Double                        : cable_Diam_Average = 0        : HSConvUnsignedNumberToHexString(cable_Diam_Average, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Diam_Average_OK_NOK As Double                 : cable_Diam_Average_OK_NOK = 0 : HSConvUnsignedNumberToHexString(cable_Diam_Average_OK_NOK , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim cable_Outer_Diam As Double				: cable_Outer_Diam = 0          : HSConvUnsignedNumberToHexString(cable_Outer_Diam, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~                                                                                        ~Dim bush_Dist_1 As Double                               : bush_Dist_1 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_1 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_2 As Double                               : bush_Dist_2 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_2 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_3 As Double                               : bush_Dist_3 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_3 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_4 As Double                               : bush_Dist_4 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_4 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_5 As Double                               : bush_Dist_5 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_5 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_6 As Double                               : bush_Dist_6 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_6 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_7 As Double                               : bush_Dist_7 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_7 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_8 As Double                               : bush_Dist_8 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_8 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_9 As Double                               : bush_Dist_9 	= 0             : HSConvUnsignedNumberToHexString(bush_Dist_9 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_10 As Double                              : bush_Dist_10 = 0              : HSConvUnsignedNumberToHexString(bush_Dist_10, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_11 As Double                              : bush_Dist_11 = 0              : HSConvUnsignedNumberToHexString(bush_Dist_11, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_12 As Double                              : bush_Dist_12 = 0              : HSConvUnsignedNumberToHexString(bush_Dist_12, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_13 As Double                              : bush_Dist_13 = 0              : HSConvUnsignedNumberToHexString(bush_Dist_13, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_14 As Double                              : bush_Dist_14 = 0              : HSConvUnsignedNumberToHexString(bush_Dist_14, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_15 As Double                              : bush_Dist_15 = 0              : HSConvUnsignedNumberToHexString(bush_Dist_15, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_16 As Double                              : bush_Dist_16 = 0              : HSConvUnsignedNumberToHexString(bush_Dist_16, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_1 As Double                          : bush_bool_Dist_1 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_1 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_2 As Double                          : bush_bool_Dist_2 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_2 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_3 As Double                          : bush_bool_Dist_3 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_3 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_4 As Double                          : bush_bool_Dist_4 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_4 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_5 As Double                          : bush_bool_Dist_5 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_5 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_6 As Double                          : bush_bool_Dist_6 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_6 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_7 As Double                          : bush_bool_Dist_7 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_7 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_8 As Double                          : bush_bool_Dist_8 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_8 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_9 As Double                          : bush_bool_Dist_9 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Dist_9 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_10 As Double                         : bush_bool_Dist_10 = 0         : HSConvUnsignedNumberToHexString(bush_bool_Dist_10, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_11 As Double                         : bush_bool_Dist_11 = 0         : HSConvUnsignedNumberToHexString(bush_bool_Dist_11, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_12 As Double                         : bush_bool_Dist_12 = 0         : HSConvUnsignedNumberToHexString(bush_bool_Dist_12, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_13 As Double                         : bush_bool_Dist_13 = 0         : HSConvUnsignedNumberToHexString(bush_bool_Dist_13, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_14 As Double                         : bush_bool_Dist_14 = 0         : HSConvUnsignedNumberToHexString(bush_bool_Dist_14, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_15 As Double                         : bush_bool_Dist_15 = 0         : HSConvUnsignedNumberToHexString(bush_bool_Dist_15, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Dist_16 As Double                         : bush_bool_Dist_16 = 0         : HSConvUnsignedNumberToHexString(bush_bool_Dist_16, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_Average As Double                         : bush_Dist_Average = 0         : HSConvUnsignedNumberToHexString(bush_Dist_Average, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Dist_Average_OK_NOK As Double                  : bush_Dist_Average_OK_NOK = 0  : HSConvUnsignedNumberToHexString(bush_Dist_Average_OK_NOK, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_1 As Double                               : bush_Diam_1 = 0               : HSConvUnsignedNumberToHexString(bush_Diam_1, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_2 As Double                               : bush_Diam_2 = 0               : HSConvUnsignedNumberToHexString(bush_Diam_2, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_3 As Double                               : bush_Diam_3 = 0               : HSConvUnsignedNumberToHexString(bush_Diam_3, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_4 As Double                               : bush_Diam_4 = 0               : HSConvUnsignedNumberToHexString(bush_Diam_4, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_5 As Double                               : bush_Diam_5=
+    EncodedBinary 
+    ExternProgramFileName 
+    UseExternProgram 0
+    NumberOfAdditionalLinesProgram 1
+    Program1 0               : HSConvUnsignedNumberToHexString(bush_Diam_5, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_6 As Double                               : bush_Diam_6 = 0               : HSConvUnsignedNumberToHexString(bush_Diam_6, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_7 As Double                               : bush_Diam_7 = 0               : HSConvUnsignedNumberToHexString(bush_Diam_7, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_8 As Double                               : bush_Diam_8 = 0               : HSConvUnsignedNumberToHexString(bush_Diam_8, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_1 As Double                          : bush_bool_Diam_1 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_1, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_2 As Double                          : bush_bool_Diam_2 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_2, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_3 As Double                          : bush_bool_Diam_3 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_3, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_4 As Double                          : bush_bool_Diam_4 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_4, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_5 As Double                          : bush_bool_Diam_5 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_5, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_6 As Double                          : bush_bool_Diam_6 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_6, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_7 As Double                          : bush_bool_Diam_7 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_7, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_bool_Diam_8 As Double                          : bush_bool_Diam_8 = 0          : HSConvUnsignedNumberToHexString(bush_bool_Diam_8, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_Average As Double                         : bush_Diam_Average = 0         : HSConvUnsignedNumberToHexString(bush_Diam_Average, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Diam_Average_OK_NOK As Double                  : bush_Diam_Average_OK_NOK = 0  : HSConvUnsignedNumberToHexString(bush_Diam_Average_OK_NOK, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim bush_Outer_Diam As Double    			: bush_Outer_Diam = 0           : HSConvUnsignedNumberToHexString(bush_Outer_Diam, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~~Dim ring_Dist_1 As Double				: ring_Dist_1 	= 0		: HSConvUnsignedNumberToHexString(ring_Dist_1 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_2 As Double                               : ring_Dist_2 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_2 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_3 As Double                               : ring_Dist_3 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_3 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_4 As Double                               : ring_Dist_4 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_4 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_5 As Double                               : ring_Dist_5 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_5 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_6 As Double                               : ring_Dist_6 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_6 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_7 As Double                               : ring_Dist_7 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_7 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_8 As Double                               : ring_Dist_8 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_8 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_9 As Double                               : ring_Dist_9 	= 0             : HSConvUnsignedNumberToHexString(ring_Dist_9 , 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_10 As Double                              : ring_Dist_10 = 0              : HSConvUnsignedNumberToHexString(ring_Dist_10, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_11 As Double                              : ring_Dist_11 = 0              : HSConvUnsignedNumberToHexString(ring_Dist_11, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_12 As Double                              : ring_Dist_12 = 0              : HSConvUnsignedNumberToHexString(ring_Dist_12, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_13 As Double                              : ring_Dist_13 = 0              : HSConvUnsignedNumberToHexString(ring_Dist_13, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_14 As Double                              : ring_Dist_14 = 0              : HSConvUnsignedNumberToHexString(ring_Dist_14, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_15 As Double                              : ring_Dist_15 = 0              : HSConvUnsignedNumberToHexString(ring_Dist_15, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_16 As Double                              : ring_Dist_16 = 0              : HSConvUnsignedNumberToHexString(ring_Dist_16, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_1 As Double                          : ring_bool_Dist_1 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_1 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_2 As Double                          : ring_bool_Dist_2 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_2 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_3 As Double                          : ring_bool_Dist_3 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_3 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_4 As Double                          : ring_bool_Dist_4 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_4 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_5 As Double                          : ring_bool_Dist_5 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_5 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_6 As Double                          : ring_bool_Dist_6 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_6 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_7 As Double                          : ring_bool_Dist_7 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_7 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_8 As Double                          : ring_bool_Dist_8 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_8 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_9 As Double                          : ring_bool_Dist_9 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Dist_9 , 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_10 As Double                         : ring_bool_Dist_10 = 0         : HSConvUnsignedNumberToHexString(ring_bool_Dist_10, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_11 As Double                         : ring_bool_Dist_11 = 0         : HSConvUnsignedNumberToHexString(ring_bool_Dist_11, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_12 As Double                         : ring_bool_Dist_12 = 0         : HSConvUnsignedNumberToHexString(ring_bool_Dist_12, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_13 As Double                         : ring_bool_Dist_13 = 0         : HSConvUnsignedNumberToHexString(ring_bool_Dist_13, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_14 As Double                         : ring_bool_Dist_14 = 0         : HSConvUnsignedNumberToHexString(ring_bool_Dist_14, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_15 As Double                         : ring_bool_Dist_15 = 0         : HSConvUnsignedNumberToHexString(ring_bool_Dist_15, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Dist_16 As Double                         : ring_bool_Dist_16 = 0         : HSConvUnsignedNumberToHexString(ring_bool_Dist_16, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_Average As Double                         : ring_Dist_Average = 0         : HSConvUnsignedNumberToHexString(ring_Dist_Average, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Dist_Average_OK_NOK As Double                  : ring_Dist_Average_OK_NOK = 0  : HSConvUnsignedNumberToHexString(ring_Dist_Average_OK_NOK, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_1 As Double                               : ring_Diam_1 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_1, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_2 As Double                               : ring_Diam_2 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_2, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_3 As Double                               : ring_Diam_3 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_3, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_4 As Double                               : ring_Diam_4 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_4, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_5 As Double                               : ring_Diam_5 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_5, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_6 As Double                               : ring_Diam_6 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_6, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_7 As Double                               : ring_Diam_7 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_7, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_8 As Double                               : ring_Diam_8 = 0               : HSConvUnsignedNumberToHexString(ring_Diam_8, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_1 As Double                          : ring_bool_Diam_1 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_1, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_2 As Double                          : ring_bool_Diam_2 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_2, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_3 As Double                          : ring_bool_Diam_3 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_3, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_4 As Double                          : ring_bool_Diam_4 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_4, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_5 As Double                          : ring_bool_Diam_5 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_5, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_6 As Double                          : ring_bool_Diam_6 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_6, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_7 As Double                          : ring_bool_Diam_7 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_7, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_bool_Diam_8 As Double                          : ring_bool_Diam_8 = 0          : HSConvUnsignedNumberToHexString(ring_bool_Diam_8, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_Average As Double                         : ring_Diam_Average = 0         : HSConvUnsignedNumberToHexString(ring_Diam_Average, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Diam_Average_OK_NOK As Double                  : ring_Diam_Average_OK_NOK = 0  : HSConvUnsignedNumberToHexString(ring_Diam_Average_OK_NOK, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim ring_Outer_Diam As Double 				: ring_Outer_Diam = 0           : HSConvUnsignedNumberToHexString(ring_Outer_Diam, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~Dim aPlusb As Double                   			: aPlusb = 0  			: HSConvUnsignedNumberToHexString(aPlusb, 4, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~    ~'Dim Measured_Length_Spindle_OK_NOK As Double 		: Measured_Length_Spindle_OK_NOK = 0            : HSConvUnsignedNumberToHexString(Measured_Length_Spindle_OK_NOK, 1, s) : HSConvSwapByteOrder(s) : SetSendString(GetSendString() + s)~~~Dim all As String~all = GetSendString()~'LogEntry(all)~~Dim i As Long~Dim s As String~~For i=0 To 47~    ~    SetSendString(GetSendString() + "00000000")~    ~Next~
+    NumberOfAdditionalLinesBinary 0
+    CKPICKUP_TYPE_WRITE 
+      ClassVersion 1
+      Name 
+      PickupObjectType 5
+      PickupListIndex 868805
+    END_CKPICKUP_TYPE_WRITE 
+    TeachInCounter 0
+  END_KEY 129
+  KEY 130
+    ClassVersion 7
+    CKGENERAL 
+      ClassVersion 3
+      Position 154
       CommandType 124
       CommandName Text
       Enabled 1
@@ -9412,12 +9685,12 @@ START_PARM_LIST
     ModuleName User
     Text2 
     TeachInCounter 0
-  END_KEY 127
-  KEY 128
+  END_KEY 130
+  KEY 131
     ClassVersion 17
     CKGENERAL 
       ClassVersion 3
-      Position 154
+      Position 156
       CommandType 246
       CommandName Reset all prev inputs
       Enabled 1
@@ -9529,12 +9802,12 @@ START_PARM_LIST
     FileAccessMode 1
     ClearStringBefore 0
     TeachInCounter 0
-  END_KEY 128
-  KEY 129
+  END_KEY 131
+  KEY 132
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 156
+      Position 158
       CommandType 2
       CommandName End of Program
       Enabled 3
@@ -9592,12 +9865,12 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 129
-  KEY 130
+  END_KEY 132
+  KEY 133
     ClassVersion 1
     CKGENERAL 
       ClassVersion 3
-      Position 157
+      Position 159
       CommandType 114
       CommandName Stop watch
       Enabled 1
@@ -9649,12 +9922,12 @@ START_PARM_LIST
       PickupListIndex 742257
     END_CKPICKUP_TYPE_WRITE 
     TeachInCounter 0
-  END_KEY 130
-  KEY 131
+  END_KEY 133
+  KEY 134
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 159
+      Position 161
       CommandType 2
       CommandName Jump to Beginning
       Enabled 2
@@ -9712,7 +9985,7 @@ START_PARM_LIST
       PickupListIndex 606664
     END_CKPICKUP_TYPE_READ 
     TeachInCounter 0
-  END_KEY 131
+  END_KEY 134
 END_PARM_LIST 
 CKPARAMETERS 
   ClassVersion 1
