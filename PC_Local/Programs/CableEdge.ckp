@@ -1,9 +1,9 @@
 EVT 
-EYEVISION_VERSION 4.00.011
-FILE_VERSION 10
+EYEVISION_VERSION 4.00.013
+FILE_VERSION 27
 CREATED 12.01.2022 14:32:20
 CREATED_BY Admin
-LAST_MODIFIED 30.01.2022 22:11:37
+LAST_MODIFIED 16.02.2022 19:16:53
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -12,7 +12,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 0
       CommandType 19980118
-      CommandName Estimate Line
+      CommandName Appraoch from the right and find reference point
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -63,12 +63,12 @@ START_PARM_LIST
         ClassVersion 2
         Name 
         Type 4
-        Value0 -35,4547576904
-        Value1 -73,3957977295
-        Value2 -4,14929
-        Value3 12,3775854111
-        Value4 70,5471801758
-        Value5 7,0159
+        Value0 -39,8378181458
+        Value1 23,599275589
+        Value2 0,0
+        Value3 38,9919013977
+        Value4 46,8864364624
+        Value5 0,0
         Value6 0,0
         Value7 0,0
         Value8 0,0
@@ -82,28 +82,28 @@ START_PARM_LIST
       END_CKSOURCEVALUE 
     ProbeDirection 4
     ProbeOnlyForeground 0
-    AutoThreshold 1
+    AutoThreshold 0
     Threshold 0,0
     UseDispersionFilter 0
     DispersionFilterStdDev 2,0
-    ConeAngle 75,0
+    ConeAngle 80,0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 389192
+      PickupListIndex 744788
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 61741
+      PickupListIndex 149220
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 391461
+      PickupListIndex 455268
     END_CKPICKUP_TYPE_WRITE 
     OutputGeometry 3
     RansacPercentage 55,0

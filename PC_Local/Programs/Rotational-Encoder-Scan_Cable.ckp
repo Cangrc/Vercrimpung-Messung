@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 506
+FILE_VERSION 546
 CREATED 03.05.2018 11:09:14
 CREATED_BY Admin
-LAST_MODIFIED 28.01.2022 14:32:14
+LAST_MODIFIED 16.02.2022 19:17:14
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -118,9 +118,9 @@ START_PARM_LIST
     ConstantValue 0,0
     ObjectName Length
     ArithmeticResultToPickup 1
-    ArithmeticElementType1 2
+    ArithmeticElementType1 3
     ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 2
+    ArithmeticElementType2 3
     ArithmeticElementRegisterIndex2 1
     ArithmeticManualElementX 20,0
     ArithmeticManualElementY 0,0
@@ -166,7 +166,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 3
       CommandType 122
-      CommandName Create Variable Yres in mm = 0.1 mm
+      CommandName Create Variable Yres in mm = 0.05 mm
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -230,9 +230,9 @@ START_PARM_LIST
     ConstantValue 0,0
     ObjectName Yres
     ArithmeticResultToPickup 1
-    ArithmeticElementType1 2
+    ArithmeticElementType1 3
     ArithmeticElementRegisterIndex1 0
-    ArithmeticElementType2 2
+    ArithmeticElementType2 3
     ArithmeticElementRegisterIndex2 1
     ArithmeticManualElementX 20,0
     ArithmeticManualElementY 0,0
@@ -269,7 +269,7 @@ START_PARM_LIST
     END_CKPICKUP_TYPE_WRITE 
     ArithmeticFirstManualElementX 100,0
     ArithmeticFirstManualElementY 0,0
-    Initialization 0,1
+    Initialization 0,05
     TeachInCounter 0
   END_KEY 4
   KEY 5
@@ -448,7 +448,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 10
       CommandType 122
-      CommandName 93.946*1.027(370degree) / YRes = Number of Profiles
+      CommandName 93.95*1.027 / YRes = Number of Profiles
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -549,7 +549,7 @@ START_PARM_LIST
       PickupObjectType 0
       PickupListIndex 647813
     END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 93,946
+    ArithmeticFirstManualElementX 96,48
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
@@ -726,7 +726,7 @@ START_PARM_LIST
       PickupObjectType 0
       PickupListIndex 966894
     END_CKPICKUP_TYPE_WRITE 
-    ArithmeticFirstManualElementX 238000,0
+    ArithmeticFirstManualElementX 244000,0
     ArithmeticFirstManualElementY 0,0
     Initialization 0,0
     TeachInCounter 0
@@ -1624,7 +1624,7 @@ START_PARM_LIST
       Name 
       SourceMode 3
       RegisterIndex 0
-      ManualValue 4000,0
+      ManualValue 1000,0
       CKPICKUP_TYPE_READ 
         ClassVersion 1
         Name 
@@ -2163,7 +2163,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 40
       CommandType 1040
-      CommandName FIR GAIN
+      CommandName FIR GAIN and Reset Encoder
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -2204,7 +2204,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program 'SET FIR GAIN~~Dim lValue As Long: lValue = 2~EVHDCCTLSetParameterLongByName(0, "/GeniCam/Camera/GenICam/CameraControl/FIRControl/FIRGain", lValue)
+    Program 'SET FIR GAIN~~Dim lValue As Long: lValue = 2~EVHDCCTLSetParameterLongByName(0, "/GeniCam/Camera/GenICam/CameraControl/FIRControl/FIRGain", lValue)~~'Executing the camera command: Clear Trigger Coordinate(/GeniCam/Camera/GenICam/TriggerControl/ResolverRS422/ClearTriggerCoord@i)~EVHDCCTLSetParameterLongByName(0, "/GeniCam/Camera/GenICam/TriggerControl/ResolverRS422/ClearTriggerCoord@i", 1)
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0

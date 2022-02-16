@@ -1,9 +1,9 @@
 EVT 
-EYEVISION_VERSION 4.00.011
-FILE_VERSION 21
+EYEVISION_VERSION 4.00.013
+FILE_VERSION 42
 CREATED 12.01.2022 14:37:00
 CREATED_BY Admin
-LAST_MODIFIED 30.01.2022 22:14:41
+LAST_MODIFIED 16.02.2022 19:17:27
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -12,7 +12,7 @@ START_PARM_LIST
       ClassVersion 3
       Position 0
       CommandType 19980118
-      CommandName Estimate Line
+      CommandName Approach from the left and find the reference point
       Enabled 1
       Hidden 0
       GraficMode 2
@@ -58,17 +58,17 @@ START_PARM_LIST
       Name 
       SourceMode 3
       RegisterIndex 0
-      TransformToCurrent 1
+      TransformToCurrent 0
       CKGEO3D 
         ClassVersion 2
         Name 
-        Type 4
-        Value0 -63,1818237305
-        Value1 69,1745223999
-        Value2 -4,14929
-        Value3 26,4560394287
-        Value4 84,7041015625
-        Value5 7,0159
+        Type 5
+        Value0 -55,4233627319
+        Value1 79,8620758057
+        Value2 -1,0278320313
+        Value3 14,3512372971
+        Value4 105,2086334229
+        Value5 2,38672
         Value6 0,0
         Value7 0,0
         Value8 0,0
@@ -86,24 +86,24 @@ START_PARM_LIST
     Threshold 0,0
     UseDispersionFilter 0
     DispersionFilterStdDev 2,0
-    ConeAngle 75,0
+    ConeAngle 60,0
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 769044
+      PickupListIndex 798706
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 0
-      PickupListIndex 133189
+      PickupListIndex 184863
     END_CKPICKUP_TYPE_WRITE 
     CKPICKUP_TYPE_WRITE 
       ClassVersion 1
       Name 
       PickupObjectType 5
-      PickupListIndex 175421
+      PickupListIndex 642069
     END_CKPICKUP_TYPE_WRITE 
     OutputGeometry 3
     RansacPercentage 55,0
@@ -114,7 +114,7 @@ START_PARM_LIST
     ClassVersion 9
     CKGENERAL 
       ClassVersion 3
-      Position 1
+      Position 2
       CommandType 19980107
       CommandName 3D Geometry
       Enabled 1
@@ -359,7 +359,7 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 2
+      Position 3
       CommandType 122
       CommandName Into Bush Edge
       Enabled 1
@@ -471,7 +471,7 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 4
+      Position 5
       CommandType 122
       CommandName Cable - Bush
       Enabled 1
@@ -583,10 +583,10 @@ START_PARM_LIST
     ClassVersion 5
     CKGENERAL 
       ClassVersion 3
-      Position 5
+      Position 6
       CommandType 122
-      CommandName * -1
-      Enabled 0
+      CommandName +165
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -629,7 +629,7 @@ START_PARM_LIST
     DetType 4
     VarType 0
     RegisterIndex 0
-    OperatorType 2
+    OperatorType 0
     VarIndex -1
     Value 0,0
     PointX 0,0
@@ -653,7 +653,7 @@ START_PARM_LIST
     ArithmeticElementRegisterIndex1 0
     ArithmeticElementType2 2
     ArithmeticElementRegisterIndex2 1
-    ArithmeticManualElementX -1,0
+    ArithmeticManualElementX 165,0
     ArithmeticManualElementY 0,0
     CKPICKUP_TYPE_READ 
       ClassVersion 1
@@ -695,7 +695,7 @@ START_PARM_LIST
     ClassVersion 4
     CKGENERAL 
       ClassVersion 3
-      Position 6
+      Position 7
       CommandType 1040
       CommandName Add Distance 4 BYTES
       Enabled 1
@@ -738,7 +738,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    Program Dim s As String~~Dim lResult As Long 'Only needed once ~ ~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~dReg0 = dReg0 * 1000~Print(dReg0)~~HSConvUnsignedNumberToHexString(dReg0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)
+    Program Dim s As String~~Dim lResult As Long 'Only needed once ~ ~Dim dReg0 As Double~CKGetValueRegister (0,dReg0, "")~dReg0 = dReg0 * 1000~LogEntry(dReg0)~~HSConvUnsignedNumberToHexString(dReg0, 4, s)~HSConvSwapByteOrder(s)~SetSendString(GetSendString() + s)
     EncodedBinary 
     ExternProgramFileName 
     UseExternProgram 0
