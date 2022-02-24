@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cx3d MajorVersion="1" MinorVersion="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cx3d.xsd">
+	<CalibCase3d id="cal0">
+		<name>Q6-C15-45</name>
+		<sensorSN>2110250001</sensorSN>
+		<dateTime>10-Nov-2021</dateTime>
+		<creator>cx_3d</creator>
+		<description>Factory Calibration</description>
+		<target>0</target>
+		<sensorSize>4096 3072</sensorSize>
+		<fov>105 42 112 45 120 47</fov>
+		<roc>0 0 0 0</roc>
+		<intrinsic>
+			<model>65537</model>
+			<rangeScale>0.0625</rangeScale>
+			<rrH>1</rrH>
+			<rrV>1</rrV>
+			<sensorRoi>0 0 0 0</sensorRoi>
+			<sensorR>0 0 0</sensorR>
+			<pixelSize>0 0</pixelSize>
+			<f>0</f>
+			<cp>0 0</cp>
+			<L>
+				<rows>1</rows>
+				<cols>0</cols>
+				<dt>d</dt>
+				<data/>
+			</L>
+			<P>
+				<rows>3</rows>
+				<cols>3</cols>
+				<dt>d</dt>
+				<data>0.01332386718717813 -2.791480459770747e-05 -26.81862318053453 3.981234747998257e-06 0.01829617048190071 -28.17930436050086 -3.142062120280524e-07 0.0001377416000241167 1</data>
+			</P>
+			<C>
+				<rows>15</rows>
+				<cols>2</cols>
+				<dt>d</dt>
+				<data>-8.368205739637001e-16 0.0458222088326321 0.9999999999999988 0.0003373515188282116 3.585736688434599e-16 0.9999359937760919 -4.072387200782939e-16 1.928319868350124e-05 1.896876473020852e-17 -3.753293955417952e-06 5.382312531869487e-17 7.72921975964409e-06 -2.86704190088773e-18 1.816341720785686e-08 -5.038467298678762e-18 -1.149527227666575e-07 1.403054749661294e-17 -1.007209119437065e-06 -5.76966833744462e-18 -5.247412151694689e-06 1.206815349329867e-18 -1.610837286929481e-09 1.728840634118043e-19 1.864007556257557e-08 6.175114183353177e-18 -1.168644845706622e-07 -1.2857575250866e-19 4.046959699259025e-08 -7.435290664098904e-19 1.129818911200373e-08</data>
+			</C>
+		</intrinsic>
+		<extrinsic>
+			<Sy>1</Sy>
+			<Sxy>0</Sxy>
+			<Szy>0</Szy>
+			<T>0 0 0</T>
+			<R>0 0 0</R>
+		</extrinsic>
+		<metric>
+			<offset>0 0 0</offset>
+			<scale>1 1 1</scale>
+			<invalidDataValue>-nan(ind)</invalidDataValue>
+		</metric>
+		<accuracyStat>
+			<rows>4</rows>
+			<cols>3</cols>
+			<dt>d</dt>
+			<data>0 0 0 0 0 0 0 0 0 0 0 0</data>
+		</accuracyStat>
+		<lensCorrStat>
+			<rows>1</rows>
+			<cols>3</cols>
+			<dt>d</dt>
+			<data>0 0 0</data>
+		</lensCorrStat>
+	</CalibCase3d>
+</cx3d>

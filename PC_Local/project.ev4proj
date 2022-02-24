@@ -162,7 +162,7 @@
 	Port = 1
 
 [ProgramControl.TCP]
-	Enabled = 0
+	Enabled = 1
 	Port = 5953
 
 [ProgramControl.UDP]
@@ -173,12 +173,12 @@
 
 [StartupPrograms]
 	DebugMode = 0	 ;0: Normal mode 1: Debug Mode
-	StartMode = 0	 ;0: Stopped 1: Endless 2: Execute defined number of cycles 3: Execute defined number of cylces and close
+	StartMode = 1	 ;0: Stopped 1: Endless 2: Execute defined number of cycles 3: Execute defined number of cylces and close
 	StartModeNoCycles = 1	 ;Number of cycles, if start mode is set to 2(Execute defined number of cycles)
 	StartOperationMode = 0	 ;0: Process mode 1: Configuration Mode
 	StartProgramMode = 2	 ;0: empty program 1: last program, 2: given program
 	StartProgramName = main.ckp	 ;Name of program, if StartProgramMode is set to given program (2)
-	StartProgramRecentName = ./main.ckp	 ;Name of program that was recently activated in the program list. This file will be used if StartProgramMode ist set to last program (1)
+	StartProgramRecentName = ./GoldenSampleCalibration.ckp	 ;Name of program that was recently activated in the program list. This file will be used if StartProgramMode ist set to last program (1)
 
 [StartupPrograms.EnterApplication]
 	Enabled = 0	 ;0: Do not execute a startup program when entering the application 1: Execute a startup program with given name
