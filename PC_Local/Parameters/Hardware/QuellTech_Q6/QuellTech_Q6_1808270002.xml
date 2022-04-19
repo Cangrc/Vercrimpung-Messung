@@ -44,7 +44,7 @@ FIRCoef	SG9
 FIRGain	2
 FIRCorrection	1
 CameraMode	FIRPeak
-ProfilesPerFrame	700
+ProfilesPerFrame	100
 AbsOffsetPos	1
 NumSubPixel	4
 TrshFirstZeroCrossing	0
@@ -79,7 +79,7 @@ LightControllerSelector	LightController0
 LightBrightnessControlMode	Analog
 LightControllerSelector	LightController0
 LightControllerSelector	LightController0
-LightBrightness	50
+LightBrightness	100
 LightControllerSelector	LightController0
 Output1	Out1_SequencerActive
 Output2	Out2_IntegrationActive

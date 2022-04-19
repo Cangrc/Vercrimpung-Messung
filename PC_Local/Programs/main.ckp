@@ -1,9 +1,9 @@
 EVT 
 EYEVISION_VERSION 4.00.013
-FILE_VERSION 471
+FILE_VERSION 492
 CREATED 13.12.2021 10:01:14
 CREATED_BY Admin
-LAST_MODIFIED 21.02.2022 18:33:26
+LAST_MODIFIED 13.04.2022 18:12:21
 LAST_MODIFIED_BY Admin
 START_PARM_LIST 
   KEY 1
@@ -4046,7 +4046,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./Gen2 16x8/2022_02_14_18_44_16_390cable-record.e3c
+    FileName ./Problem/2022_04_13_13_51_57_382cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -4388,7 +4388,7 @@ START_PARM_LIST
       Enabled 0
       Hidden 0
       GraficMode 2
-      TextMode 2
+      TextMode 3
       ImageMemory 0
       InvertResult 0
       Memo 
@@ -4693,7 +4693,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_21_18_33_20_624cable-record.e3c
+    FileName ./2022_04_13_18_12_18_617cable-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -6141,7 +6141,7 @@ START_PARM_LIST
         Index -1
       END_CKSTATISTIC 
     END_CKRESULT 
-    NameOfSubProgram ./CableDiameterCalculation.ckp
+    NameOfSubProgram ./CableDiameterCalculation-new.ckp
     RunSubprogramMode 0
     ResultMode 0
     CKPICKUP_TYPE_READ 
@@ -7607,7 +7607,7 @@ START_PARM_LIST
     TriggerTimeout 0
     TriggerInputLine 0
     MinimumSignalDuration 0
-    FileName ./2022_02_21_18_33_20_624-bush-record.e3c
+    FileName ./2022_04_13_18_12_18_617-bush-record.e3c
     AVIframes 1
     AVImode 0
     HWTriggeredCapture 1
@@ -8539,7 +8539,7 @@ START_PARM_LIST
       Position 132
       CommandType 1040
       CommandName CRIMP_RING_NOT_AVAILABLE
-      Enabled 1
+      Enabled 0
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -8947,7 +8947,7 @@ START_PARM_LIST
       Position 140
       CommandType 1000
       CommandName Jump to CrimpRingDistance Calculation
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -9069,7 +9069,7 @@ START_PARM_LIST
       Position 142
       CommandType 1000
       CommandName Jump to CrimpRingDiameter Calculation
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2
@@ -9191,7 +9191,7 @@ START_PARM_LIST
       Position 144
       CommandType 1040
       CommandName Add RingOuter Diameter 4 BYTES
-      Enabled 0
+      Enabled 1
       Hidden 0
       GraficMode 2
       TextMode 2

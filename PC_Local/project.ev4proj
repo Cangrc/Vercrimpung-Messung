@@ -13,6 +13,8 @@
 [Commands.ImageTransfer]
 	OverlayProtocolVersion = 2	 ;EyeView from Version 3 requires protocol version 1
 
+[Commands.SQLPlugin]
+
 [Display]
 
 [Display.Format]
@@ -178,7 +180,7 @@
 	StartOperationMode = 0	 ;0: Process mode 1: Configuration Mode
 	StartProgramMode = 2	 ;0: empty program 1: last program, 2: given program
 	StartProgramName = main.ckp	 ;Name of program, if StartProgramMode is set to given program (2)
-	StartProgramRecentName = ./GoldenSampleCalibration.ckp	 ;Name of program that was recently activated in the program list. This file will be used if StartProgramMode ist set to last program (1)
+	StartProgramRecentName = ./main.ckp	 ;Name of program that was recently activated in the program list. This file will be used if StartProgramMode ist set to last program (1)
 
 [StartupPrograms.EnterApplication]
 	Enabled = 0	 ;0: Do not execute a startup program when entering the application 1: Execute a startup program with given name
